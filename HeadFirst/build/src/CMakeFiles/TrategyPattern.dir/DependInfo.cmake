@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/shuai/workspace/C-Knowledge/HeadFirst/src/TrategyPatternMain.cpp" "/home/shuai/workspace/C-Knowledge/HeadFirst/build/src/CMakeFiles/TrategyPattern.dir/TrategyPatternMain.cpp.o"
+  "/home/shuai/my_code/ilike/HeadFirst/src/TrategyPatternMain.cpp" "/home/shuai/my_code/ilike/HeadFirst/build/src/CMakeFiles/TrategyPattern.dir/TrategyPatternMain.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -15,7 +15,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/shuai/workspace/C-Knowledge/HeadFirst/build/src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/DependInfo.cmake"
+  "/home/shuai/my_code/ilike/HeadFirst/build/src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

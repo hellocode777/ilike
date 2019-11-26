@@ -1,4 +1,4 @@
-CMAKE_MINIMUM_REQUIRED( VERSION 2.8 ) #设定使用的cmake的版本
+CMAKE_MINIMUM_REQUIRED( VERSION 3.13 ) #设定使用的cmake的版本
 PROJECT( code ) #设定项目或工程名
 SET( CMAKE_CXX_COMPILER "g++") #设定编译器
 

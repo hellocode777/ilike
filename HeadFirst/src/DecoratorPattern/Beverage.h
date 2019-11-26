@@ -8,7 +8,7 @@
 #ifndef BEVERAGE_H_
 #define BEVERAGE_H_
 
-#include "/home/shuai/workspace/C-Knowledge/HeadFirst/include/Public.h"
+#include "/home/shuai/my_code/ilike/HeadFirst/include/Public.h"
 
 class Beverage {
 public:

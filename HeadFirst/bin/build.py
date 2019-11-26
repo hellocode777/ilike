@@ -1,4 +1,4 @@
-cd /home/shuai/workspace/C-Knowledge/HeadFirst/build
+cd /home/shuai/my_code/ilike/HeadFirst/build
 cmake ..
 make
-cd /home/shuai/workspace/C-Knowledge/HeadFirst/bin
+cd /home/shuai/my_code/ilike/HeadFirst/bin

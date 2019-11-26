@@ -1,4 +1,4 @@
-# Install script for directory: /home/shuai/workspace/C-Knowledge/HeadFirst/src
+# Install script for directory: /home/shuai/my_code/ilike/HeadFirst/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,10 +39,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/shuai/workspace/C-Knowledge/HeadFirst/build/src/ObserverPattern/cmake_install.cmake")
-  include("/home/shuai/workspace/C-Knowledge/HeadFirst/build/src/TrategyPattern/cmake_install.cmake")
-  include("/home/shuai/workspace/C-Knowledge/HeadFirst/build/src/DecoratorPattern/cmake_install.cmake")
-  include("/home/shuai/workspace/C-Knowledge/HeadFirst/build/src/FactoryPattern/cmake_install.cmake")
+  include("/home/shuai/my_code/ilike/HeadFirst/build/src/ObserverPattern/cmake_install.cmake")
+  include("/home/shuai/my_code/ilike/HeadFirst/build/src/TrategyPattern/cmake_install.cmake")
+  include("/home/shuai/my_code/ilike/HeadFirst/build/src/DecoratorPattern/cmake_install.cmake")
+  include("/home/shuai/my_code/ilike/HeadFirst/build/src/FactoryPattern/cmake_install.cmake")
 
 endif()
 

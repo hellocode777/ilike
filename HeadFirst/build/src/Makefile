@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/bin/cmake
+CMAKE_COMMAND = /usr/local/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/bin/cmake -E remove -f
+RM = /usr/local/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shuai/workspace/C-Knowledge/HeadFirst
+CMAKE_SOURCE_DIR = /home/shuai/my_code/ilike/HeadFirst
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shuai/workspace/C-Knowledge/HeadFirst/build
+CMAKE_BINARY_DIR = /home/shuai/my_code/ilike/HeadFirst/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/shuai/workspace/C-Knowledge/HeadFirst/build
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/cmake/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/local/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/usr/local/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles /home/shuai/workspace/C-Knowledge/HeadFirst/build/src/CMakeFiles/progress.marks
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles 0
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles /home/shuai/my_code/ilike/HeadFirst/build/src/CMakeFiles/progress.marks
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/FactoryPattern.dir/rule:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/FactoryPattern.dir/rule
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/FactoryPattern.dir/rule
 .PHONY : src/CMakeFiles/FactoryPattern.dir/rule
 
 # Convenience name for target.
@@ -122,12 +122,12 @@ FactoryPattern: src/CMakeFiles/FactoryPattern.dir/rule
 
 # fast build rule for target.
 FactoryPattern/fast:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/CMakeFiles/FactoryPattern.dir/build.make src/CMakeFiles/FactoryPattern.dir/build
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/CMakeFiles/FactoryPattern.dir/build.make src/CMakeFiles/FactoryPattern.dir/build
 .PHONY : FactoryPattern/fast
 
 # Convenience name for target.
 src/CMakeFiles/DecoratorPattern.dir/rule:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/DecoratorPattern.dir/rule
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/DecoratorPattern.dir/rule
 .PHONY : src/CMakeFiles/DecoratorPattern.dir/rule
 
 # Convenience name for target.
@@ -137,12 +137,12 @@ DecoratorPattern: src/CMakeFiles/DecoratorPattern.dir/rule
 
 # fast build rule for target.
 DecoratorPattern/fast:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/CMakeFiles/DecoratorPattern.dir/build.make src/CMakeFiles/DecoratorPattern.dir/build
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/CMakeFiles/DecoratorPattern.dir/build.make src/CMakeFiles/DecoratorPattern.dir/build
 .PHONY : DecoratorPattern/fast
 
 # Convenience name for target.
 src/CMakeFiles/ObserverPattern.dir/rule:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/ObserverPattern.dir/rule
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/ObserverPattern.dir/rule
 .PHONY : src/CMakeFiles/ObserverPattern.dir/rule
 
 # Convenience name for target.
@@ -152,12 +152,12 @@ ObserverPattern: src/CMakeFiles/ObserverPattern.dir/rule
 
 # fast build rule for target.
 ObserverPattern/fast:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/CMakeFiles/ObserverPattern.dir/build.make src/CMakeFiles/ObserverPattern.dir/build
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/CMakeFiles/ObserverPattern.dir/build.make src/CMakeFiles/ObserverPattern.dir/build
 .PHONY : ObserverPattern/fast
 
 # Convenience name for target.
 src/CMakeFiles/TrategyPattern.dir/rule:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/TrategyPattern.dir/rule
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/TrategyPattern.dir/rule
 .PHONY : src/CMakeFiles/TrategyPattern.dir/rule
 
 # Convenience name for target.
@@ -167,7 +167,7 @@ TrategyPattern: src/CMakeFiles/TrategyPattern.dir/rule
 
 # fast build rule for target.
 TrategyPattern/fast:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/CMakeFiles/TrategyPattern.dir/build.make src/CMakeFiles/TrategyPattern.dir/build
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/CMakeFiles/TrategyPattern.dir/build.make src/CMakeFiles/TrategyPattern.dir/build
 .PHONY : TrategyPattern/fast
 
 DecoratorPatternMain.o: DecoratorPatternMain.cpp.o
@@ -176,7 +176,7 @@ DecoratorPatternMain.o: DecoratorPatternMain.cpp.o
 
 # target to build an object file
 DecoratorPatternMain.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/CMakeFiles/DecoratorPattern.dir/build.make src/CMakeFiles/DecoratorPattern.dir/DecoratorPatternMain.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/CMakeFiles/DecoratorPattern.dir/build.make src/CMakeFiles/DecoratorPattern.dir/DecoratorPatternMain.cpp.o
 .PHONY : DecoratorPatternMain.cpp.o
 
 DecoratorPatternMain.i: DecoratorPatternMain.cpp.i
@@ -185,7 +185,7 @@ DecoratorPatternMain.i: DecoratorPatternMain.cpp.i
 
 # target to preprocess a source file
 DecoratorPatternMain.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/CMakeFiles/DecoratorPattern.dir/build.make src/CMakeFiles/DecoratorPattern.dir/DecoratorPatternMain.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/CMakeFiles/DecoratorPattern.dir/build.make src/CMakeFiles/DecoratorPattern.dir/DecoratorPatternMain.cpp.i
 .PHONY : DecoratorPatternMain.cpp.i
 
 DecoratorPatternMain.s: DecoratorPatternMain.cpp.s
@@ -194,7 +194,7 @@ DecoratorPatternMain.s: DecoratorPatternMain.cpp.s
 
 # target to generate assembly for a file
 DecoratorPatternMain.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/CMakeFiles/DecoratorPattern.dir/build.make src/CMakeFiles/DecoratorPattern.dir/DecoratorPatternMain.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/CMakeFiles/DecoratorPattern.dir/build.make src/CMakeFiles/DecoratorPattern.dir/DecoratorPatternMain.cpp.s
 .PHONY : DecoratorPatternMain.cpp.s
 
 FactoryPatternMain.o: FactoryPatternMain.cpp.o
@@ -203,7 +203,7 @@ FactoryPatternMain.o: FactoryPatternMain.cpp.o
 
 # target to build an object file
 FactoryPatternMain.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/CMakeFiles/FactoryPattern.dir/build.make src/CMakeFiles/FactoryPattern.dir/FactoryPatternMain.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/CMakeFiles/FactoryPattern.dir/build.make src/CMakeFiles/FactoryPattern.dir/FactoryPatternMain.cpp.o
 .PHONY : FactoryPatternMain.cpp.o
 
 FactoryPatternMain.i: FactoryPatternMain.cpp.i
@@ -212,7 +212,7 @@ FactoryPatternMain.i: FactoryPatternMain.cpp.i
 
 # target to preprocess a source file
 FactoryPatternMain.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/CMakeFiles/FactoryPattern.dir/build.make src/CMakeFiles/FactoryPattern.dir/FactoryPatternMain.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/CMakeFiles/FactoryPattern.dir/build.make src/CMakeFiles/FactoryPattern.dir/FactoryPatternMain.cpp.i
 .PHONY : FactoryPatternMain.cpp.i
 
 FactoryPatternMain.s: FactoryPatternMain.cpp.s
@@ -221,7 +221,7 @@ FactoryPatternMain.s: FactoryPatternMain.cpp.s
 
 # target to generate assembly for a file
 FactoryPatternMain.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/CMakeFiles/FactoryPattern.dir/build.make src/CMakeFiles/FactoryPattern.dir/FactoryPatternMain.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/CMakeFiles/FactoryPattern.dir/build.make src/CMakeFiles/FactoryPattern.dir/FactoryPatternMain.cpp.s
 .PHONY : FactoryPatternMain.cpp.s
 
 ObserverPatternMain.o: ObserverPatternMain.cpp.o
@@ -230,7 +230,7 @@ ObserverPatternMain.o: ObserverPatternMain.cpp.o
 
 # target to build an object file
 ObserverPatternMain.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/CMakeFiles/ObserverPattern.dir/build.make src/CMakeFiles/ObserverPattern.dir/ObserverPatternMain.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/CMakeFiles/ObserverPattern.dir/build.make src/CMakeFiles/ObserverPattern.dir/ObserverPatternMain.cpp.o
 .PHONY : ObserverPatternMain.cpp.o
 
 ObserverPatternMain.i: ObserverPatternMain.cpp.i
@@ -239,7 +239,7 @@ ObserverPatternMain.i: ObserverPatternMain.cpp.i
 
 # target to preprocess a source file
 ObserverPatternMain.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/CMakeFiles/ObserverPattern.dir/build.make src/CMakeFiles/ObserverPattern.dir/ObserverPatternMain.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/CMakeFiles/ObserverPattern.dir/build.make src/CMakeFiles/ObserverPattern.dir/ObserverPatternMain.cpp.i
 .PHONY : ObserverPatternMain.cpp.i
 
 ObserverPatternMain.s: ObserverPatternMain.cpp.s
@@ -248,7 +248,7 @@ ObserverPatternMain.s: ObserverPatternMain.cpp.s
 
 # target to generate assembly for a file
 ObserverPatternMain.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/CMakeFiles/ObserverPattern.dir/build.make src/CMakeFiles/ObserverPattern.dir/ObserverPatternMain.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/CMakeFiles/ObserverPattern.dir/build.make src/CMakeFiles/ObserverPattern.dir/ObserverPatternMain.cpp.s
 .PHONY : ObserverPatternMain.cpp.s
 
 TrategyPatternMain.o: TrategyPatternMain.cpp.o
@@ -257,7 +257,7 @@ TrategyPatternMain.o: TrategyPatternMain.cpp.o
 
 # target to build an object file
 TrategyPatternMain.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/CMakeFiles/TrategyPattern.dir/build.make src/CMakeFiles/TrategyPattern.dir/TrategyPatternMain.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/CMakeFiles/TrategyPattern.dir/build.make src/CMakeFiles/TrategyPattern.dir/TrategyPatternMain.cpp.o
 .PHONY : TrategyPatternMain.cpp.o
 
 TrategyPatternMain.i: TrategyPatternMain.cpp.i
@@ -266,7 +266,7 @@ TrategyPatternMain.i: TrategyPatternMain.cpp.i
 
 # target to preprocess a source file
 TrategyPatternMain.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/CMakeFiles/TrategyPattern.dir/build.make src/CMakeFiles/TrategyPattern.dir/TrategyPatternMain.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/CMakeFiles/TrategyPattern.dir/build.make src/CMakeFiles/TrategyPattern.dir/TrategyPatternMain.cpp.i
 .PHONY : TrategyPatternMain.cpp.i
 
 TrategyPatternMain.s: TrategyPatternMain.cpp.s
@@ -275,7 +275,7 @@ TrategyPatternMain.s: TrategyPatternMain.cpp.s
 
 # target to generate assembly for a file
 TrategyPatternMain.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/CMakeFiles/TrategyPattern.dir/build.make src/CMakeFiles/TrategyPattern.dir/TrategyPatternMain.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/CMakeFiles/TrategyPattern.dir/build.make src/CMakeFiles/TrategyPattern.dir/TrategyPatternMain.cpp.s
 .PHONY : TrategyPatternMain.cpp.s
 
 # Help Target
@@ -313,6 +313,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

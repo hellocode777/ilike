@@ -1,4 +1,4 @@
-# Install script for directory: /home/shuai/workspace/C-Knowledge/HeadFirst/src/FactoryPattern
+# Install script for directory: /home/shuai/my_code/ilike/HeadFirst/src/FactoryPattern
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
