@@ -6,43 +6,43 @@
 
 #IncludeRegexTransform: 
 
-/home/shuai/workspace/C-Knowledge/HeadFirst/include/Public.h
+/home/shuai/my_code/ilike/HeadFirst/include/Public.h
 iostream
 -
 
-/home/shuai/workspace/C-Knowledge/HeadFirst/src/TrategyPattern/Duck.h
-/home/shuai/workspace/C-Knowledge/HeadFirst/include/Public.h
+/home/shuai/my_code/ilike/HeadFirst/src/TrategyPattern/Duck.h
+/home/shuai/my_code/ilike/HeadFirst/include/Public.h
 -
 FlyBehavior.h
-/home/shuai/workspace/C-Knowledge/HeadFirst/src/TrategyPattern/FlyBehavior.h
+/home/shuai/my_code/ilike/HeadFirst/src/TrategyPattern/FlyBehavior.h
 QuackBehavior.h
-/home/shuai/workspace/C-Knowledge/HeadFirst/src/TrategyPattern/QuackBehavior.h
+/home/shuai/my_code/ilike/HeadFirst/src/TrategyPattern/QuackBehavior.h
 
-/home/shuai/workspace/C-Knowledge/HeadFirst/src/TrategyPattern/FlyBehavior.h
-/home/shuai/workspace/C-Knowledge/HeadFirst/include/Public.h
+/home/shuai/my_code/ilike/HeadFirst/src/TrategyPattern/FlyBehavior.h
+/home/shuai/my_code/ilike/HeadFirst/include/Public.h
 -
 
-/home/shuai/workspace/C-Knowledge/HeadFirst/src/TrategyPattern/FlyRocketPowered.h
+/home/shuai/my_code/ilike/HeadFirst/src/TrategyPattern/FlyRocketPowered.h
 FlyBehavior.h
-/home/shuai/workspace/C-Knowledge/HeadFirst/src/TrategyPattern/FlyBehavior.h
+/home/shuai/my_code/ilike/HeadFirst/src/TrategyPattern/FlyBehavior.h
 
-/home/shuai/workspace/C-Knowledge/HeadFirst/src/TrategyPattern/MallardDuck.h
+/home/shuai/my_code/ilike/HeadFirst/src/TrategyPattern/MallardDuck.h
 Duck.h
-/home/shuai/workspace/C-Knowledge/HeadFirst/src/TrategyPattern/Duck.h
+/home/shuai/my_code/ilike/HeadFirst/src/TrategyPattern/Duck.h
 
-/home/shuai/workspace/C-Knowledge/HeadFirst/src/TrategyPattern/ModelDuck.h
+/home/shuai/my_code/ilike/HeadFirst/src/TrategyPattern/ModelDuck.h
 Duck.h
-/home/shuai/workspace/C-Knowledge/HeadFirst/src/TrategyPattern/Duck.h
+/home/shuai/my_code/ilike/HeadFirst/src/TrategyPattern/Duck.h
 
-/home/shuai/workspace/C-Knowledge/HeadFirst/src/TrategyPattern/QuackBehavior.h
-/home/shuai/workspace/C-Knowledge/HeadFirst/include/Public.h
+/home/shuai/my_code/ilike/HeadFirst/src/TrategyPattern/QuackBehavior.h
+/home/shuai/my_code/ilike/HeadFirst/include/Public.h
 -
 
-/home/shuai/workspace/C-Knowledge/HeadFirst/src/TrategyPatternMain.cpp
+/home/shuai/my_code/ilike/HeadFirst/src/TrategyPatternMain.cpp
 TrategyPattern/MallardDuck.h
-/home/shuai/workspace/C-Knowledge/HeadFirst/src/TrategyPattern/MallardDuck.h
+/home/shuai/my_code/ilike/HeadFirst/src/TrategyPattern/MallardDuck.h
 TrategyPattern/ModelDuck.h
-/home/shuai/workspace/C-Knowledge/HeadFirst/src/TrategyPattern/ModelDuck.h
+/home/shuai/my_code/ilike/HeadFirst/src/TrategyPattern/ModelDuck.h
 TrategyPattern/FlyRocketPowered.h
-/home/shuai/workspace/C-Knowledge/HeadFirst/src/TrategyPattern/FlyRocketPowered.h
+/home/shuai/my_code/ilike/HeadFirst/src/TrategyPattern/FlyRocketPowered.h
 

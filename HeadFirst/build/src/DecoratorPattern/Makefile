@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/bin/cmake
+CMAKE_COMMAND = /usr/local/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/bin/cmake -E remove -f
+RM = /usr/local/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shuai/workspace/C-Knowledge/HeadFirst
+CMAKE_SOURCE_DIR = /home/shuai/my_code/ilike/HeadFirst
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shuai/workspace/C-Knowledge/HeadFirst/build
+CMAKE_BINARY_DIR = /home/shuai/my_code/ilike/HeadFirst/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/shuai/workspace/C-Knowledge/HeadFirst/build
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/cmake/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/local/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/usr/local/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles /home/shuai/workspace/C-Knowledge/HeadFirst/build/src/DecoratorPattern/CMakeFiles/progress.marks
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/DecoratorPattern/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles 0
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles /home/shuai/my_code/ilike/HeadFirst/build/src/DecoratorPattern/CMakeFiles/progress.marks
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/DecoratorPattern/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/DecoratorPattern/clean
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/DecoratorPattern/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/DecoratorPattern/preinstall
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/DecoratorPattern/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/DecoratorPattern/preinstall
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/DecoratorPattern/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/rule:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/rule
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/rule
 .PHONY : src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ DecoratorPatternFunctions: src/DecoratorPattern/CMakeFiles/DecoratorPatternFunct
 
 # fast build rule for target.
 DecoratorPatternFunctions/fast:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build
 .PHONY : DecoratorPatternFunctions/fast
 
 Beverage.o: Beverage.cpp.o
@@ -131,7 +131,7 @@ Beverage.o: Beverage.cpp.o
 
 # target to build an object file
 Beverage.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Beverage.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Beverage.cpp.o
 .PHONY : Beverage.cpp.o
 
 Beverage.i: Beverage.cpp.i
@@ -140,7 +140,7 @@ Beverage.i: Beverage.cpp.i
 
 # target to preprocess a source file
 Beverage.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Beverage.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Beverage.cpp.i
 .PHONY : Beverage.cpp.i
 
 Beverage.s: Beverage.cpp.s
@@ -149,7 +149,7 @@ Beverage.s: Beverage.cpp.s
 
 # target to generate assembly for a file
 Beverage.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Beverage.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Beverage.cpp.s
 .PHONY : Beverage.cpp.s
 
 CondimentDecorator.o: CondimentDecorator.cpp.o
@@ -158,7 +158,7 @@ CondimentDecorator.o: CondimentDecorator.cpp.o
 
 # target to build an object file
 CondimentDecorator.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/CondimentDecorator.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/CondimentDecorator.cpp.o
 .PHONY : CondimentDecorator.cpp.o
 
 CondimentDecorator.i: CondimentDecorator.cpp.i
@@ -167,7 +167,7 @@ CondimentDecorator.i: CondimentDecorator.cpp.i
 
 # target to preprocess a source file
 CondimentDecorator.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/CondimentDecorator.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/CondimentDecorator.cpp.i
 .PHONY : CondimentDecorator.cpp.i
 
 CondimentDecorator.s: CondimentDecorator.cpp.s
@@ -176,7 +176,7 @@ CondimentDecorator.s: CondimentDecorator.cpp.s
 
 # target to generate assembly for a file
 CondimentDecorator.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/CondimentDecorator.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/CondimentDecorator.cpp.s
 .PHONY : CondimentDecorator.cpp.s
 
 DarkRoast.o: DarkRoast.cpp.o
@@ -185,7 +185,7 @@ DarkRoast.o: DarkRoast.cpp.o
 
 # target to build an object file
 DarkRoast.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/DarkRoast.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/DarkRoast.cpp.o
 .PHONY : DarkRoast.cpp.o
 
 DarkRoast.i: DarkRoast.cpp.i
@@ -194,7 +194,7 @@ DarkRoast.i: DarkRoast.cpp.i
 
 # target to preprocess a source file
 DarkRoast.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/DarkRoast.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/DarkRoast.cpp.i
 .PHONY : DarkRoast.cpp.i
 
 DarkRoast.s: DarkRoast.cpp.s
@@ -203,7 +203,7 @@ DarkRoast.s: DarkRoast.cpp.s
 
 # target to generate assembly for a file
 DarkRoast.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/DarkRoast.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/DarkRoast.cpp.s
 .PHONY : DarkRoast.cpp.s
 
 Decat.o: Decat.cpp.o
@@ -212,7 +212,7 @@ Decat.o: Decat.cpp.o
 
 # target to build an object file
 Decat.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Decat.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Decat.cpp.o
 .PHONY : Decat.cpp.o
 
 Decat.i: Decat.cpp.i
@@ -221,7 +221,7 @@ Decat.i: Decat.cpp.i
 
 # target to preprocess a source file
 Decat.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Decat.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Decat.cpp.i
 .PHONY : Decat.cpp.i
 
 Decat.s: Decat.cpp.s
@@ -230,7 +230,7 @@ Decat.s: Decat.cpp.s
 
 # target to generate assembly for a file
 Decat.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Decat.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Decat.cpp.s
 .PHONY : Decat.cpp.s
 
 Espresso.o: Espresso.cpp.o
@@ -239,7 +239,7 @@ Espresso.o: Espresso.cpp.o
 
 # target to build an object file
 Espresso.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Espresso.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Espresso.cpp.o
 .PHONY : Espresso.cpp.o
 
 Espresso.i: Espresso.cpp.i
@@ -248,7 +248,7 @@ Espresso.i: Espresso.cpp.i
 
 # target to preprocess a source file
 Espresso.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Espresso.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Espresso.cpp.i
 .PHONY : Espresso.cpp.i
 
 Espresso.s: Espresso.cpp.s
@@ -257,7 +257,7 @@ Espresso.s: Espresso.cpp.s
 
 # target to generate assembly for a file
 Espresso.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Espresso.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Espresso.cpp.s
 .PHONY : Espresso.cpp.s
 
 HouseBlend.o: HouseBlend.cpp.o
@@ -266,7 +266,7 @@ HouseBlend.o: HouseBlend.cpp.o
 
 # target to build an object file
 HouseBlend.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/HouseBlend.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/HouseBlend.cpp.o
 .PHONY : HouseBlend.cpp.o
 
 HouseBlend.i: HouseBlend.cpp.i
@@ -275,7 +275,7 @@ HouseBlend.i: HouseBlend.cpp.i
 
 # target to preprocess a source file
 HouseBlend.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/HouseBlend.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/HouseBlend.cpp.i
 .PHONY : HouseBlend.cpp.i
 
 HouseBlend.s: HouseBlend.cpp.s
@@ -284,7 +284,7 @@ HouseBlend.s: HouseBlend.cpp.s
 
 # target to generate assembly for a file
 HouseBlend.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/HouseBlend.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/HouseBlend.cpp.s
 .PHONY : HouseBlend.cpp.s
 
 Mocha.o: Mocha.cpp.o
@@ -293,7 +293,7 @@ Mocha.o: Mocha.cpp.o
 
 # target to build an object file
 Mocha.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Mocha.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Mocha.cpp.o
 .PHONY : Mocha.cpp.o
 
 Mocha.i: Mocha.cpp.i
@@ -302,7 +302,7 @@ Mocha.i: Mocha.cpp.i
 
 # target to preprocess a source file
 Mocha.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Mocha.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Mocha.cpp.i
 .PHONY : Mocha.cpp.i
 
 Mocha.s: Mocha.cpp.s
@@ -311,7 +311,7 @@ Mocha.s: Mocha.cpp.s
 
 # target to generate assembly for a file
 Mocha.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Mocha.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Mocha.cpp.s
 .PHONY : Mocha.cpp.s
 
 Soy.o: Soy.cpp.o
@@ -320,7 +320,7 @@ Soy.o: Soy.cpp.o
 
 # target to build an object file
 Soy.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Soy.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Soy.cpp.o
 .PHONY : Soy.cpp.o
 
 Soy.i: Soy.cpp.i
@@ -329,7 +329,7 @@ Soy.i: Soy.cpp.i
 
 # target to preprocess a source file
 Soy.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Soy.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Soy.cpp.i
 .PHONY : Soy.cpp.i
 
 Soy.s: Soy.cpp.s
@@ -338,7 +338,7 @@ Soy.s: Soy.cpp.s
 
 # target to generate assembly for a file
 Soy.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Soy.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Soy.cpp.s
 .PHONY : Soy.cpp.s
 
 Whip.o: Whip.cpp.o
@@ -347,7 +347,7 @@ Whip.o: Whip.cpp.o
 
 # target to build an object file
 Whip.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Whip.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Whip.cpp.o
 .PHONY : Whip.cpp.o
 
 Whip.i: Whip.cpp.i
@@ -356,7 +356,7 @@ Whip.i: Whip.cpp.i
 
 # target to preprocess a source file
 Whip.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Whip.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Whip.cpp.i
 .PHONY : Whip.cpp.i
 
 Whip.s: Whip.cpp.s
@@ -365,7 +365,7 @@ Whip.s: Whip.cpp.s
 
 # target to generate assembly for a file
 Whip.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Whip.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/build.make src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/Whip.cpp.s
 .PHONY : Whip.cpp.s
 
 # Help Target
@@ -415,6 +415,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

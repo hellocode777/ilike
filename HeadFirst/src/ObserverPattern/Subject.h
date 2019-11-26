@@ -9,7 +9,7 @@
 #define SUBJECT_H_
 
 #include "Observer.h"
-#include "/home/shuai/workspace/C-Knowledge/HeadFirst/include/Public.h"
+#include "/home/shuai/my_code/ilike/HeadFirst/include/Public.h"
 
 class Subject {
 public:

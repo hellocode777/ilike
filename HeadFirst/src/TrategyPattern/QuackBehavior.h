@@ -7,7 +7,7 @@
 
 #ifndef QUACKBEHAVIOR_H_
 #define QUACKBEHAVIOR_H_
-#include "/home/shuai/workspace/C-Knowledge/HeadFirst/include/Public.h"
+#include "/home/shuai/my_code/ilike/HeadFirst/include/Public.h"
 class QuackBehavior {
 public:
 	QuackBehavior();

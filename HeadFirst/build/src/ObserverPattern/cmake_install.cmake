@@ -1,4 +1,4 @@
-# Install script for directory: /home/shuai/workspace/C-Knowledge/HeadFirst/src/ObserverPattern
+# Install script for directory: /home/shuai/my_code/ilike/HeadFirst/src/ObserverPattern
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

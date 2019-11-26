@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/bin/cmake
+CMAKE_COMMAND = /usr/local/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/bin/cmake -E remove -f
+RM = /usr/local/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shuai/workspace/C-Knowledge/HeadFirst
+CMAKE_SOURCE_DIR = /home/shuai/my_code/ilike/HeadFirst
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shuai/workspace/C-Knowledge/HeadFirst/build
+CMAKE_BINARY_DIR = /home/shuai/my_code/ilike/HeadFirst/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/shuai/workspace/C-Knowledge/HeadFirst/build
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/cmake/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/local/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/usr/local/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles /home/shuai/workspace/C-Knowledge/HeadFirst/build/src/FactoryPattern/CMakeFiles/progress.marks
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/FactoryPattern/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles 0
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles /home/shuai/my_code/ilike/HeadFirst/build/src/FactoryPattern/CMakeFiles/progress.marks
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/FactoryPattern/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/FactoryPattern/clean
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/FactoryPattern/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/FactoryPattern/preinstall
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/FactoryPattern/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/FactoryPattern/preinstall
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/FactoryPattern/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/rule:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/rule
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/rule
 .PHONY : src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ FactoryPatternFunctions: src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.d
 
 # fast build rule for target.
 FactoryPatternFunctions/fast:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build
 .PHONY : FactoryPatternFunctions/fast
 
 ChicagoPizzaStore.o: ChicagoPizzaStore.cpp.o
@@ -131,7 +131,7 @@ ChicagoPizzaStore.o: ChicagoPizzaStore.cpp.o
 
 # target to build an object file
 ChicagoPizzaStore.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/ChicagoPizzaStore.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/ChicagoPizzaStore.cpp.o
 .PHONY : ChicagoPizzaStore.cpp.o
 
 ChicagoPizzaStore.i: ChicagoPizzaStore.cpp.i
@@ -140,7 +140,7 @@ ChicagoPizzaStore.i: ChicagoPizzaStore.cpp.i
 
 # target to preprocess a source file
 ChicagoPizzaStore.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/ChicagoPizzaStore.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/ChicagoPizzaStore.cpp.i
 .PHONY : ChicagoPizzaStore.cpp.i
 
 ChicagoPizzaStore.s: ChicagoPizzaStore.cpp.s
@@ -149,7 +149,7 @@ ChicagoPizzaStore.s: ChicagoPizzaStore.cpp.s
 
 # target to generate assembly for a file
 ChicagoPizzaStore.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/ChicagoPizzaStore.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/ChicagoPizzaStore.cpp.s
 .PHONY : ChicagoPizzaStore.cpp.s
 
 ChicagoStyleCheesePizza.o: ChicagoStyleCheesePizza.cpp.o
@@ -158,7 +158,7 @@ ChicagoStyleCheesePizza.o: ChicagoStyleCheesePizza.cpp.o
 
 # target to build an object file
 ChicagoStyleCheesePizza.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/ChicagoStyleCheesePizza.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/ChicagoStyleCheesePizza.cpp.o
 .PHONY : ChicagoStyleCheesePizza.cpp.o
 
 ChicagoStyleCheesePizza.i: ChicagoStyleCheesePizza.cpp.i
@@ -167,7 +167,7 @@ ChicagoStyleCheesePizza.i: ChicagoStyleCheesePizza.cpp.i
 
 # target to preprocess a source file
 ChicagoStyleCheesePizza.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/ChicagoStyleCheesePizza.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/ChicagoStyleCheesePizza.cpp.i
 .PHONY : ChicagoStyleCheesePizza.cpp.i
 
 ChicagoStyleCheesePizza.s: ChicagoStyleCheesePizza.cpp.s
@@ -176,7 +176,7 @@ ChicagoStyleCheesePizza.s: ChicagoStyleCheesePizza.cpp.s
 
 # target to generate assembly for a file
 ChicagoStyleCheesePizza.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/ChicagoStyleCheesePizza.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/ChicagoStyleCheesePizza.cpp.s
 .PHONY : ChicagoStyleCheesePizza.cpp.s
 
 NYPizzaStore.o: NYPizzaStore.cpp.o
@@ -185,7 +185,7 @@ NYPizzaStore.o: NYPizzaStore.cpp.o
 
 # target to build an object file
 NYPizzaStore.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/NYPizzaStore.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/NYPizzaStore.cpp.o
 .PHONY : NYPizzaStore.cpp.o
 
 NYPizzaStore.i: NYPizzaStore.cpp.i
@@ -194,7 +194,7 @@ NYPizzaStore.i: NYPizzaStore.cpp.i
 
 # target to preprocess a source file
 NYPizzaStore.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/NYPizzaStore.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/NYPizzaStore.cpp.i
 .PHONY : NYPizzaStore.cpp.i
 
 NYPizzaStore.s: NYPizzaStore.cpp.s
@@ -203,7 +203,7 @@ NYPizzaStore.s: NYPizzaStore.cpp.s
 
 # target to generate assembly for a file
 NYPizzaStore.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/NYPizzaStore.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/NYPizzaStore.cpp.s
 .PHONY : NYPizzaStore.cpp.s
 
 NYStyleCheesePizza.o: NYStyleCheesePizza.cpp.o
@@ -212,7 +212,7 @@ NYStyleCheesePizza.o: NYStyleCheesePizza.cpp.o
 
 # target to build an object file
 NYStyleCheesePizza.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/NYStyleCheesePizza.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/NYStyleCheesePizza.cpp.o
 .PHONY : NYStyleCheesePizza.cpp.o
 
 NYStyleCheesePizza.i: NYStyleCheesePizza.cpp.i
@@ -221,7 +221,7 @@ NYStyleCheesePizza.i: NYStyleCheesePizza.cpp.i
 
 # target to preprocess a source file
 NYStyleCheesePizza.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/NYStyleCheesePizza.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/NYStyleCheesePizza.cpp.i
 .PHONY : NYStyleCheesePizza.cpp.i
 
 NYStyleCheesePizza.s: NYStyleCheesePizza.cpp.s
@@ -230,7 +230,7 @@ NYStyleCheesePizza.s: NYStyleCheesePizza.cpp.s
 
 # target to generate assembly for a file
 NYStyleCheesePizza.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/NYStyleCheesePizza.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/NYStyleCheesePizza.cpp.s
 .PHONY : NYStyleCheesePizza.cpp.s
 
 Pizza.o: Pizza.cpp.o
@@ -239,7 +239,7 @@ Pizza.o: Pizza.cpp.o
 
 # target to build an object file
 Pizza.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/Pizza.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/Pizza.cpp.o
 .PHONY : Pizza.cpp.o
 
 Pizza.i: Pizza.cpp.i
@@ -248,7 +248,7 @@ Pizza.i: Pizza.cpp.i
 
 # target to preprocess a source file
 Pizza.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/Pizza.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/Pizza.cpp.i
 .PHONY : Pizza.cpp.i
 
 Pizza.s: Pizza.cpp.s
@@ -257,7 +257,7 @@ Pizza.s: Pizza.cpp.s
 
 # target to generate assembly for a file
 Pizza.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/Pizza.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/Pizza.cpp.s
 .PHONY : Pizza.cpp.s
 
 PizzaStore.o: PizzaStore.cpp.o
@@ -266,7 +266,7 @@ PizzaStore.o: PizzaStore.cpp.o
 
 # target to build an object file
 PizzaStore.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/PizzaStore.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/PizzaStore.cpp.o
 .PHONY : PizzaStore.cpp.o
 
 PizzaStore.i: PizzaStore.cpp.i
@@ -275,7 +275,7 @@ PizzaStore.i: PizzaStore.cpp.i
 
 # target to preprocess a source file
 PizzaStore.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/PizzaStore.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/PizzaStore.cpp.i
 .PHONY : PizzaStore.cpp.i
 
 PizzaStore.s: PizzaStore.cpp.s
@@ -284,7 +284,7 @@ PizzaStore.s: PizzaStore.cpp.s
 
 # target to generate assembly for a file
 PizzaStore.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/PizzaStore.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/PizzaStore.cpp.s
 .PHONY : PizzaStore.cpp.s
 
 # Help Target
@@ -325,6 +325,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

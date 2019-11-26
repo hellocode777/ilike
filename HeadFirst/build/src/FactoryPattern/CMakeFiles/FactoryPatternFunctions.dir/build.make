@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/bin/cmake
+CMAKE_COMMAND = /usr/local/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/bin/cmake -E remove -f
+RM = /usr/local/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shuai/workspace/C-Knowledge/HeadFirst
+CMAKE_SOURCE_DIR = /home/shuai/my_code/ilike/HeadFirst
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shuai/workspace/C-Knowledge/HeadFirst/build
+CMAKE_BINARY_DIR = /home/shuai/my_code/ilike/HeadFirst/build
 
 # Include any dependencies generated for this target.
 include src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/depend.make
@@ -59,81 +59,81 @@ include src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/flags.make
 
 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/ChicagoPizzaStore.cpp.o: src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/flags.make
 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/ChicagoPizzaStore.cpp.o: ../src/FactoryPattern/ChicagoPizzaStore.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/ChicagoPizzaStore.cpp.o"
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build/src/FactoryPattern && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FactoryPatternFunctions.dir/ChicagoPizzaStore.cpp.o -c /home/shuai/workspace/C-Knowledge/HeadFirst/src/FactoryPattern/ChicagoPizzaStore.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/ChicagoPizzaStore.cpp.o"
+	cd /home/shuai/my_code/ilike/HeadFirst/build/src/FactoryPattern && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FactoryPatternFunctions.dir/ChicagoPizzaStore.cpp.o -c /home/shuai/my_code/ilike/HeadFirst/src/FactoryPattern/ChicagoPizzaStore.cpp
 
 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/ChicagoPizzaStore.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FactoryPatternFunctions.dir/ChicagoPizzaStore.cpp.i"
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build/src/FactoryPattern && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shuai/workspace/C-Knowledge/HeadFirst/src/FactoryPattern/ChicagoPizzaStore.cpp > CMakeFiles/FactoryPatternFunctions.dir/ChicagoPizzaStore.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build/src/FactoryPattern && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shuai/my_code/ilike/HeadFirst/src/FactoryPattern/ChicagoPizzaStore.cpp > CMakeFiles/FactoryPatternFunctions.dir/ChicagoPizzaStore.cpp.i
 
 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/ChicagoPizzaStore.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FactoryPatternFunctions.dir/ChicagoPizzaStore.cpp.s"
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build/src/FactoryPattern && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shuai/workspace/C-Knowledge/HeadFirst/src/FactoryPattern/ChicagoPizzaStore.cpp -o CMakeFiles/FactoryPatternFunctions.dir/ChicagoPizzaStore.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build/src/FactoryPattern && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shuai/my_code/ilike/HeadFirst/src/FactoryPattern/ChicagoPizzaStore.cpp -o CMakeFiles/FactoryPatternFunctions.dir/ChicagoPizzaStore.cpp.s
 
 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/ChicagoStyleCheesePizza.cpp.o: src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/flags.make
 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/ChicagoStyleCheesePizza.cpp.o: ../src/FactoryPattern/ChicagoStyleCheesePizza.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/ChicagoStyleCheesePizza.cpp.o"
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build/src/FactoryPattern && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FactoryPatternFunctions.dir/ChicagoStyleCheesePizza.cpp.o -c /home/shuai/workspace/C-Knowledge/HeadFirst/src/FactoryPattern/ChicagoStyleCheesePizza.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/ChicagoStyleCheesePizza.cpp.o"
+	cd /home/shuai/my_code/ilike/HeadFirst/build/src/FactoryPattern && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FactoryPatternFunctions.dir/ChicagoStyleCheesePizza.cpp.o -c /home/shuai/my_code/ilike/HeadFirst/src/FactoryPattern/ChicagoStyleCheesePizza.cpp
 
 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/ChicagoStyleCheesePizza.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FactoryPatternFunctions.dir/ChicagoStyleCheesePizza.cpp.i"
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build/src/FactoryPattern && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shuai/workspace/C-Knowledge/HeadFirst/src/FactoryPattern/ChicagoStyleCheesePizza.cpp > CMakeFiles/FactoryPatternFunctions.dir/ChicagoStyleCheesePizza.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build/src/FactoryPattern && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shuai/my_code/ilike/HeadFirst/src/FactoryPattern/ChicagoStyleCheesePizza.cpp > CMakeFiles/FactoryPatternFunctions.dir/ChicagoStyleCheesePizza.cpp.i
 
 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/ChicagoStyleCheesePizza.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FactoryPatternFunctions.dir/ChicagoStyleCheesePizza.cpp.s"
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build/src/FactoryPattern && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shuai/workspace/C-Knowledge/HeadFirst/src/FactoryPattern/ChicagoStyleCheesePizza.cpp -o CMakeFiles/FactoryPatternFunctions.dir/ChicagoStyleCheesePizza.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build/src/FactoryPattern && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shuai/my_code/ilike/HeadFirst/src/FactoryPattern/ChicagoStyleCheesePizza.cpp -o CMakeFiles/FactoryPatternFunctions.dir/ChicagoStyleCheesePizza.cpp.s
 
 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/NYPizzaStore.cpp.o: src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/flags.make
 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/NYPizzaStore.cpp.o: ../src/FactoryPattern/NYPizzaStore.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/NYPizzaStore.cpp.o"
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build/src/FactoryPattern && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FactoryPatternFunctions.dir/NYPizzaStore.cpp.o -c /home/shuai/workspace/C-Knowledge/HeadFirst/src/FactoryPattern/NYPizzaStore.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/NYPizzaStore.cpp.o"
+	cd /home/shuai/my_code/ilike/HeadFirst/build/src/FactoryPattern && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FactoryPatternFunctions.dir/NYPizzaStore.cpp.o -c /home/shuai/my_code/ilike/HeadFirst/src/FactoryPattern/NYPizzaStore.cpp
 
 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/NYPizzaStore.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FactoryPatternFunctions.dir/NYPizzaStore.cpp.i"
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build/src/FactoryPattern && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shuai/workspace/C-Knowledge/HeadFirst/src/FactoryPattern/NYPizzaStore.cpp > CMakeFiles/FactoryPatternFunctions.dir/NYPizzaStore.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build/src/FactoryPattern && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shuai/my_code/ilike/HeadFirst/src/FactoryPattern/NYPizzaStore.cpp > CMakeFiles/FactoryPatternFunctions.dir/NYPizzaStore.cpp.i
 
 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/NYPizzaStore.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FactoryPatternFunctions.dir/NYPizzaStore.cpp.s"
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build/src/FactoryPattern && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shuai/workspace/C-Knowledge/HeadFirst/src/FactoryPattern/NYPizzaStore.cpp -o CMakeFiles/FactoryPatternFunctions.dir/NYPizzaStore.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build/src/FactoryPattern && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shuai/my_code/ilike/HeadFirst/src/FactoryPattern/NYPizzaStore.cpp -o CMakeFiles/FactoryPatternFunctions.dir/NYPizzaStore.cpp.s
 
 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/NYStyleCheesePizza.cpp.o: src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/flags.make
 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/NYStyleCheesePizza.cpp.o: ../src/FactoryPattern/NYStyleCheesePizza.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/NYStyleCheesePizza.cpp.o"
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build/src/FactoryPattern && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FactoryPatternFunctions.dir/NYStyleCheesePizza.cpp.o -c /home/shuai/workspace/C-Knowledge/HeadFirst/src/FactoryPattern/NYStyleCheesePizza.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/NYStyleCheesePizza.cpp.o"
+	cd /home/shuai/my_code/ilike/HeadFirst/build/src/FactoryPattern && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FactoryPatternFunctions.dir/NYStyleCheesePizza.cpp.o -c /home/shuai/my_code/ilike/HeadFirst/src/FactoryPattern/NYStyleCheesePizza.cpp
 
 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/NYStyleCheesePizza.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FactoryPatternFunctions.dir/NYStyleCheesePizza.cpp.i"
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build/src/FactoryPattern && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shuai/workspace/C-Knowledge/HeadFirst/src/FactoryPattern/NYStyleCheesePizza.cpp > CMakeFiles/FactoryPatternFunctions.dir/NYStyleCheesePizza.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build/src/FactoryPattern && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shuai/my_code/ilike/HeadFirst/src/FactoryPattern/NYStyleCheesePizza.cpp > CMakeFiles/FactoryPatternFunctions.dir/NYStyleCheesePizza.cpp.i
 
 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/NYStyleCheesePizza.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FactoryPatternFunctions.dir/NYStyleCheesePizza.cpp.s"
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build/src/FactoryPattern && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shuai/workspace/C-Knowledge/HeadFirst/src/FactoryPattern/NYStyleCheesePizza.cpp -o CMakeFiles/FactoryPatternFunctions.dir/NYStyleCheesePizza.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build/src/FactoryPattern && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shuai/my_code/ilike/HeadFirst/src/FactoryPattern/NYStyleCheesePizza.cpp -o CMakeFiles/FactoryPatternFunctions.dir/NYStyleCheesePizza.cpp.s
 
 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/Pizza.cpp.o: src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/flags.make
 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/Pizza.cpp.o: ../src/FactoryPattern/Pizza.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/Pizza.cpp.o"
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build/src/FactoryPattern && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FactoryPatternFunctions.dir/Pizza.cpp.o -c /home/shuai/workspace/C-Knowledge/HeadFirst/src/FactoryPattern/Pizza.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/Pizza.cpp.o"
+	cd /home/shuai/my_code/ilike/HeadFirst/build/src/FactoryPattern && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FactoryPatternFunctions.dir/Pizza.cpp.o -c /home/shuai/my_code/ilike/HeadFirst/src/FactoryPattern/Pizza.cpp
 
 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/Pizza.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FactoryPatternFunctions.dir/Pizza.cpp.i"
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build/src/FactoryPattern && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shuai/workspace/C-Knowledge/HeadFirst/src/FactoryPattern/Pizza.cpp > CMakeFiles/FactoryPatternFunctions.dir/Pizza.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build/src/FactoryPattern && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shuai/my_code/ilike/HeadFirst/src/FactoryPattern/Pizza.cpp > CMakeFiles/FactoryPatternFunctions.dir/Pizza.cpp.i
 
 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/Pizza.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FactoryPatternFunctions.dir/Pizza.cpp.s"
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build/src/FactoryPattern && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shuai/workspace/C-Knowledge/HeadFirst/src/FactoryPattern/Pizza.cpp -o CMakeFiles/FactoryPatternFunctions.dir/Pizza.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build/src/FactoryPattern && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shuai/my_code/ilike/HeadFirst/src/FactoryPattern/Pizza.cpp -o CMakeFiles/FactoryPatternFunctions.dir/Pizza.cpp.s
 
 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/PizzaStore.cpp.o: src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/flags.make
 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/PizzaStore.cpp.o: ../src/FactoryPattern/PizzaStore.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/PizzaStore.cpp.o"
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build/src/FactoryPattern && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FactoryPatternFunctions.dir/PizzaStore.cpp.o -c /home/shuai/workspace/C-Knowledge/HeadFirst/src/FactoryPattern/PizzaStore.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/PizzaStore.cpp.o"
+	cd /home/shuai/my_code/ilike/HeadFirst/build/src/FactoryPattern && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FactoryPatternFunctions.dir/PizzaStore.cpp.o -c /home/shuai/my_code/ilike/HeadFirst/src/FactoryPattern/PizzaStore.cpp
 
 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/PizzaStore.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FactoryPatternFunctions.dir/PizzaStore.cpp.i"
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build/src/FactoryPattern && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shuai/workspace/C-Knowledge/HeadFirst/src/FactoryPattern/PizzaStore.cpp > CMakeFiles/FactoryPatternFunctions.dir/PizzaStore.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build/src/FactoryPattern && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shuai/my_code/ilike/HeadFirst/src/FactoryPattern/PizzaStore.cpp > CMakeFiles/FactoryPatternFunctions.dir/PizzaStore.cpp.i
 
 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/PizzaStore.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FactoryPatternFunctions.dir/PizzaStore.cpp.s"
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build/src/FactoryPattern && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shuai/workspace/C-Knowledge/HeadFirst/src/FactoryPattern/PizzaStore.cpp -o CMakeFiles/FactoryPatternFunctions.dir/PizzaStore.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build/src/FactoryPattern && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shuai/my_code/ilike/HeadFirst/src/FactoryPattern/PizzaStore.cpp -o CMakeFiles/FactoryPatternFunctions.dir/PizzaStore.cpp.s
 
 # Object files for target FactoryPatternFunctions
 FactoryPatternFunctions_OBJECTS = \
@@ -155,9 +155,9 @@ FactoryPatternFunctions_EXTERNAL_OBJECTS =
 ../lib/libFactoryPatternFunctions.a: src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/PizzaStore.cpp.o
 ../lib/libFactoryPatternFunctions.a: src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build.make
 ../lib/libFactoryPatternFunctions.a: src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library ../../../lib/libFactoryPatternFunctions.a"
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build/src/FactoryPattern && $(CMAKE_COMMAND) -P CMakeFiles/FactoryPatternFunctions.dir/cmake_clean_target.cmake
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build/src/FactoryPattern && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FactoryPatternFunctions.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library ../../../lib/libFactoryPatternFunctions.a"
+	cd /home/shuai/my_code/ilike/HeadFirst/build/src/FactoryPattern && $(CMAKE_COMMAND) -P CMakeFiles/FactoryPatternFunctions.dir/cmake_clean_target.cmake
+	cd /home/shuai/my_code/ilike/HeadFirst/build/src/FactoryPattern && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FactoryPatternFunctions.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build: ../lib/libFactoryPatternFunctions.a
@@ -165,10 +165,10 @@ src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build: ../lib/libFacto
 .PHONY : src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/build
 
 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/clean:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build/src/FactoryPattern && $(CMAKE_COMMAND) -P CMakeFiles/FactoryPatternFunctions.dir/cmake_clean.cmake
+	cd /home/shuai/my_code/ilike/HeadFirst/build/src/FactoryPattern && $(CMAKE_COMMAND) -P CMakeFiles/FactoryPatternFunctions.dir/cmake_clean.cmake
 .PHONY : src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/clean
 
 src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/depend:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shuai/workspace/C-Knowledge/HeadFirst /home/shuai/workspace/C-Knowledge/HeadFirst/src/FactoryPattern /home/shuai/workspace/C-Knowledge/HeadFirst/build /home/shuai/workspace/C-Knowledge/HeadFirst/build/src/FactoryPattern /home/shuai/workspace/C-Knowledge/HeadFirst/build/src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shuai/my_code/ilike/HeadFirst /home/shuai/my_code/ilike/HeadFirst/src/FactoryPattern /home/shuai/my_code/ilike/HeadFirst/build /home/shuai/my_code/ilike/HeadFirst/build/src/FactoryPattern /home/shuai/my_code/ilike/HeadFirst/build/src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/depend
 

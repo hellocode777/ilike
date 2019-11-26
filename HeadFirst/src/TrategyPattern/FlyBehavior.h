@@ -8,7 +8,7 @@
 #ifndef FLYBEHAVIOR_H_
 #define FLYBEHAVIOR_H_
 
-#include "/home/shuai/workspace/C-Knowledge/HeadFirst/include/Public.h"
+#include "/home/shuai/my_code/ilike/HeadFirst/include/Public.h"
 
 class FlyBehavior {
 public:

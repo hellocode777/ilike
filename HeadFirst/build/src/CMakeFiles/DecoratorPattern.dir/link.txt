@@ -1,1 +1,1 @@
-g++    -rdynamic CMakeFiles/DecoratorPattern.dir/DecoratorPatternMain.cpp.o  -o ../../bin/DecoratorPattern  -L/home/shuai/workspace/C-Knowledge/HeadFirst/lib -Wl,-rpath,/home/shuai/workspace/C-Knowledge/HeadFirst/lib ../../lib/libDecoratorPatternFunctions.a 
+g++     CMakeFiles/DecoratorPattern.dir/DecoratorPatternMain.cpp.o  -o ../../bin/DecoratorPattern  -L/home/shuai/my_code/ilike/HeadFirst/lib -Wl,-rpath,/home/shuai/my_code/ilike/HeadFirst/lib ../../lib/libDecoratorPatternFunctions.a 

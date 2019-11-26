@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/bin/cmake
+CMAKE_COMMAND = /usr/local/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/bin/cmake -E remove -f
+RM = /usr/local/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shuai/workspace/C-Knowledge/HeadFirst
+CMAKE_SOURCE_DIR = /home/shuai/my_code/ilike/HeadFirst
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shuai/workspace/C-Knowledge/HeadFirst/build
+CMAKE_BINARY_DIR = /home/shuai/my_code/ilike/HeadFirst/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/shuai/workspace/C-Knowledge/HeadFirst/build
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/cmake/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/local/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/usr/local/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles /home/shuai/workspace/C-Knowledge/HeadFirst/build/src/TrategyPattern/CMakeFiles/progress.marks
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/TrategyPattern/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles 0
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles /home/shuai/my_code/ilike/HeadFirst/build/src/TrategyPattern/CMakeFiles/progress.marks
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/TrategyPattern/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/TrategyPattern/clean
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/TrategyPattern/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/TrategyPattern/preinstall
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/TrategyPattern/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/TrategyPattern/preinstall
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/TrategyPattern/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/rule:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/rule
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/rule
 .PHONY : src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ TrategyPatternFunctions: src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.d
 
 # fast build rule for target.
 TrategyPatternFunctions/fast:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build
 .PHONY : TrategyPatternFunctions/fast
 
 Duck.o: Duck.cpp.o
@@ -131,7 +131,7 @@ Duck.o: Duck.cpp.o
 
 # target to build an object file
 Duck.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/Duck.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/Duck.cpp.o
 .PHONY : Duck.cpp.o
 
 Duck.i: Duck.cpp.i
@@ -140,7 +140,7 @@ Duck.i: Duck.cpp.i
 
 # target to preprocess a source file
 Duck.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/Duck.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/Duck.cpp.i
 .PHONY : Duck.cpp.i
 
 Duck.s: Duck.cpp.s
@@ -149,7 +149,7 @@ Duck.s: Duck.cpp.s
 
 # target to generate assembly for a file
 Duck.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/Duck.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/Duck.cpp.s
 .PHONY : Duck.cpp.s
 
 FlyBehavior.o: FlyBehavior.cpp.o
@@ -158,7 +158,7 @@ FlyBehavior.o: FlyBehavior.cpp.o
 
 # target to build an object file
 FlyBehavior.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/FlyBehavior.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/FlyBehavior.cpp.o
 .PHONY : FlyBehavior.cpp.o
 
 FlyBehavior.i: FlyBehavior.cpp.i
@@ -167,7 +167,7 @@ FlyBehavior.i: FlyBehavior.cpp.i
 
 # target to preprocess a source file
 FlyBehavior.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/FlyBehavior.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/FlyBehavior.cpp.i
 .PHONY : FlyBehavior.cpp.i
 
 FlyBehavior.s: FlyBehavior.cpp.s
@@ -176,7 +176,7 @@ FlyBehavior.s: FlyBehavior.cpp.s
 
 # target to generate assembly for a file
 FlyBehavior.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/FlyBehavior.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/FlyBehavior.cpp.s
 .PHONY : FlyBehavior.cpp.s
 
 FlyNoWay.o: FlyNoWay.cpp.o
@@ -185,7 +185,7 @@ FlyNoWay.o: FlyNoWay.cpp.o
 
 # target to build an object file
 FlyNoWay.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/FlyNoWay.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/FlyNoWay.cpp.o
 .PHONY : FlyNoWay.cpp.o
 
 FlyNoWay.i: FlyNoWay.cpp.i
@@ -194,7 +194,7 @@ FlyNoWay.i: FlyNoWay.cpp.i
 
 # target to preprocess a source file
 FlyNoWay.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/FlyNoWay.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/FlyNoWay.cpp.i
 .PHONY : FlyNoWay.cpp.i
 
 FlyNoWay.s: FlyNoWay.cpp.s
@@ -203,7 +203,7 @@ FlyNoWay.s: FlyNoWay.cpp.s
 
 # target to generate assembly for a file
 FlyNoWay.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/FlyNoWay.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/FlyNoWay.cpp.s
 .PHONY : FlyNoWay.cpp.s
 
 FlyRocketPowered.o: FlyRocketPowered.cpp.o
@@ -212,7 +212,7 @@ FlyRocketPowered.o: FlyRocketPowered.cpp.o
 
 # target to build an object file
 FlyRocketPowered.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/FlyRocketPowered.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/FlyRocketPowered.cpp.o
 .PHONY : FlyRocketPowered.cpp.o
 
 FlyRocketPowered.i: FlyRocketPowered.cpp.i
@@ -221,7 +221,7 @@ FlyRocketPowered.i: FlyRocketPowered.cpp.i
 
 # target to preprocess a source file
 FlyRocketPowered.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/FlyRocketPowered.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/FlyRocketPowered.cpp.i
 .PHONY : FlyRocketPowered.cpp.i
 
 FlyRocketPowered.s: FlyRocketPowered.cpp.s
@@ -230,7 +230,7 @@ FlyRocketPowered.s: FlyRocketPowered.cpp.s
 
 # target to generate assembly for a file
 FlyRocketPowered.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/FlyRocketPowered.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/FlyRocketPowered.cpp.s
 .PHONY : FlyRocketPowered.cpp.s
 
 FlyWithWings.o: FlyWithWings.cpp.o
@@ -239,7 +239,7 @@ FlyWithWings.o: FlyWithWings.cpp.o
 
 # target to build an object file
 FlyWithWings.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/FlyWithWings.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/FlyWithWings.cpp.o
 .PHONY : FlyWithWings.cpp.o
 
 FlyWithWings.i: FlyWithWings.cpp.i
@@ -248,7 +248,7 @@ FlyWithWings.i: FlyWithWings.cpp.i
 
 # target to preprocess a source file
 FlyWithWings.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/FlyWithWings.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/FlyWithWings.cpp.i
 .PHONY : FlyWithWings.cpp.i
 
 FlyWithWings.s: FlyWithWings.cpp.s
@@ -257,7 +257,7 @@ FlyWithWings.s: FlyWithWings.cpp.s
 
 # target to generate assembly for a file
 FlyWithWings.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/FlyWithWings.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/FlyWithWings.cpp.s
 .PHONY : FlyWithWings.cpp.s
 
 MallardDuck.o: MallardDuck.cpp.o
@@ -266,7 +266,7 @@ MallardDuck.o: MallardDuck.cpp.o
 
 # target to build an object file
 MallardDuck.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/MallardDuck.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/MallardDuck.cpp.o
 .PHONY : MallardDuck.cpp.o
 
 MallardDuck.i: MallardDuck.cpp.i
@@ -275,7 +275,7 @@ MallardDuck.i: MallardDuck.cpp.i
 
 # target to preprocess a source file
 MallardDuck.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/MallardDuck.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/MallardDuck.cpp.i
 .PHONY : MallardDuck.cpp.i
 
 MallardDuck.s: MallardDuck.cpp.s
@@ -284,7 +284,7 @@ MallardDuck.s: MallardDuck.cpp.s
 
 # target to generate assembly for a file
 MallardDuck.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/MallardDuck.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/MallardDuck.cpp.s
 .PHONY : MallardDuck.cpp.s
 
 ModelDuck.o: ModelDuck.cpp.o
@@ -293,7 +293,7 @@ ModelDuck.o: ModelDuck.cpp.o
 
 # target to build an object file
 ModelDuck.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/ModelDuck.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/ModelDuck.cpp.o
 .PHONY : ModelDuck.cpp.o
 
 ModelDuck.i: ModelDuck.cpp.i
@@ -302,7 +302,7 @@ ModelDuck.i: ModelDuck.cpp.i
 
 # target to preprocess a source file
 ModelDuck.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/ModelDuck.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/ModelDuck.cpp.i
 .PHONY : ModelDuck.cpp.i
 
 ModelDuck.s: ModelDuck.cpp.s
@@ -311,7 +311,7 @@ ModelDuck.s: ModelDuck.cpp.s
 
 # target to generate assembly for a file
 ModelDuck.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/ModelDuck.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/ModelDuck.cpp.s
 .PHONY : ModelDuck.cpp.s
 
 MuteQuack.o: MuteQuack.cpp.o
@@ -320,7 +320,7 @@ MuteQuack.o: MuteQuack.cpp.o
 
 # target to build an object file
 MuteQuack.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/MuteQuack.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/MuteQuack.cpp.o
 .PHONY : MuteQuack.cpp.o
 
 MuteQuack.i: MuteQuack.cpp.i
@@ -329,7 +329,7 @@ MuteQuack.i: MuteQuack.cpp.i
 
 # target to preprocess a source file
 MuteQuack.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/MuteQuack.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/MuteQuack.cpp.i
 .PHONY : MuteQuack.cpp.i
 
 MuteQuack.s: MuteQuack.cpp.s
@@ -338,7 +338,7 @@ MuteQuack.s: MuteQuack.cpp.s
 
 # target to generate assembly for a file
 MuteQuack.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/MuteQuack.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/MuteQuack.cpp.s
 .PHONY : MuteQuack.cpp.s
 
 Quack.o: Quack.cpp.o
@@ -347,7 +347,7 @@ Quack.o: Quack.cpp.o
 
 # target to build an object file
 Quack.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/Quack.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/Quack.cpp.o
 .PHONY : Quack.cpp.o
 
 Quack.i: Quack.cpp.i
@@ -356,7 +356,7 @@ Quack.i: Quack.cpp.i
 
 # target to preprocess a source file
 Quack.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/Quack.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/Quack.cpp.i
 .PHONY : Quack.cpp.i
 
 Quack.s: Quack.cpp.s
@@ -365,7 +365,7 @@ Quack.s: Quack.cpp.s
 
 # target to generate assembly for a file
 Quack.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/Quack.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/Quack.cpp.s
 .PHONY : Quack.cpp.s
 
 QuackBehavior.o: QuackBehavior.cpp.o
@@ -374,7 +374,7 @@ QuackBehavior.o: QuackBehavior.cpp.o
 
 # target to build an object file
 QuackBehavior.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/QuackBehavior.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/QuackBehavior.cpp.o
 .PHONY : QuackBehavior.cpp.o
 
 QuackBehavior.i: QuackBehavior.cpp.i
@@ -383,7 +383,7 @@ QuackBehavior.i: QuackBehavior.cpp.i
 
 # target to preprocess a source file
 QuackBehavior.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/QuackBehavior.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/QuackBehavior.cpp.i
 .PHONY : QuackBehavior.cpp.i
 
 QuackBehavior.s: QuackBehavior.cpp.s
@@ -392,7 +392,7 @@ QuackBehavior.s: QuackBehavior.cpp.s
 
 # target to generate assembly for a file
 QuackBehavior.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/QuackBehavior.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/QuackBehavior.cpp.s
 .PHONY : QuackBehavior.cpp.s
 
 Squeak.o: Squeak.cpp.o
@@ -401,7 +401,7 @@ Squeak.o: Squeak.cpp.o
 
 # target to build an object file
 Squeak.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/Squeak.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/Squeak.cpp.o
 .PHONY : Squeak.cpp.o
 
 Squeak.i: Squeak.cpp.i
@@ -410,7 +410,7 @@ Squeak.i: Squeak.cpp.i
 
 # target to preprocess a source file
 Squeak.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/Squeak.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/Squeak.cpp.i
 .PHONY : Squeak.cpp.i
 
 Squeak.s: Squeak.cpp.s
@@ -419,7 +419,7 @@ Squeak.s: Squeak.cpp.s
 
 # target to generate assembly for a file
 Squeak.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/Squeak.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/build.make src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/Squeak.cpp.s
 .PHONY : Squeak.cpp.s
 
 # Help Target
@@ -475,6 +475,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

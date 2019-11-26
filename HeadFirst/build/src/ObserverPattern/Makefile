@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/bin/cmake
+CMAKE_COMMAND = /usr/local/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/bin/cmake -E remove -f
+RM = /usr/local/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shuai/workspace/C-Knowledge/HeadFirst
+CMAKE_SOURCE_DIR = /home/shuai/my_code/ilike/HeadFirst
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shuai/workspace/C-Knowledge/HeadFirst/build
+CMAKE_BINARY_DIR = /home/shuai/my_code/ilike/HeadFirst/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/shuai/workspace/C-Knowledge/HeadFirst/build
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/cmake/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/local/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/usr/local/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles /home/shuai/workspace/C-Knowledge/HeadFirst/build/src/ObserverPattern/CMakeFiles/progress.marks
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/ObserverPattern/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles 0
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles /home/shuai/my_code/ilike/HeadFirst/build/src/ObserverPattern/CMakeFiles/progress.marks
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/ObserverPattern/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/ObserverPattern/clean
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/ObserverPattern/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/ObserverPattern/preinstall
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/ObserverPattern/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/ObserverPattern/preinstall
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/ObserverPattern/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/rule:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/rule
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f CMakeFiles/Makefile2 src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/rule
 .PHONY : src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ ObserverPatternFunctions: src/ObserverPattern/CMakeFiles/ObserverPatternFunction
 
 # fast build rule for target.
 ObserverPatternFunctions/fast:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build
 .PHONY : ObserverPatternFunctions/fast
 
 CurrentConditionsDisplay.o: CurrentConditionsDisplay.cpp.o
@@ -131,7 +131,7 @@ CurrentConditionsDisplay.o: CurrentConditionsDisplay.cpp.o
 
 # target to build an object file
 CurrentConditionsDisplay.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/CurrentConditionsDisplay.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/CurrentConditionsDisplay.cpp.o
 .PHONY : CurrentConditionsDisplay.cpp.o
 
 CurrentConditionsDisplay.i: CurrentConditionsDisplay.cpp.i
@@ -140,7 +140,7 @@ CurrentConditionsDisplay.i: CurrentConditionsDisplay.cpp.i
 
 # target to preprocess a source file
 CurrentConditionsDisplay.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/CurrentConditionsDisplay.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/CurrentConditionsDisplay.cpp.i
 .PHONY : CurrentConditionsDisplay.cpp.i
 
 CurrentConditionsDisplay.s: CurrentConditionsDisplay.cpp.s
@@ -149,7 +149,7 @@ CurrentConditionsDisplay.s: CurrentConditionsDisplay.cpp.s
 
 # target to generate assembly for a file
 CurrentConditionsDisplay.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/CurrentConditionsDisplay.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/CurrentConditionsDisplay.cpp.s
 .PHONY : CurrentConditionsDisplay.cpp.s
 
 DisplayElement.o: DisplayElement.cpp.o
@@ -158,7 +158,7 @@ DisplayElement.o: DisplayElement.cpp.o
 
 # target to build an object file
 DisplayElement.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/DisplayElement.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/DisplayElement.cpp.o
 .PHONY : DisplayElement.cpp.o
 
 DisplayElement.i: DisplayElement.cpp.i
@@ -167,7 +167,7 @@ DisplayElement.i: DisplayElement.cpp.i
 
 # target to preprocess a source file
 DisplayElement.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/DisplayElement.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/DisplayElement.cpp.i
 .PHONY : DisplayElement.cpp.i
 
 DisplayElement.s: DisplayElement.cpp.s
@@ -176,7 +176,7 @@ DisplayElement.s: DisplayElement.cpp.s
 
 # target to generate assembly for a file
 DisplayElement.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/DisplayElement.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/DisplayElement.cpp.s
 .PHONY : DisplayElement.cpp.s
 
 Observer.o: Observer.cpp.o
@@ -185,7 +185,7 @@ Observer.o: Observer.cpp.o
 
 # target to build an object file
 Observer.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/Observer.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/Observer.cpp.o
 .PHONY : Observer.cpp.o
 
 Observer.i: Observer.cpp.i
@@ -194,7 +194,7 @@ Observer.i: Observer.cpp.i
 
 # target to preprocess a source file
 Observer.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/Observer.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/Observer.cpp.i
 .PHONY : Observer.cpp.i
 
 Observer.s: Observer.cpp.s
@@ -203,7 +203,7 @@ Observer.s: Observer.cpp.s
 
 # target to generate assembly for a file
 Observer.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/Observer.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/Observer.cpp.s
 .PHONY : Observer.cpp.s
 
 Subject.o: Subject.cpp.o
@@ -212,7 +212,7 @@ Subject.o: Subject.cpp.o
 
 # target to build an object file
 Subject.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/Subject.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/Subject.cpp.o
 .PHONY : Subject.cpp.o
 
 Subject.i: Subject.cpp.i
@@ -221,7 +221,7 @@ Subject.i: Subject.cpp.i
 
 # target to preprocess a source file
 Subject.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/Subject.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/Subject.cpp.i
 .PHONY : Subject.cpp.i
 
 Subject.s: Subject.cpp.s
@@ -230,7 +230,7 @@ Subject.s: Subject.cpp.s
 
 # target to generate assembly for a file
 Subject.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/Subject.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/Subject.cpp.s
 .PHONY : Subject.cpp.s
 
 WeatherData.o: WeatherData.cpp.o
@@ -239,7 +239,7 @@ WeatherData.o: WeatherData.cpp.o
 
 # target to build an object file
 WeatherData.cpp.o:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/WeatherData.cpp.o
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/WeatherData.cpp.o
 .PHONY : WeatherData.cpp.o
 
 WeatherData.i: WeatherData.cpp.i
@@ -248,7 +248,7 @@ WeatherData.i: WeatherData.cpp.i
 
 # target to preprocess a source file
 WeatherData.cpp.i:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/WeatherData.cpp.i
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/WeatherData.cpp.i
 .PHONY : WeatherData.cpp.i
 
 WeatherData.s: WeatherData.cpp.s
@@ -257,7 +257,7 @@ WeatherData.s: WeatherData.cpp.s
 
 # target to generate assembly for a file
 WeatherData.cpp.s:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/WeatherData.cpp.s
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(MAKE) -f src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/build.make src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/WeatherData.cpp.s
 .PHONY : WeatherData.cpp.s
 
 # Help Target
@@ -295,6 +295,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/shuai/workspace/C-Knowledge/HeadFirst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/shuai/my_code/ilike/HeadFirst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -9,7 +9,7 @@
 #define OBSERVER_H_
 //#include <iostream>
 //#include "../../../../include/Public.h"
-#include "/home/shuai/workspace/C-Knowledge/HeadFirst/include/Public.h"
+#include "/home/shuai/my_code/ilike/HeadFirst/include/Public.h"
 
 //HeadFirst/src/ObserverPattern/src/Observer.h
 //HeadFirst/include/Public.h"

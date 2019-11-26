@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/3.13.0-rc2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/3.13.0-rc2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,33 +23,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/3.13.0-rc2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/3.13.0-rc2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp
+Change Dir: /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_76329/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_76329.dir/build.make CMakeFiles/cmTC_76329.dir/build
-gmake[1]: 进入目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_76329.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_76329.dir/testCCompiler.c.o   -c /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_76329
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_76329.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_76329.dir/testCCompiler.c.o  -o cmTC_76329 
-gmake[1]: 离开目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/gmake" "cmTC_b0c31/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_b0c31.dir/build.make CMakeFiles/cmTC_b0c31.dir/build
+gmake[1]: 进入目录“/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_b0c31.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_b0c31.dir/testCCompiler.c.o   -c /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_b0c31
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0c31.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_b0c31.dir/testCCompiler.c.o  -o cmTC_b0c31 
+gmake[1]: 离开目录“/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp”
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp
+Change Dir: /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_8f807/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_8f807.dir/build.make CMakeFiles/cmTC_8f807.dir/build
-gmake[1]: 进入目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_8f807.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_8f807.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.13/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_8f807
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f807.dir/link.txt --verbose=1
-/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_8f807.dir/CMakeCCompilerABI.c.o  -o cmTC_8f807 
+Run Build Command:"/usr/bin/gmake" "cmTC_3cf0f/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_3cf0f.dir/build.make CMakeFiles/cmTC_3cf0f.dir/build
+gmake[1]: 进入目录“/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_3cf0f.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_3cf0f.dir/CMakeCCompilerABI.c.o   -c /usr/local/cmake/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_3cf0f
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3cf0f.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTC_3cf0f.dir/CMakeCCompilerABI.c.o  -o cmTC_3cf0f 
 使用内建 specs。
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper
@@ -61,24 +61,24 @@ OFFLOAD_TARGET_DEFAULT=1
 gcc 版本 8.2.1 20180905 (Red Hat 8.2.1-3) (GCC) 
 COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_8f807' '-mtune=generic' '-march=x86-64'
- /usr/libexec/gcc/x86_64-redhat-linux/8/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWXPiQh.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_8f807 /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. CMakeFiles/cmTC_8f807.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/8/crtend.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_8f807' '-mtune=generic' '-march=x86-64'
-gmake[1]: 离开目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp”
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3cf0f' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/8/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdyH8rw.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_3cf0f /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. CMakeFiles/cmTC_3cf0f.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/8/crtend.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3cf0f' '-mtune=generic' '-march=x86-64'
+gmake[1]: 离开目录“/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp”
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_8f807/fast"]
-  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_8f807.dir/build.make CMakeFiles/cmTC_8f807.dir/build]
-  ignore line: [gmake[1]: 进入目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp”]
-  ignore line: [Building C object CMakeFiles/cmTC_8f807.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_8f807.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.13/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_8f807]
-  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f807.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_8f807.dir/CMakeCCompilerABI.c.o  -o cmTC_8f807 ]
+  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_3cf0f/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_3cf0f.dir/build.make CMakeFiles/cmTC_3cf0f.dir/build]
+  ignore line: [gmake[1]: 进入目录“/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp”]
+  ignore line: [Building C object CMakeFiles/cmTC_3cf0f.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_3cf0f.dir/CMakeCCompilerABI.c.o   -c /usr/local/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_3cf0f]
+  ignore line: [/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3cf0f.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_3cf0f.dir/CMakeCCompilerABI.c.o  -o cmTC_3cf0f ]
   ignore line: [使用内建 specs。]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper]
@@ -90,13 +90,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc 版本 8.2.1 20180905 (Red Hat 8.2.1-3) (GCC) ]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_8f807' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/8/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWXPiQh.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_8f807 /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. CMakeFiles/cmTC_8f807.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/8/crtend.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3cf0f' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/8/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdyH8rw.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_3cf0f /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. CMakeFiles/cmTC_3cf0f.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/8/crtend.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o]
     arg [/usr/libexec/gcc/x86_64-redhat-linux/8/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccWXPiQh.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccdyH8rw.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -108,11 +108,10 @@ Parsed C implicit link information from above output:
     arg [--hash-style=gnu] ==> ignore
     arg [-m] ==> ignore
     arg [elf_x86_64] ==> ignore
-    arg [-export-dynamic] ==> ignore
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_8f807] ==> ignore
+    arg [cmTC_3cf0f] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o] ==> ignore
@@ -121,7 +120,7 @@ Parsed C implicit link information from above output:
     arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
     arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
     arg [-L/usr/lib/gcc/x86_64-redhat-linux/8/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../..]
-    arg [CMakeFiles/cmTC_8f807.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_3cf0f.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -146,17 +145,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp
+Change Dir: /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_56f99/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_56f99.dir/build.make CMakeFiles/cmTC_56f99.dir/build
-gmake[1]: 进入目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_56f99.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_56f99.dir/feature_tests.c.o   -c /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_56f99
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56f99.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_56f99.dir/feature_tests.c.o  -o cmTC_56f99 
-gmake[1]: 离开目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/gmake" "cmTC_3cca2/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_3cca2.dir/build.make CMakeFiles/cmTC_3cca2.dir/build
+gmake[1]: 进入目录“/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_3cca2.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_3cca2.dir/feature_tests.c.o   -c /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_3cca2
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3cca2.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_3cca2.dir/feature_tests.c.o  -o cmTC_3cca2 
+gmake[1]: 离开目录“/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp”
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -166,17 +165,17 @@ gmake[1]: 离开目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMake
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp
+Change Dir: /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_a02e2/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_a02e2.dir/build.make CMakeFiles/cmTC_a02e2.dir/build
-gmake[1]: 进入目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_a02e2.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_a02e2.dir/feature_tests.c.o   -c /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_a02e2
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a02e2.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_a02e2.dir/feature_tests.c.o  -o cmTC_a02e2 
-gmake[1]: 离开目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/gmake" "cmTC_a32eb/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_a32eb.dir/build.make CMakeFiles/cmTC_a32eb.dir/build
+gmake[1]: 进入目录“/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_a32eb.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_a32eb.dir/feature_tests.c.o   -c /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_a32eb
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a32eb.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_a32eb.dir/feature_tests.c.o  -o cmTC_a32eb 
+gmake[1]: 离开目录“/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp”
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -186,17 +185,17 @@ gmake[1]: 离开目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMake
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp
+Change Dir: /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_08f50/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_08f50.dir/build.make CMakeFiles/cmTC_08f50.dir/build
-gmake[1]: 进入目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_08f50.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_08f50.dir/feature_tests.c.o   -c /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_08f50
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08f50.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_08f50.dir/feature_tests.c.o  -o cmTC_08f50 
-gmake[1]: 离开目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/gmake" "cmTC_f36cc/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_f36cc.dir/build.make CMakeFiles/cmTC_f36cc.dir/build
+gmake[1]: 进入目录“/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_f36cc.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_f36cc.dir/feature_tests.c.o   -c /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_f36cc
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f36cc.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_f36cc.dir/feature_tests.c.o  -o cmTC_f36cc 
+gmake[1]: 离开目录“/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp”
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -204,30 +203,30 @@ gmake[1]: 离开目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMake
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp
+Change Dir: /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_9a752/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_9a752.dir/build.make CMakeFiles/cmTC_9a752.dir/build
-gmake[1]: 进入目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_9a752.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_9a752.dir/testCXXCompiler.cxx.o -c /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_9a752
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a752.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_9a752.dir/testCXXCompiler.cxx.o  -o cmTC_9a752 
-gmake[1]: 离开目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/gmake" "cmTC_3cdb8/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_3cdb8.dir/build.make CMakeFiles/cmTC_3cdb8.dir/build
+gmake[1]: 进入目录“/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_3cdb8.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_3cdb8.dir/testCXXCompiler.cxx.o -c /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_3cdb8
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3cdb8.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_3cdb8.dir/testCXXCompiler.cxx.o  -o cmTC_3cdb8 
+gmake[1]: 离开目录“/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp”
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp
+Change Dir: /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_48c0f/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_48c0f.dir/build.make CMakeFiles/cmTC_48c0f.dir/build
-gmake[1]: 进入目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_48c0f.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_48c0f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_48c0f
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48c0f.dir/link.txt --verbose=1
-/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_48c0f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_48c0f 
+Run Build Command:"/usr/bin/gmake" "cmTC_e4b5f/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_e4b5f.dir/build.make CMakeFiles/cmTC_e4b5f.dir/build
+gmake[1]: 进入目录“/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_e4b5f.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_e4b5f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/cmake/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_e4b5f
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4b5f.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTC_e4b5f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_e4b5f 
 使用内建 specs。
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper
@@ -239,24 +238,24 @@ OFFLOAD_TARGET_DEFAULT=1
 gcc 版本 8.2.1 20180905 (Red Hat 8.2.1-3) (GCC) 
 COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_48c0f' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/libexec/gcc/x86_64-redhat-linux/8/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccS1pdri.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_48c0f /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. CMakeFiles/cmTC_48c0f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/8/crtend.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_48c0f' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-gmake[1]: 离开目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp”
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e4b5f' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/8/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOxqXtM.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_e4b5f /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. CMakeFiles/cmTC_e4b5f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/8/crtend.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e4b5f' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+gmake[1]: 离开目录“/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp”
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_48c0f/fast"]
-  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_48c0f.dir/build.make CMakeFiles/cmTC_48c0f.dir/build]
-  ignore line: [gmake[1]: 进入目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp”]
-  ignore line: [Building CXX object CMakeFiles/cmTC_48c0f.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_48c0f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_48c0f]
-  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48c0f.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_48c0f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_48c0f ]
+  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_e4b5f/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_e4b5f.dir/build.make CMakeFiles/cmTC_e4b5f.dir/build]
+  ignore line: [gmake[1]: 进入目录“/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp”]
+  ignore line: [Building CXX object CMakeFiles/cmTC_e4b5f.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_e4b5f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_e4b5f]
+  ignore line: [/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4b5f.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_e4b5f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_e4b5f ]
   ignore line: [使用内建 specs。]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper]
@@ -268,13 +267,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc 版本 8.2.1 20180905 (Red Hat 8.2.1-3) (GCC) ]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_48c0f' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/8/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccS1pdri.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_48c0f /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. CMakeFiles/cmTC_48c0f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/8/crtend.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e4b5f' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/8/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOxqXtM.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_e4b5f /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. CMakeFiles/cmTC_e4b5f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/8/crtend.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o]
     arg [/usr/libexec/gcc/x86_64-redhat-linux/8/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccS1pdri.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccOxqXtM.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -286,11 +285,10 @@ Parsed CXX implicit link information from above output:
     arg [--hash-style=gnu] ==> ignore
     arg [-m] ==> ignore
     arg [elf_x86_64] ==> ignore
-    arg [-export-dynamic] ==> ignore
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_48c0f] ==> ignore
+    arg [cmTC_e4b5f] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o] ==> ignore
@@ -299,7 +297,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
     arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
     arg [-L/usr/lib/gcc/x86_64-redhat-linux/8/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../..]
-    arg [CMakeFiles/cmTC_48c0f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_e4b5f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -322,17 +320,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++2a] compiler features compiled with the following output:
-Change Dir: /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp
+Change Dir: /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_a9636/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_a9636.dir/build.make CMakeFiles/cmTC_a9636.dir/build
-gmake[1]: 进入目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_a9636.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++2a -o CMakeFiles/cmTC_a9636.dir/feature_tests.cxx.o -c /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_a9636
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9636.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_a9636.dir/feature_tests.cxx.o  -o cmTC_a9636 
-gmake[1]: 离开目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/gmake" "cmTC_daf29/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_daf29.dir/build.make CMakeFiles/cmTC_daf29.dir/build
+gmake[1]: 进入目录“/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_daf29.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++2a -o CMakeFiles/cmTC_daf29.dir/feature_tests.cxx.o -c /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_daf29
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_daf29.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_daf29.dir/feature_tests.cxx.o  -o cmTC_daf29 
+gmake[1]: 离开目录“/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp”
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -395,17 +393,17 @@ gmake[1]: 离开目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMake
 
 
 Detecting CXX [-std=c++17] compiler features compiled with the following output:
-Change Dir: /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp
+Change Dir: /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_8e71b/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_8e71b.dir/build.make CMakeFiles/cmTC_8e71b.dir/build
-gmake[1]: 进入目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_8e71b.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++17 -o CMakeFiles/cmTC_8e71b.dir/feature_tests.cxx.o -c /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_8e71b
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e71b.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_8e71b.dir/feature_tests.cxx.o  -o cmTC_8e71b 
-gmake[1]: 离开目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/gmake" "cmTC_7a6e7/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_7a6e7.dir/build.make CMakeFiles/cmTC_7a6e7.dir/build
+gmake[1]: 进入目录“/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_7a6e7.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++17 -o CMakeFiles/cmTC_7a6e7.dir/feature_tests.cxx.o -c /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_7a6e7
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a6e7.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_7a6e7.dir/feature_tests.cxx.o  -o cmTC_7a6e7 
+gmake[1]: 离开目录“/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp”
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -468,17 +466,17 @@ gmake[1]: 离开目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMake
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp
+Change Dir: /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_67c98/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_67c98.dir/build.make CMakeFiles/cmTC_67c98.dir/build
-gmake[1]: 进入目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_67c98.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_67c98.dir/feature_tests.cxx.o -c /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_67c98
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67c98.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_67c98.dir/feature_tests.cxx.o  -o cmTC_67c98 
-gmake[1]: 离开目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/gmake" "cmTC_12280/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_12280.dir/build.make CMakeFiles/cmTC_12280.dir/build
+gmake[1]: 进入目录“/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_12280.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_12280.dir/feature_tests.cxx.o -c /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_12280
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12280.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_12280.dir/feature_tests.cxx.o  -o cmTC_12280 
+gmake[1]: 离开目录“/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp”
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -541,17 +539,17 @@ gmake[1]: 离开目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMake
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp
+Change Dir: /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_a378f/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_a378f.dir/build.make CMakeFiles/cmTC_a378f.dir/build
-gmake[1]: 进入目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_a378f.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_a378f.dir/feature_tests.cxx.o -c /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_a378f
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a378f.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_a378f.dir/feature_tests.cxx.o  -o cmTC_a378f 
-gmake[1]: 离开目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/gmake" "cmTC_c7ba1/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_c7ba1.dir/build.make CMakeFiles/cmTC_c7ba1.dir/build
+gmake[1]: 进入目录“/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_c7ba1.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_c7ba1.dir/feature_tests.cxx.o -c /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_c7ba1
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7ba1.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_c7ba1.dir/feature_tests.cxx.o  -o cmTC_c7ba1 
+gmake[1]: 离开目录“/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp”
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -614,17 +612,17 @@ gmake[1]: 离开目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMake
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp
+Change Dir: /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_64200/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_64200.dir/build.make CMakeFiles/cmTC_64200.dir/build
-gmake[1]: 进入目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_64200.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_64200.dir/feature_tests.cxx.o -c /home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_64200
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_64200.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_64200.dir/feature_tests.cxx.o  -o cmTC_64200 
-gmake[1]: 离开目录“/home/shuai/workspace/C-Knowledge/HeadFirst/build/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/gmake" "cmTC_4211e/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_4211e.dir/build.make CMakeFiles/cmTC_4211e.dir/build
+gmake[1]: 进入目录“/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_4211e.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_4211e.dir/feature_tests.cxx.o -c /home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_4211e
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4211e.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_4211e.dir/feature_tests.cxx.o  -o cmTC_4211e 
+gmake[1]: 离开目录“/home/shuai/my_code/ilike/HeadFirst/build/CMakeFiles/CMakeTmp”
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

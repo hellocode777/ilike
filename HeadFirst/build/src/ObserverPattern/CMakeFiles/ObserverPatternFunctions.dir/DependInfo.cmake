@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/shuai/workspace/C-Knowledge/HeadFirst/src/ObserverPattern/CurrentConditionsDisplay.cpp" "/home/shuai/workspace/C-Knowledge/HeadFirst/build/src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/CurrentConditionsDisplay.cpp.o"
-  "/home/shuai/workspace/C-Knowledge/HeadFirst/src/ObserverPattern/DisplayElement.cpp" "/home/shuai/workspace/C-Knowledge/HeadFirst/build/src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/DisplayElement.cpp.o"
-  "/home/shuai/workspace/C-Knowledge/HeadFirst/src/ObserverPattern/Observer.cpp" "/home/shuai/workspace/C-Knowledge/HeadFirst/build/src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/Observer.cpp.o"
-  "/home/shuai/workspace/C-Knowledge/HeadFirst/src/ObserverPattern/Subject.cpp" "/home/shuai/workspace/C-Knowledge/HeadFirst/build/src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/Subject.cpp.o"
-  "/home/shuai/workspace/C-Knowledge/HeadFirst/src/ObserverPattern/WeatherData.cpp" "/home/shuai/workspace/C-Knowledge/HeadFirst/build/src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/WeatherData.cpp.o"
+  "/home/shuai/my_code/ilike/HeadFirst/src/ObserverPattern/CurrentConditionsDisplay.cpp" "/home/shuai/my_code/ilike/HeadFirst/build/src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/CurrentConditionsDisplay.cpp.o"
+  "/home/shuai/my_code/ilike/HeadFirst/src/ObserverPattern/DisplayElement.cpp" "/home/shuai/my_code/ilike/HeadFirst/build/src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/DisplayElement.cpp.o"
+  "/home/shuai/my_code/ilike/HeadFirst/src/ObserverPattern/Observer.cpp" "/home/shuai/my_code/ilike/HeadFirst/build/src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/Observer.cpp.o"
+  "/home/shuai/my_code/ilike/HeadFirst/src/ObserverPattern/Subject.cpp" "/home/shuai/my_code/ilike/HeadFirst/build/src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/Subject.cpp.o"
+  "/home/shuai/my_code/ilike/HeadFirst/src/ObserverPattern/WeatherData.cpp" "/home/shuai/my_code/ilike/HeadFirst/build/src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/WeatherData.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
