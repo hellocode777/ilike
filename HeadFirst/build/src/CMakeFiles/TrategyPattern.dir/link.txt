@@ -1,0 +1,1 @@
+g++    -rdynamic CMakeFiles/TrategyPattern.dir/TrategyPatternMain.cpp.o  -o ../../bin/TrategyPattern  -L/home/shuai/workspace/C-Knowledge/HeadFirst/lib -Wl,-rpath,/home/shuai/workspace/C-Knowledge/HeadFirst/lib ../../lib/libTrategyPatternFunctions.a 

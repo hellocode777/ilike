@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/libObserverPatternFunctions.a  CMakeFiles/ObserverPatternFunctions.dir/CurrentConditionsDisplay.cpp.o CMakeFiles/ObserverPatternFunctions.dir/DisplayElement.cpp.o CMakeFiles/ObserverPatternFunctions.dir/Observer.cpp.o CMakeFiles/ObserverPatternFunctions.dir/Subject.cpp.o CMakeFiles/ObserverPatternFunctions.dir/WeatherData.cpp.o
+/usr/bin/ranlib ../../../lib/libObserverPatternFunctions.a

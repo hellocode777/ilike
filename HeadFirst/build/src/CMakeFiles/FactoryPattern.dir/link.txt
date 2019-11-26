@@ -1,0 +1,1 @@
+g++    -rdynamic CMakeFiles/FactoryPattern.dir/FactoryPatternMain.cpp.o  -o ../../bin/FactoryPattern  -L/home/shuai/workspace/C-Knowledge/HeadFirst/lib -Wl,-rpath,/home/shuai/workspace/C-Knowledge/HeadFirst/lib ../../lib/libFactoryPatternFunctions.a 

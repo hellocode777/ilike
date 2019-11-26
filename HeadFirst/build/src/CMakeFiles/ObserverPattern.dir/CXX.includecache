@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/shuai/workspace/C-Knowledge/HeadFirst/include/Public.h
+iostream
+-
+
+/home/shuai/workspace/C-Knowledge/HeadFirst/src/ObserverPattern/CurrentConditionsDisplay.h
+Observer.h
+/home/shuai/workspace/C-Knowledge/HeadFirst/src/ObserverPattern/Observer.h
+DisplayElement.h
+/home/shuai/workspace/C-Knowledge/HeadFirst/src/ObserverPattern/DisplayElement.h
+WeatherData.h
+/home/shuai/workspace/C-Knowledge/HeadFirst/src/ObserverPattern/WeatherData.h
+
+/home/shuai/workspace/C-Knowledge/HeadFirst/src/ObserverPattern/DisplayElement.h
+
+/home/shuai/workspace/C-Knowledge/HeadFirst/src/ObserverPattern/Observer.h
+/home/shuai/workspace/C-Knowledge/HeadFirst/include/Public.h
+-
+
+/home/shuai/workspace/C-Knowledge/HeadFirst/src/ObserverPattern/Subject.h
+Observer.h
+/home/shuai/workspace/C-Knowledge/HeadFirst/src/ObserverPattern/Observer.h
+/home/shuai/workspace/C-Knowledge/HeadFirst/include/Public.h
+-
+
+/home/shuai/workspace/C-Knowledge/HeadFirst/src/ObserverPattern/WeatherData.h
+Subject.h
+/home/shuai/workspace/C-Knowledge/HeadFirst/src/ObserverPattern/Subject.h
+Observer.h
+/home/shuai/workspace/C-Knowledge/HeadFirst/src/ObserverPattern/Observer.h
+list
+-
+
+/home/shuai/workspace/C-Knowledge/HeadFirst/src/ObserverPatternMain.cpp
+ObserverPattern/WeatherData.h
+/home/shuai/workspace/C-Knowledge/HeadFirst/src/ObserverPattern/WeatherData.h
+ObserverPattern/CurrentConditionsDisplay.h
+/home/shuai/workspace/C-Knowledge/HeadFirst/src/ObserverPattern/CurrentConditionsDisplay.h
+

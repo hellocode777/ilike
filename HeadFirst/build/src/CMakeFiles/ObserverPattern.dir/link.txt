@@ -1,0 +1,1 @@
+g++    -rdynamic CMakeFiles/ObserverPattern.dir/ObserverPatternMain.cpp.o  -o ../../bin/ObserverPattern  -L/home/shuai/workspace/C-Knowledge/HeadFirst/lib -Wl,-rpath,/home/shuai/workspace/C-Knowledge/HeadFirst/lib ../../lib/libObserverPatternFunctions.a 

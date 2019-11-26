@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/libFactoryPatternFunctions.a  CMakeFiles/FactoryPatternFunctions.dir/ChicagoPizzaStore.cpp.o CMakeFiles/FactoryPatternFunctions.dir/ChicagoStyleCheesePizza.cpp.o CMakeFiles/FactoryPatternFunctions.dir/NYPizzaStore.cpp.o CMakeFiles/FactoryPatternFunctions.dir/NYStyleCheesePizza.cpp.o CMakeFiles/FactoryPatternFunctions.dir/Pizza.cpp.o CMakeFiles/FactoryPatternFunctions.dir/PizzaStore.cpp.o
+/usr/bin/ranlib ../../../lib/libFactoryPatternFunctions.a
