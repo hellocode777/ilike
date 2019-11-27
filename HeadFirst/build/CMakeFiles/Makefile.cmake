@@ -18,6 +18,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../src/FactoryPattern/CMakeLists.txt"
   "../src/ObserverPattern/CMakeLists.txt"
   "../src/TrategyPattern/CMakeLists.txt"
+<<<<<<< HEAD
   "/usr/local/cmake/Modules/CMakeCCompiler.cmake.in"
   "/usr/local/cmake/Modules/CMakeCCompilerABI.c"
   "/usr/local/cmake/Modules/CMakeCInformation.cmake"
@@ -95,6 +96,20 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake"
   "/usr/local/cmake/Modules/Internal/FeatureTesting.cmake"
   "/usr/local/cmake/Modules/Platform/Linux-Determine-CXX.cmake"
+=======
+  "/usr/local/cmake/Modules/CMakeCInformation.cmake"
+  "/usr/local/cmake/Modules/CMakeCXXInformation.cmake"
+  "/usr/local/cmake/Modules/CMakeCommonLanguageInclude.cmake"
+  "/usr/local/cmake/Modules/CMakeGenericSystem.cmake"
+  "/usr/local/cmake/Modules/CMakeInitializeConfigs.cmake"
+  "/usr/local/cmake/Modules/CMakeLanguageInformation.cmake"
+  "/usr/local/cmake/Modules/CMakeSystemSpecificInformation.cmake"
+  "/usr/local/cmake/Modules/CMakeSystemSpecificInitialize.cmake"
+  "/usr/local/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+  "/usr/local/cmake/Modules/Compiler/GNU-C.cmake"
+  "/usr/local/cmake/Modules/Compiler/GNU-CXX.cmake"
+  "/usr/local/cmake/Modules/Compiler/GNU.cmake"
+>>>>>>> a215ba318b1997be7e116741e77cb1c4186d60af
   "/usr/local/cmake/Modules/Platform/Linux-GNU-C.cmake"
   "/usr/local/cmake/Modules/Platform/Linux-GNU-CXX.cmake"
   "/usr/local/cmake/Modules/Platform/Linux-GNU.cmake"

@@ -22,6 +22,7 @@ DisplayElement.h
 WeatherData.h
 /home/shuai/my_code/ilike/HeadFirst/src/ObserverPattern/WeatherData.h
 
+<<<<<<< HEAD
 /home/shuai/my_code/ilike/HeadFirst/src/ObserverPattern/DisplayElement.cpp
 DisplayElement.h
 /home/shuai/my_code/ilike/HeadFirst/src/ObserverPattern/DisplayElement.h
@@ -32,6 +33,14 @@ DisplayElement.h
 Observer.h
 /home/shuai/my_code/ilike/HeadFirst/src/ObserverPattern/Observer.h
 
+=======
+/home/shuai/my_code/ilike/HeadFirst/src/ObserverPattern/DisplayElement.h
+
+/home/shuai/my_code/ilike/HeadFirst/src/ObserverPattern/Observer.cpp
+Observer.h
+/home/shuai/my_code/ilike/HeadFirst/src/ObserverPattern/Observer.h
+
+>>>>>>> a215ba318b1997be7e116741e77cb1c4186d60af
 /home/shuai/my_code/ilike/HeadFirst/src/ObserverPattern/Observer.h
 /home/shuai/my_code/ilike/HeadFirst/include/Public.h
 -
