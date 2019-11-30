@@ -12,10 +12,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.13.0-rc2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.13.0-rc2/CMakeSystem.cmake"
   "../src/CMakeLists.txt"
-  "../src/DecoratorPattern/CMakeLists.txt"
-  "../src/FactoryPattern/CMakeLists.txt"
-  "../src/ObserverPattern/CMakeLists.txt"
-  "../src/TrategyPattern/CMakeLists.txt"
+  "../src/LinkList/CMakeLists.txt"
+  "../src/array/CMakeLists.txt"
   "/usr/local/cmake/Modules/CMakeCInformation.cmake"
   "/usr/local/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/local/cmake/Modules/CMakeCommonLanguageInclude.cmake"
@@ -45,20 +43,14 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/ObserverPattern/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/TrategyPattern/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/DecoratorPattern/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/FactoryPattern/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/array/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/LinkList/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "src/CMakeFiles/FactoryPattern.dir/DependInfo.cmake"
-  "src/CMakeFiles/DecoratorPattern.dir/DependInfo.cmake"
-  "src/CMakeFiles/ObserverPattern.dir/DependInfo.cmake"
-  "src/CMakeFiles/TrategyPattern.dir/DependInfo.cmake"
-  "src/ObserverPattern/CMakeFiles/ObserverPatternFunctions.dir/DependInfo.cmake"
-  "src/TrategyPattern/CMakeFiles/TrategyPatternFunctions.dir/DependInfo.cmake"
-  "src/DecoratorPattern/CMakeFiles/DecoratorPatternFunctions.dir/DependInfo.cmake"
-  "src/FactoryPattern/CMakeFiles/FactoryPatternFunctions.dir/DependInfo.cmake"
+  "src/CMakeFiles/array.dir/DependInfo.cmake"
+  "src/CMakeFiles/LinkList.dir/DependInfo.cmake"
+  "src/array/CMakeFiles/ArrayFunctions.dir/DependInfo.cmake"
+  "src/LinkList/CMakeFiles/LinkListFunctions.dir/DependInfo.cmake"
   )

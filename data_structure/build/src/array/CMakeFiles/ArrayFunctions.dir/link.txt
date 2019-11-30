@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/libArrayFunctions.a  CMakeFiles/ArrayFunctions.dir/array.cpp.o
+/usr/bin/ranlib ../../../lib/libArrayFunctions.a

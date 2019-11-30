@@ -1,0 +1,1 @@
+g++     CMakeFiles/LinkList.dir/LinkListMain.cpp.o  -o ../../bin/LinkList  -L/home/shuai/my_code/ilike/data_structure/lib -Wl,-rpath,/home/shuai/my_code/ilike/data_structure/lib ../../lib/libLinkListFunctions.a 

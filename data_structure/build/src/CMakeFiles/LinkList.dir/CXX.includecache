@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/shuai/my_code/ilike/data_structure/include/public.h
+stdio.h
+-
+stdlib.h
+-
+
+/home/shuai/my_code/ilike/data_structure/src/LinkList/LinkList.h
+../../include/public.h
+/home/shuai/my_code/ilike/data_structure/include/public.h
+stdarg.h
+-
+
+/home/shuai/my_code/ilike/data_structure/src/LinkListMain.cpp
+cstdlib
+-
+LinkList/LinkList.h
+/home/shuai/my_code/ilike/data_structure/src/LinkList/LinkList.h
+
