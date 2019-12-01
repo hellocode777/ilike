@@ -14,6 +14,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../src/CMakeLists.txt"
   "../src/LinkList/CMakeLists.txt"
   "../src/array/CMakeLists.txt"
+  "../src/queue/CMakeLists.txt"
   "/usr/local/cmake/Modules/CMakeCInformation.cmake"
   "/usr/local/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/local/cmake/Modules/CMakeCommonLanguageInclude.cmake"
@@ -45,12 +46,15 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/array/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/LinkList/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/queue/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "src/CMakeFiles/queue.dir/DependInfo.cmake"
   "src/CMakeFiles/array.dir/DependInfo.cmake"
   "src/CMakeFiles/LinkList.dir/DependInfo.cmake"
   "src/array/CMakeFiles/ArrayFunctions.dir/DependInfo.cmake"
   "src/LinkList/CMakeFiles/LinkListFunctions.dir/DependInfo.cmake"
+  "src/queue/CMakeFiles/QueueFunctions.dir/DependInfo.cmake"
   )

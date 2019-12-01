@@ -42,6 +42,5 @@ int main()
 	delete beverage3;
 	beverage3 = nullptr;
 
-
 	return 0;
 }

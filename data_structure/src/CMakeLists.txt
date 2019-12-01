@@ -14,3 +14,10 @@ add_subdirectory(LinkList)
 add_executable(LinkList LinkListMain.cpp )
 # 添加链接库
 target_link_libraries(LinkList LinkListFunctions)
+
+# 添加 ObserverPattern 子目录
+add_subdirectory(queue)
+# 指定生成目标 
+add_executable(queue QueueMain.cpp )
+# 添加链接库
+target_link_libraries(queue QueueFunctions)

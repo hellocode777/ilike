@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/data_structure/build/CMakeFiles /home/shuai/my_code/ilike/data_structure/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/shuai/my_code/ilike/data_structure/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/data_structure/build/CMakeFiles /home/shuai/my_code/ilike/data_structure/build/src/queue/CMakeFiles/progress.marks
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f CMakeFiles/Makefile2 src/queue/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/data_structure/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f CMakeFiles/Makefile2 src/queue/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,96 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f CMakeFiles/Makefile2 src/queue/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f CMakeFiles/Makefile2 src/queue/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/shuai/my_code/ilike/data_structure/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named queue
+# Convenience name for target.
+src/queue/CMakeFiles/QueueFunctions.dir/rule:
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f CMakeFiles/Makefile2 src/queue/CMakeFiles/QueueFunctions.dir/rule
+.PHONY : src/queue/CMakeFiles/QueueFunctions.dir/rule
 
-# Build rule for target.
-queue: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 queue
-.PHONY : queue
+# Convenience name for target.
+QueueFunctions: src/queue/CMakeFiles/QueueFunctions.dir/rule
 
-# fast build rule for target.
-queue/fast:
-	$(MAKE) -f src/CMakeFiles/queue.dir/build.make src/CMakeFiles/queue.dir/build
-.PHONY : queue/fast
-
-#=============================================================================
-# Target rules for targets named array
-
-# Build rule for target.
-array: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 array
-.PHONY : array
-
-# fast build rule for target.
-array/fast:
-	$(MAKE) -f src/CMakeFiles/array.dir/build.make src/CMakeFiles/array.dir/build
-.PHONY : array/fast
-
-#=============================================================================
-# Target rules for targets named LinkList
-
-# Build rule for target.
-LinkList: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 LinkList
-.PHONY : LinkList
-
-# fast build rule for target.
-LinkList/fast:
-	$(MAKE) -f src/CMakeFiles/LinkList.dir/build.make src/CMakeFiles/LinkList.dir/build
-.PHONY : LinkList/fast
-
-#=============================================================================
-# Target rules for targets named ArrayFunctions
-
-# Build rule for target.
-ArrayFunctions: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ArrayFunctions
-.PHONY : ArrayFunctions
-
-# fast build rule for target.
-ArrayFunctions/fast:
-	$(MAKE) -f src/array/CMakeFiles/ArrayFunctions.dir/build.make src/array/CMakeFiles/ArrayFunctions.dir/build
-.PHONY : ArrayFunctions/fast
-
-#=============================================================================
-# Target rules for targets named LinkListFunctions
-
-# Build rule for target.
-LinkListFunctions: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 LinkListFunctions
-.PHONY : LinkListFunctions
-
-# fast build rule for target.
-LinkListFunctions/fast:
-	$(MAKE) -f src/LinkList/CMakeFiles/LinkListFunctions.dir/build.make src/LinkList/CMakeFiles/LinkListFunctions.dir/build
-.PHONY : LinkListFunctions/fast
-
-#=============================================================================
-# Target rules for targets named QueueFunctions
-
-# Build rule for target.
-QueueFunctions: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 QueueFunctions
 .PHONY : QueueFunctions
 
 # fast build rule for target.
 QueueFunctions/fast:
-	$(MAKE) -f src/queue/CMakeFiles/QueueFunctions.dir/build.make src/queue/CMakeFiles/QueueFunctions.dir/build
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f src/queue/CMakeFiles/QueueFunctions.dir/build.make src/queue/CMakeFiles/QueueFunctions.dir/build
 .PHONY : QueueFunctions/fast
+
+queue.o: queue.cpp.o
+
+.PHONY : queue.o
+
+# target to build an object file
+queue.cpp.o:
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f src/queue/CMakeFiles/QueueFunctions.dir/build.make src/queue/CMakeFiles/QueueFunctions.dir/queue.cpp.o
+.PHONY : queue.cpp.o
+
+queue.i: queue.cpp.i
+
+.PHONY : queue.i
+
+# target to preprocess a source file
+queue.cpp.i:
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f src/queue/CMakeFiles/QueueFunctions.dir/build.make src/queue/CMakeFiles/QueueFunctions.dir/queue.cpp.i
+.PHONY : queue.cpp.i
+
+queue.s: queue.cpp.s
+
+.PHONY : queue.s
+
+# target to generate assembly for a file
+queue.cpp.s:
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f src/queue/CMakeFiles/QueueFunctions.dir/build.make src/queue/CMakeFiles/QueueFunctions.dir/queue.cpp.s
+.PHONY : queue.cpp.s
 
 # Help Target
 help:
@@ -195,13 +159,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... queue"
-	@echo "... array"
-	@echo "... LinkList"
-	@echo "... ArrayFunctions"
-	@echo "... LinkListFunctions"
 	@echo "... QueueFunctions"
+	@echo "... edit_cache"
+	@echo "... queue.o"
+	@echo "... queue.i"
+	@echo "... queue.s"
 .PHONY : help
 
 
@@ -213,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/shuai/my_code/ilike/data_structure/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

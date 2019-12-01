@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-/* 
+/*
  * File:   main.cpp
  * Author: Administrator
  *
@@ -13,9 +13,9 @@
 
 #include <cstdlib>
 using namespace std;
-#include "queue.h"
+#include "queue/queue.h"
 
-int main(int argc, char** argv) 
+int main(int argc, char** argv)
 {
     CMyQueue qu;
     ElemType e;

@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+src/CMakeFiles/queue.dir/rule:
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/queue.dir/rule
+.PHONY : src/CMakeFiles/queue.dir/rule
+
+# Convenience name for target.
+queue: src/CMakeFiles/queue.dir/rule
+
+.PHONY : queue
+
+# fast build rule for target.
+queue/fast:
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f src/CMakeFiles/queue.dir/build.make src/CMakeFiles/queue.dir/build
+.PHONY : queue/fast
+
+# Convenience name for target.
 src/CMakeFiles/array.dir/rule:
 	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/array.dir/rule
 .PHONY : src/CMakeFiles/array.dir/rule
@@ -194,6 +209,33 @@ LinkListMain.cpp.s:
 	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f src/CMakeFiles/LinkList.dir/build.make src/CMakeFiles/LinkList.dir/LinkListMain.cpp.s
 .PHONY : LinkListMain.cpp.s
 
+QueueMain.o: QueueMain.cpp.o
+
+.PHONY : QueueMain.o
+
+# target to build an object file
+QueueMain.cpp.o:
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f src/CMakeFiles/queue.dir/build.make src/CMakeFiles/queue.dir/QueueMain.cpp.o
+.PHONY : QueueMain.cpp.o
+
+QueueMain.i: QueueMain.cpp.i
+
+.PHONY : QueueMain.i
+
+# target to preprocess a source file
+QueueMain.cpp.i:
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f src/CMakeFiles/queue.dir/build.make src/CMakeFiles/queue.dir/QueueMain.cpp.i
+.PHONY : QueueMain.cpp.i
+
+QueueMain.s: QueueMain.cpp.s
+
+.PHONY : QueueMain.s
+
+# target to generate assembly for a file
+QueueMain.cpp.s:
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f src/CMakeFiles/queue.dir/build.make src/CMakeFiles/queue.dir/QueueMain.cpp.s
+.PHONY : QueueMain.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -201,6 +243,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... queue"
 	@echo "... array"
 	@echo "... rebuild_cache"
 	@echo "... LinkList"
@@ -210,6 +253,9 @@ help:
 	@echo "... LinkListMain.o"
 	@echo "... LinkListMain.i"
 	@echo "... LinkListMain.s"
+	@echo "... QueueMain.o"
+	@echo "... QueueMain.i"
+	@echo "... QueueMain.s"
 .PHONY : help
 
 

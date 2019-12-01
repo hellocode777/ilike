@@ -1,4 +1,4 @@
-# Install script for directory: /home/shuai/my_code/ilike/data_structure/src
+# Install script for directory: /home/shuai/my_code/ilike/data_structure/src/queue
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,13 +35,5 @@ endif()
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/home/shuai/my_code/ilike/data_structure/build/src/array/cmake_install.cmake")
-  include("/home/shuai/my_code/ilike/data_structure/build/src/LinkList/cmake_install.cmake")
-  include("/home/shuai/my_code/ilike/data_structure/build/src/queue/cmake_install.cmake")
-
 endif()
 
