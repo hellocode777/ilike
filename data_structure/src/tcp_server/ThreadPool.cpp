@@ -7,9 +7,6 @@
 
 #include "ThreadPool.h"
 
-
-
-
 void *threadpool_thread(void *threadpool);
 
 void *adjust_thread(void *threadpool)
@@ -107,12 +104,10 @@ void *threadpool_thread(void *threadpool)
 		pthread_mutex_unlock(&(pool->thread_counter));
 		(*(task.function))(task.arg);
 
-
 		cout << "thread: " <<  (unsigned int)pthread_self() << "end working! " << endl;
 		pthread_mutex_lock(&(pool->thread_counter));
 		pool->busy_thr_num--;
 		pthread_mutex_unlock(&(pool->thread_counter));
-
 	}
 
 	pthread_exit(NULL);
@@ -199,8 +194,6 @@ ThreadPool* ThreadPool::threadPool_create(int min_thr_num, int max_thr_num, int 
 		}
 		memset(pool->task_queue, 0, sizeof(ThreadPoolTask)*queue_max_size);
 
-
-
 		for (int i = 0; i < min_thr_num; i++)
 		{
 			pthread_create(&(pool->threads[i]), NULL, threadpool_thread, (void *)pool);
@@ -236,13 +229,11 @@ int ThreadPool::threadpool_add(ThreadPool *pool, void*(*function)(void *arg), vo
 	}
 
 	pool->task_queue[pool->queue_rear].function = function;
-
 	pool->task_queue[pool->queue_rear].arg = arg;
 	pool->queue_rear = (pool->queue_rear + 1) % pool->queue_max_size;
 	pool->queue_size++;
 
 	pthread_cond_signal(&(pool->queue_not_empty));
-	cout << "pthread_cond_signal"<< endl;
 	pthread_mutex_unlock(&(pool->lock));
 
 	return 0;
