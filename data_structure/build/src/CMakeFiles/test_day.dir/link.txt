@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -march=native -O3 -pthread   CMakeFiles/test_day.dir/TestMain.cpp.o  -o ../../bin/test_day  -L/home/shuai/my_code/ilike/data_structure/lib -Wl,-rpath,/home/shuai/my_code/ilike/data_structure/lib ../../lib/libTestFunctions.a 

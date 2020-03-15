@@ -60,15 +60,15 @@ include src/CMakeFiles/queue.dir/flags.make
 src/CMakeFiles/queue.dir/QueueMain.cpp.o: src/CMakeFiles/queue.dir/flags.make
 src/CMakeFiles/queue.dir/QueueMain.cpp.o: ../src/QueueMain.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shuai/my_code/ilike/data_structure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/queue.dir/QueueMain.cpp.o"
-	cd /home/shuai/my_code/ilike/data_structure/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/queue.dir/QueueMain.cpp.o -c /home/shuai/my_code/ilike/data_structure/src/QueueMain.cpp
+	cd /home/shuai/my_code/ilike/data_structure/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/queue.dir/QueueMain.cpp.o -c /home/shuai/my_code/ilike/data_structure/src/QueueMain.cpp
 
 src/CMakeFiles/queue.dir/QueueMain.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/queue.dir/QueueMain.cpp.i"
-	cd /home/shuai/my_code/ilike/data_structure/build/src && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shuai/my_code/ilike/data_structure/src/QueueMain.cpp > CMakeFiles/queue.dir/QueueMain.cpp.i
+	cd /home/shuai/my_code/ilike/data_structure/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shuai/my_code/ilike/data_structure/src/QueueMain.cpp > CMakeFiles/queue.dir/QueueMain.cpp.i
 
 src/CMakeFiles/queue.dir/QueueMain.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/queue.dir/QueueMain.cpp.s"
-	cd /home/shuai/my_code/ilike/data_structure/build/src && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shuai/my_code/ilike/data_structure/src/QueueMain.cpp -o CMakeFiles/queue.dir/QueueMain.cpp.s
+	cd /home/shuai/my_code/ilike/data_structure/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shuai/my_code/ilike/data_structure/src/QueueMain.cpp -o CMakeFiles/queue.dir/QueueMain.cpp.s
 
 # Object files for target queue
 queue_OBJECTS = \

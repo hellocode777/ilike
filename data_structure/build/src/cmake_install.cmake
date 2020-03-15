@@ -42,6 +42,9 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/shuai/my_code/ilike/data_structure/build/src/array/cmake_install.cmake")
   include("/home/shuai/my_code/ilike/data_structure/build/src/LinkList/cmake_install.cmake")
   include("/home/shuai/my_code/ilike/data_structure/build/src/queue/cmake_install.cmake")
+  include("/home/shuai/my_code/ilike/data_structure/build/src/TestDay/cmake_install.cmake")
+  include("/home/shuai/my_code/ilike/data_structure/build/src/tcp_client/cmake_install.cmake")
+  include("/home/shuai/my_code/ilike/data_structure/build/src/tcp_server/cmake_install.cmake")
 
 endif()
 

@@ -68,22 +68,34 @@ CMAKE_BINARY_DIR = /home/shuai/my_code/ilike/data_structure/build
 # Directory level rules for directory src
 
 # Convenience name for "all" pass in the directory.
-src/all: src/CMakeFiles/queue.dir/all
-src/all: src/CMakeFiles/array.dir/all
 src/all: src/CMakeFiles/LinkList.dir/all
+src/all: src/CMakeFiles/test_day.dir/all
+src/all: src/CMakeFiles/array.dir/all
+src/all: src/CMakeFiles/queue.dir/all
+src/all: src/CMakeFiles/tcp_client_test.dir/all
+src/all: src/CMakeFiles/tcp_server_test.dir/all
 src/all: src/array/all
 src/all: src/LinkList/all
 src/all: src/queue/all
+src/all: src/TestDay/all
+src/all: src/tcp_client/all
+src/all: src/tcp_server/all
 
 .PHONY : src/all
 
 # Convenience name for "clean" pass in the directory.
-src/clean: src/CMakeFiles/queue.dir/clean
-src/clean: src/CMakeFiles/array.dir/clean
 src/clean: src/CMakeFiles/LinkList.dir/clean
+src/clean: src/CMakeFiles/test_day.dir/clean
+src/clean: src/CMakeFiles/array.dir/clean
+src/clean: src/CMakeFiles/queue.dir/clean
+src/clean: src/CMakeFiles/tcp_client_test.dir/clean
+src/clean: src/CMakeFiles/tcp_server_test.dir/clean
 src/clean: src/array/clean
 src/clean: src/LinkList/clean
 src/clean: src/queue/clean
+src/clean: src/TestDay/clean
+src/clean: src/tcp_client/clean
+src/clean: src/tcp_server/clean
 
 .PHONY : src/clean
 
@@ -91,82 +103,11 @@ src/clean: src/queue/clean
 src/preinstall: src/array/preinstall
 src/preinstall: src/LinkList/preinstall
 src/preinstall: src/queue/preinstall
+src/preinstall: src/TestDay/preinstall
+src/preinstall: src/tcp_client/preinstall
+src/preinstall: src/tcp_server/preinstall
 
 .PHONY : src/preinstall
-
-#=============================================================================
-# Target rules for target src/CMakeFiles/queue.dir
-
-# All Build rule for target.
-src/CMakeFiles/queue.dir/all: src/queue/CMakeFiles/QueueFunctions.dir/all
-	$(MAKE) -f src/CMakeFiles/queue.dir/build.make src/CMakeFiles/queue.dir/depend
-	$(MAKE) -f src/CMakeFiles/queue.dir/build.make src/CMakeFiles/queue.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shuai/my_code/ilike/data_structure/build/CMakeFiles --progress-num=11,12 "Built target queue"
-.PHONY : src/CMakeFiles/queue.dir/all
-
-# Include target in all.
-all: src/CMakeFiles/queue.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-src/CMakeFiles/queue.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/data_structure/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/queue.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/data_structure/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/queue.dir/rule
-
-# Convenience name for target.
-queue: src/CMakeFiles/queue.dir/rule
-
-.PHONY : queue
-
-# clean rule for target.
-src/CMakeFiles/queue.dir/clean:
-	$(MAKE) -f src/CMakeFiles/queue.dir/build.make src/CMakeFiles/queue.dir/clean
-.PHONY : src/CMakeFiles/queue.dir/clean
-
-# clean rule for target.
-clean: src/CMakeFiles/queue.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target src/CMakeFiles/array.dir
-
-# All Build rule for target.
-src/CMakeFiles/array.dir/all: src/array/CMakeFiles/ArrayFunctions.dir/all
-	$(MAKE) -f src/CMakeFiles/array.dir/build.make src/CMakeFiles/array.dir/depend
-	$(MAKE) -f src/CMakeFiles/array.dir/build.make src/CMakeFiles/array.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shuai/my_code/ilike/data_structure/build/CMakeFiles --progress-num=9,10 "Built target array"
-.PHONY : src/CMakeFiles/array.dir/all
-
-# Include target in all.
-all: src/CMakeFiles/array.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-src/CMakeFiles/array.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/data_structure/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/array.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/data_structure/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/array.dir/rule
-
-# Convenience name for target.
-array: src/CMakeFiles/array.dir/rule
-
-.PHONY : array
-
-# clean rule for target.
-src/CMakeFiles/array.dir/clean:
-	$(MAKE) -f src/CMakeFiles/array.dir/build.make src/CMakeFiles/array.dir/clean
-.PHONY : src/CMakeFiles/array.dir/clean
-
-# clean rule for target.
-clean: src/CMakeFiles/array.dir/clean
-
-.PHONY : clean
 
 #=============================================================================
 # Target rules for target src/CMakeFiles/LinkList.dir
@@ -202,6 +143,191 @@ src/CMakeFiles/LinkList.dir/clean:
 
 # clean rule for target.
 clean: src/CMakeFiles/LinkList.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/test_day.dir
+
+# All Build rule for target.
+src/CMakeFiles/test_day.dir/all: src/TestDay/CMakeFiles/TestFunctions.dir/all
+	$(MAKE) -f src/CMakeFiles/test_day.dir/build.make src/CMakeFiles/test_day.dir/depend
+	$(MAKE) -f src/CMakeFiles/test_day.dir/build.make src/CMakeFiles/test_day.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shuai/my_code/ilike/data_structure/build/CMakeFiles --progress-num=25,26 "Built target test_day"
+.PHONY : src/CMakeFiles/test_day.dir/all
+
+# Include target in all.
+all: src/CMakeFiles/test_day.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/test_day.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/data_structure/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/test_day.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/data_structure/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/test_day.dir/rule
+
+# Convenience name for target.
+test_day: src/CMakeFiles/test_day.dir/rule
+
+.PHONY : test_day
+
+# clean rule for target.
+src/CMakeFiles/test_day.dir/clean:
+	$(MAKE) -f src/CMakeFiles/test_day.dir/build.make src/CMakeFiles/test_day.dir/clean
+.PHONY : src/CMakeFiles/test_day.dir/clean
+
+# clean rule for target.
+clean: src/CMakeFiles/test_day.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/array.dir
+
+# All Build rule for target.
+src/CMakeFiles/array.dir/all: src/array/CMakeFiles/ArrayFunctions.dir/all
+	$(MAKE) -f src/CMakeFiles/array.dir/build.make src/CMakeFiles/array.dir/depend
+	$(MAKE) -f src/CMakeFiles/array.dir/build.make src/CMakeFiles/array.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shuai/my_code/ilike/data_structure/build/CMakeFiles --progress-num=17,18 "Built target array"
+.PHONY : src/CMakeFiles/array.dir/all
+
+# Include target in all.
+all: src/CMakeFiles/array.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/array.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/data_structure/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/array.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/data_structure/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/array.dir/rule
+
+# Convenience name for target.
+array: src/CMakeFiles/array.dir/rule
+
+.PHONY : array
+
+# clean rule for target.
+src/CMakeFiles/array.dir/clean:
+	$(MAKE) -f src/CMakeFiles/array.dir/build.make src/CMakeFiles/array.dir/clean
+.PHONY : src/CMakeFiles/array.dir/clean
+
+# clean rule for target.
+clean: src/CMakeFiles/array.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/queue.dir
+
+# All Build rule for target.
+src/CMakeFiles/queue.dir/all: src/queue/CMakeFiles/QueueFunctions.dir/all
+	$(MAKE) -f src/CMakeFiles/queue.dir/build.make src/CMakeFiles/queue.dir/depend
+	$(MAKE) -f src/CMakeFiles/queue.dir/build.make src/CMakeFiles/queue.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shuai/my_code/ilike/data_structure/build/CMakeFiles --progress-num=19,20 "Built target queue"
+.PHONY : src/CMakeFiles/queue.dir/all
+
+# Include target in all.
+all: src/CMakeFiles/queue.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/queue.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/data_structure/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/queue.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/data_structure/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/queue.dir/rule
+
+# Convenience name for target.
+queue: src/CMakeFiles/queue.dir/rule
+
+.PHONY : queue
+
+# clean rule for target.
+src/CMakeFiles/queue.dir/clean:
+	$(MAKE) -f src/CMakeFiles/queue.dir/build.make src/CMakeFiles/queue.dir/clean
+.PHONY : src/CMakeFiles/queue.dir/clean
+
+# clean rule for target.
+clean: src/CMakeFiles/queue.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/tcp_client_test.dir
+
+# All Build rule for target.
+src/CMakeFiles/tcp_client_test.dir/all: src/tcp_client/CMakeFiles/TcpClientFunctions.dir/all
+	$(MAKE) -f src/CMakeFiles/tcp_client_test.dir/build.make src/CMakeFiles/tcp_client_test.dir/depend
+	$(MAKE) -f src/CMakeFiles/tcp_client_test.dir/build.make src/CMakeFiles/tcp_client_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shuai/my_code/ilike/data_structure/build/CMakeFiles --progress-num=21,22 "Built target tcp_client_test"
+.PHONY : src/CMakeFiles/tcp_client_test.dir/all
+
+# Include target in all.
+all: src/CMakeFiles/tcp_client_test.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/tcp_client_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/data_structure/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/tcp_client_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/data_structure/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/tcp_client_test.dir/rule
+
+# Convenience name for target.
+tcp_client_test: src/CMakeFiles/tcp_client_test.dir/rule
+
+.PHONY : tcp_client_test
+
+# clean rule for target.
+src/CMakeFiles/tcp_client_test.dir/clean:
+	$(MAKE) -f src/CMakeFiles/tcp_client_test.dir/build.make src/CMakeFiles/tcp_client_test.dir/clean
+.PHONY : src/CMakeFiles/tcp_client_test.dir/clean
+
+# clean rule for target.
+clean: src/CMakeFiles/tcp_client_test.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/tcp_server_test.dir
+
+# All Build rule for target.
+src/CMakeFiles/tcp_server_test.dir/all: src/tcp_server/CMakeFiles/TcpServerFunctions.dir/all
+	$(MAKE) -f src/CMakeFiles/tcp_server_test.dir/build.make src/CMakeFiles/tcp_server_test.dir/depend
+	$(MAKE) -f src/CMakeFiles/tcp_server_test.dir/build.make src/CMakeFiles/tcp_server_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shuai/my_code/ilike/data_structure/build/CMakeFiles --progress-num=23,24 "Built target tcp_server_test"
+.PHONY : src/CMakeFiles/tcp_server_test.dir/all
+
+# Include target in all.
+all: src/CMakeFiles/tcp_server_test.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/tcp_server_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/data_structure/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/tcp_server_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/data_structure/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/tcp_server_test.dir/rule
+
+# Convenience name for target.
+tcp_server_test: src/CMakeFiles/tcp_server_test.dir/rule
+
+.PHONY : tcp_server_test
+
+# clean rule for target.
+src/CMakeFiles/tcp_server_test.dir/clean:
+	$(MAKE) -f src/CMakeFiles/tcp_server_test.dir/build.make src/CMakeFiles/tcp_server_test.dir/clean
+.PHONY : src/CMakeFiles/tcp_server_test.dir/clean
+
+# clean rule for target.
+clean: src/CMakeFiles/tcp_server_test.dir/clean
 
 .PHONY : clean
 
@@ -367,6 +493,171 @@ src/queue/CMakeFiles/QueueFunctions.dir/clean:
 
 # clean rule for target.
 clean: src/queue/CMakeFiles/QueueFunctions.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src/TestDay
+
+# Convenience name for "all" pass in the directory.
+src/TestDay/all: src/TestDay/CMakeFiles/TestFunctions.dir/all
+
+.PHONY : src/TestDay/all
+
+# Convenience name for "clean" pass in the directory.
+src/TestDay/clean: src/TestDay/CMakeFiles/TestFunctions.dir/clean
+
+.PHONY : src/TestDay/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/TestDay/preinstall:
+
+.PHONY : src/TestDay/preinstall
+
+#=============================================================================
+# Target rules for target src/TestDay/CMakeFiles/TestFunctions.dir
+
+# All Build rule for target.
+src/TestDay/CMakeFiles/TestFunctions.dir/all:
+	$(MAKE) -f src/TestDay/CMakeFiles/TestFunctions.dir/build.make src/TestDay/CMakeFiles/TestFunctions.dir/depend
+	$(MAKE) -f src/TestDay/CMakeFiles/TestFunctions.dir/build.make src/TestDay/CMakeFiles/TestFunctions.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shuai/my_code/ilike/data_structure/build/CMakeFiles --progress-num=15,16 "Built target TestFunctions"
+.PHONY : src/TestDay/CMakeFiles/TestFunctions.dir/all
+
+# Include target in all.
+all: src/TestDay/CMakeFiles/TestFunctions.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/TestDay/CMakeFiles/TestFunctions.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/data_structure/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 src/TestDay/CMakeFiles/TestFunctions.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/data_structure/build/CMakeFiles 0
+.PHONY : src/TestDay/CMakeFiles/TestFunctions.dir/rule
+
+# Convenience name for target.
+TestFunctions: src/TestDay/CMakeFiles/TestFunctions.dir/rule
+
+.PHONY : TestFunctions
+
+# clean rule for target.
+src/TestDay/CMakeFiles/TestFunctions.dir/clean:
+	$(MAKE) -f src/TestDay/CMakeFiles/TestFunctions.dir/build.make src/TestDay/CMakeFiles/TestFunctions.dir/clean
+.PHONY : src/TestDay/CMakeFiles/TestFunctions.dir/clean
+
+# clean rule for target.
+clean: src/TestDay/CMakeFiles/TestFunctions.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src/tcp_client
+
+# Convenience name for "all" pass in the directory.
+src/tcp_client/all: src/tcp_client/CMakeFiles/TcpClientFunctions.dir/all
+
+.PHONY : src/tcp_client/all
+
+# Convenience name for "clean" pass in the directory.
+src/tcp_client/clean: src/tcp_client/CMakeFiles/TcpClientFunctions.dir/clean
+
+.PHONY : src/tcp_client/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/tcp_client/preinstall:
+
+.PHONY : src/tcp_client/preinstall
+
+#=============================================================================
+# Target rules for target src/tcp_client/CMakeFiles/TcpClientFunctions.dir
+
+# All Build rule for target.
+src/tcp_client/CMakeFiles/TcpClientFunctions.dir/all:
+	$(MAKE) -f src/tcp_client/CMakeFiles/TcpClientFunctions.dir/build.make src/tcp_client/CMakeFiles/TcpClientFunctions.dir/depend
+	$(MAKE) -f src/tcp_client/CMakeFiles/TcpClientFunctions.dir/build.make src/tcp_client/CMakeFiles/TcpClientFunctions.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shuai/my_code/ilike/data_structure/build/CMakeFiles --progress-num=9,10 "Built target TcpClientFunctions"
+.PHONY : src/tcp_client/CMakeFiles/TcpClientFunctions.dir/all
+
+# Include target in all.
+all: src/tcp_client/CMakeFiles/TcpClientFunctions.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/tcp_client/CMakeFiles/TcpClientFunctions.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/data_structure/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 src/tcp_client/CMakeFiles/TcpClientFunctions.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/data_structure/build/CMakeFiles 0
+.PHONY : src/tcp_client/CMakeFiles/TcpClientFunctions.dir/rule
+
+# Convenience name for target.
+TcpClientFunctions: src/tcp_client/CMakeFiles/TcpClientFunctions.dir/rule
+
+.PHONY : TcpClientFunctions
+
+# clean rule for target.
+src/tcp_client/CMakeFiles/TcpClientFunctions.dir/clean:
+	$(MAKE) -f src/tcp_client/CMakeFiles/TcpClientFunctions.dir/build.make src/tcp_client/CMakeFiles/TcpClientFunctions.dir/clean
+.PHONY : src/tcp_client/CMakeFiles/TcpClientFunctions.dir/clean
+
+# clean rule for target.
+clean: src/tcp_client/CMakeFiles/TcpClientFunctions.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src/tcp_server
+
+# Convenience name for "all" pass in the directory.
+src/tcp_server/all: src/tcp_server/CMakeFiles/TcpServerFunctions.dir/all
+
+.PHONY : src/tcp_server/all
+
+# Convenience name for "clean" pass in the directory.
+src/tcp_server/clean: src/tcp_server/CMakeFiles/TcpServerFunctions.dir/clean
+
+.PHONY : src/tcp_server/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/tcp_server/preinstall:
+
+.PHONY : src/tcp_server/preinstall
+
+#=============================================================================
+# Target rules for target src/tcp_server/CMakeFiles/TcpServerFunctions.dir
+
+# All Build rule for target.
+src/tcp_server/CMakeFiles/TcpServerFunctions.dir/all:
+	$(MAKE) -f src/tcp_server/CMakeFiles/TcpServerFunctions.dir/build.make src/tcp_server/CMakeFiles/TcpServerFunctions.dir/depend
+	$(MAKE) -f src/tcp_server/CMakeFiles/TcpServerFunctions.dir/build.make src/tcp_server/CMakeFiles/TcpServerFunctions.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shuai/my_code/ilike/data_structure/build/CMakeFiles --progress-num=11,12,13,14 "Built target TcpServerFunctions"
+.PHONY : src/tcp_server/CMakeFiles/TcpServerFunctions.dir/all
+
+# Include target in all.
+all: src/tcp_server/CMakeFiles/TcpServerFunctions.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/tcp_server/CMakeFiles/TcpServerFunctions.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/data_structure/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 src/tcp_server/CMakeFiles/TcpServerFunctions.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shuai/my_code/ilike/data_structure/build/CMakeFiles 0
+.PHONY : src/tcp_server/CMakeFiles/TcpServerFunctions.dir/rule
+
+# Convenience name for target.
+TcpServerFunctions: src/tcp_server/CMakeFiles/TcpServerFunctions.dir/rule
+
+.PHONY : TcpServerFunctions
+
+# clean rule for target.
+src/tcp_server/CMakeFiles/TcpServerFunctions.dir/clean:
+	$(MAKE) -f src/tcp_server/CMakeFiles/TcpServerFunctions.dir/build.make src/tcp_server/CMakeFiles/TcpServerFunctions.dir/clean
+.PHONY : src/tcp_server/CMakeFiles/TcpServerFunctions.dir/clean
+
+# clean rule for target.
+clean: src/tcp_server/CMakeFiles/TcpServerFunctions.dir/clean
 
 .PHONY : clean
 

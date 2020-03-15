@@ -111,17 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named queue
+# Target rules for targets named LinkList
 
 # Build rule for target.
-queue: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 queue
-.PHONY : queue
+LinkList: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LinkList
+.PHONY : LinkList
 
 # fast build rule for target.
-queue/fast:
-	$(MAKE) -f src/CMakeFiles/queue.dir/build.make src/CMakeFiles/queue.dir/build
-.PHONY : queue/fast
+LinkList/fast:
+	$(MAKE) -f src/CMakeFiles/LinkList.dir/build.make src/CMakeFiles/LinkList.dir/build
+.PHONY : LinkList/fast
+
+#=============================================================================
+# Target rules for targets named test_day
+
+# Build rule for target.
+test_day: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_day
+.PHONY : test_day
+
+# fast build rule for target.
+test_day/fast:
+	$(MAKE) -f src/CMakeFiles/test_day.dir/build.make src/CMakeFiles/test_day.dir/build
+.PHONY : test_day/fast
 
 #=============================================================================
 # Target rules for targets named array
@@ -137,17 +150,43 @@ array/fast:
 .PHONY : array/fast
 
 #=============================================================================
-# Target rules for targets named LinkList
+# Target rules for targets named queue
 
 # Build rule for target.
-LinkList: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 LinkList
-.PHONY : LinkList
+queue: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 queue
+.PHONY : queue
 
 # fast build rule for target.
-LinkList/fast:
-	$(MAKE) -f src/CMakeFiles/LinkList.dir/build.make src/CMakeFiles/LinkList.dir/build
-.PHONY : LinkList/fast
+queue/fast:
+	$(MAKE) -f src/CMakeFiles/queue.dir/build.make src/CMakeFiles/queue.dir/build
+.PHONY : queue/fast
+
+#=============================================================================
+# Target rules for targets named tcp_client_test
+
+# Build rule for target.
+tcp_client_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tcp_client_test
+.PHONY : tcp_client_test
+
+# fast build rule for target.
+tcp_client_test/fast:
+	$(MAKE) -f src/CMakeFiles/tcp_client_test.dir/build.make src/CMakeFiles/tcp_client_test.dir/build
+.PHONY : tcp_client_test/fast
+
+#=============================================================================
+# Target rules for targets named tcp_server_test
+
+# Build rule for target.
+tcp_server_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tcp_server_test
+.PHONY : tcp_server_test
+
+# fast build rule for target.
+tcp_server_test/fast:
+	$(MAKE) -f src/CMakeFiles/tcp_server_test.dir/build.make src/CMakeFiles/tcp_server_test.dir/build
+.PHONY : tcp_server_test/fast
 
 #=============================================================================
 # Target rules for targets named ArrayFunctions
@@ -188,6 +227,45 @@ QueueFunctions/fast:
 	$(MAKE) -f src/queue/CMakeFiles/QueueFunctions.dir/build.make src/queue/CMakeFiles/QueueFunctions.dir/build
 .PHONY : QueueFunctions/fast
 
+#=============================================================================
+# Target rules for targets named TestFunctions
+
+# Build rule for target.
+TestFunctions: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TestFunctions
+.PHONY : TestFunctions
+
+# fast build rule for target.
+TestFunctions/fast:
+	$(MAKE) -f src/TestDay/CMakeFiles/TestFunctions.dir/build.make src/TestDay/CMakeFiles/TestFunctions.dir/build
+.PHONY : TestFunctions/fast
+
+#=============================================================================
+# Target rules for targets named TcpClientFunctions
+
+# Build rule for target.
+TcpClientFunctions: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TcpClientFunctions
+.PHONY : TcpClientFunctions
+
+# fast build rule for target.
+TcpClientFunctions/fast:
+	$(MAKE) -f src/tcp_client/CMakeFiles/TcpClientFunctions.dir/build.make src/tcp_client/CMakeFiles/TcpClientFunctions.dir/build
+.PHONY : TcpClientFunctions/fast
+
+#=============================================================================
+# Target rules for targets named TcpServerFunctions
+
+# Build rule for target.
+TcpServerFunctions: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TcpServerFunctions
+.PHONY : TcpServerFunctions
+
+# fast build rule for target.
+TcpServerFunctions/fast:
+	$(MAKE) -f src/tcp_server/CMakeFiles/TcpServerFunctions.dir/build.make src/tcp_server/CMakeFiles/TcpServerFunctions.dir/build
+.PHONY : TcpServerFunctions/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -196,12 +274,18 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... queue"
-	@echo "... array"
 	@echo "... LinkList"
+	@echo "... test_day"
+	@echo "... array"
+	@echo "... queue"
+	@echo "... tcp_client_test"
+	@echo "... tcp_server_test"
 	@echo "... ArrayFunctions"
 	@echo "... LinkListFunctions"
 	@echo "... QueueFunctions"
+	@echo "... TestFunctions"
+	@echo "... TcpClientFunctions"
+	@echo "... TcpServerFunctions"
 .PHONY : help
 
 

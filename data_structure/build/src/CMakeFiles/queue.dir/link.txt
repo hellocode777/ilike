@@ -1,1 +1,1 @@
-g++     CMakeFiles/queue.dir/QueueMain.cpp.o  -o ../../bin/queue  -L/home/shuai/my_code/ilike/data_structure/lib -Wl,-rpath,/home/shuai/my_code/ilike/data_structure/lib ../../lib/libQueueFunctions.a 
+/usr/bin/c++   -std=c++11 -march=native -O3 -pthread   CMakeFiles/queue.dir/QueueMain.cpp.o  -o ../../bin/queue  -L/home/shuai/my_code/ilike/data_structure/lib -Wl,-rpath,/home/shuai/my_code/ilike/data_structure/lib ../../lib/libQueueFunctions.a 
