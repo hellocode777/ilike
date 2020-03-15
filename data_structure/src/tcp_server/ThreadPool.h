@@ -23,7 +23,10 @@ using namespace std;
 #define MIN_WAIT_TASK_NUM 10
 #define DEFAULT_THREAD_VARY 10
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3ef46fc021982cad38bdfa8963d5e1125a324f6d
 class ThreadPool {
 public:
 	ThreadPool();

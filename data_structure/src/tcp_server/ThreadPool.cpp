@@ -7,9 +7,12 @@
 
 #include "ThreadPool.h"
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 3ef46fc021982cad38bdfa8963d5e1125a324f6d
 void *threadpool_thread(void *threadpool);
 
 void *adjust_thread(void *threadpool)
@@ -94,7 +97,11 @@ void *threadpool_thread(void *threadpool)
 		task.function = pool->task_queue[pool->queue_front].function;
 		task.arg = pool->task_queue[pool->queue_front].arg;
 
+<<<<<<< HEAD
 		pool->queue_front = (pool->queue_front + 1) % pool->queue_max_size;
+=======
+		pool->queue_front = (pool->queue_front + 1) & pool->queue_max_size;
+>>>>>>> 3ef46fc021982cad38bdfa8963d5e1125a324f6d
 		pool->queue_size--;
 
 		pthread_cond_broadcast(&(pool->queue_not_full));
@@ -103,6 +110,7 @@ void *threadpool_thread(void *threadpool)
 
 		cout << "thread: " <<  (unsigned int)pthread_self() << "start working! " << endl;
 		pthread_mutex_lock(&(pool->thread_counter));
+<<<<<<< HEAD
 		pool->busy_thr_num++;
 		pthread_mutex_unlock(&(pool->thread_counter));
 		(*(task.function))(task.arg);
@@ -113,6 +121,10 @@ void *threadpool_thread(void *threadpool)
 		pool->busy_thr_num--;
 		pthread_mutex_unlock(&(pool->thread_counter));
 
+=======
+		pool->busy_thr_num--;
+		pthread_mutex_unlock(&(pool->thread_counter));
+>>>>>>> 3ef46fc021982cad38bdfa8963d5e1125a324f6d
 	}
 
 	pthread_exit(NULL);
@@ -236,13 +248,19 @@ int ThreadPool::threadpool_add(ThreadPool *pool, void*(*function)(void *arg), vo
 	}
 
 	pool->task_queue[pool->queue_rear].function = function;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3ef46fc021982cad38bdfa8963d5e1125a324f6d
 	pool->task_queue[pool->queue_rear].arg = arg;
 	pool->queue_rear = (pool->queue_rear + 1) % pool->queue_max_size;
 	pool->queue_size++;
 
 	pthread_cond_signal(&(pool->queue_not_empty));
+<<<<<<< HEAD
 	cout << "pthread_cond_signal"<< endl;
+=======
+>>>>>>> 3ef46fc021982cad38bdfa8963d5e1125a324f6d
 	pthread_mutex_unlock(&(pool->lock));
 
 	return 0;
