@@ -111,19 +111,34 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/queue.dir/rule:
-	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/queue.dir/rule
-.PHONY : src/CMakeFiles/queue.dir/rule
+src/CMakeFiles/LinkList.dir/rule:
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/LinkList.dir/rule
+.PHONY : src/CMakeFiles/LinkList.dir/rule
 
 # Convenience name for target.
-queue: src/CMakeFiles/queue.dir/rule
+LinkList: src/CMakeFiles/LinkList.dir/rule
 
-.PHONY : queue
+.PHONY : LinkList
 
 # fast build rule for target.
-queue/fast:
-	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f src/CMakeFiles/queue.dir/build.make src/CMakeFiles/queue.dir/build
-.PHONY : queue/fast
+LinkList/fast:
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f src/CMakeFiles/LinkList.dir/build.make src/CMakeFiles/LinkList.dir/build
+.PHONY : LinkList/fast
+
+# Convenience name for target.
+src/CMakeFiles/test_day.dir/rule:
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/test_day.dir/rule
+.PHONY : src/CMakeFiles/test_day.dir/rule
+
+# Convenience name for target.
+test_day: src/CMakeFiles/test_day.dir/rule
+
+.PHONY : test_day
+
+# fast build rule for target.
+test_day/fast:
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f src/CMakeFiles/test_day.dir/build.make src/CMakeFiles/test_day.dir/build
+.PHONY : test_day/fast
 
 # Convenience name for target.
 src/CMakeFiles/array.dir/rule:
@@ -141,19 +156,49 @@ array/fast:
 .PHONY : array/fast
 
 # Convenience name for target.
-src/CMakeFiles/LinkList.dir/rule:
-	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/LinkList.dir/rule
-.PHONY : src/CMakeFiles/LinkList.dir/rule
+src/CMakeFiles/queue.dir/rule:
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/queue.dir/rule
+.PHONY : src/CMakeFiles/queue.dir/rule
 
 # Convenience name for target.
-LinkList: src/CMakeFiles/LinkList.dir/rule
+queue: src/CMakeFiles/queue.dir/rule
 
-.PHONY : LinkList
+.PHONY : queue
 
 # fast build rule for target.
-LinkList/fast:
-	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f src/CMakeFiles/LinkList.dir/build.make src/CMakeFiles/LinkList.dir/build
-.PHONY : LinkList/fast
+queue/fast:
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f src/CMakeFiles/queue.dir/build.make src/CMakeFiles/queue.dir/build
+.PHONY : queue/fast
+
+# Convenience name for target.
+src/CMakeFiles/tcp_client_test.dir/rule:
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/tcp_client_test.dir/rule
+.PHONY : src/CMakeFiles/tcp_client_test.dir/rule
+
+# Convenience name for target.
+tcp_client_test: src/CMakeFiles/tcp_client_test.dir/rule
+
+.PHONY : tcp_client_test
+
+# fast build rule for target.
+tcp_client_test/fast:
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f src/CMakeFiles/tcp_client_test.dir/build.make src/CMakeFiles/tcp_client_test.dir/build
+.PHONY : tcp_client_test/fast
+
+# Convenience name for target.
+src/CMakeFiles/tcp_server_test.dir/rule:
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/tcp_server_test.dir/rule
+.PHONY : src/CMakeFiles/tcp_server_test.dir/rule
+
+# Convenience name for target.
+tcp_server_test: src/CMakeFiles/tcp_server_test.dir/rule
+
+.PHONY : tcp_server_test
+
+# fast build rule for target.
+tcp_server_test/fast:
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f src/CMakeFiles/tcp_server_test.dir/build.make src/CMakeFiles/tcp_server_test.dir/build
+.PHONY : tcp_server_test/fast
 
 ArrayMain.o: ArrayMain.cpp.o
 
@@ -236,6 +281,87 @@ QueueMain.cpp.s:
 	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f src/CMakeFiles/queue.dir/build.make src/CMakeFiles/queue.dir/QueueMain.cpp.s
 .PHONY : QueueMain.cpp.s
 
+TestMain.o: TestMain.cpp.o
+
+.PHONY : TestMain.o
+
+# target to build an object file
+TestMain.cpp.o:
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f src/CMakeFiles/test_day.dir/build.make src/CMakeFiles/test_day.dir/TestMain.cpp.o
+.PHONY : TestMain.cpp.o
+
+TestMain.i: TestMain.cpp.i
+
+.PHONY : TestMain.i
+
+# target to preprocess a source file
+TestMain.cpp.i:
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f src/CMakeFiles/test_day.dir/build.make src/CMakeFiles/test_day.dir/TestMain.cpp.i
+.PHONY : TestMain.cpp.i
+
+TestMain.s: TestMain.cpp.s
+
+.PHONY : TestMain.s
+
+# target to generate assembly for a file
+TestMain.cpp.s:
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f src/CMakeFiles/test_day.dir/build.make src/CMakeFiles/test_day.dir/TestMain.cpp.s
+.PHONY : TestMain.cpp.s
+
+tcp_client_main.o: tcp_client_main.cpp.o
+
+.PHONY : tcp_client_main.o
+
+# target to build an object file
+tcp_client_main.cpp.o:
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f src/CMakeFiles/tcp_client_test.dir/build.make src/CMakeFiles/tcp_client_test.dir/tcp_client_main.cpp.o
+.PHONY : tcp_client_main.cpp.o
+
+tcp_client_main.i: tcp_client_main.cpp.i
+
+.PHONY : tcp_client_main.i
+
+# target to preprocess a source file
+tcp_client_main.cpp.i:
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f src/CMakeFiles/tcp_client_test.dir/build.make src/CMakeFiles/tcp_client_test.dir/tcp_client_main.cpp.i
+.PHONY : tcp_client_main.cpp.i
+
+tcp_client_main.s: tcp_client_main.cpp.s
+
+.PHONY : tcp_client_main.s
+
+# target to generate assembly for a file
+tcp_client_main.cpp.s:
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f src/CMakeFiles/tcp_client_test.dir/build.make src/CMakeFiles/tcp_client_test.dir/tcp_client_main.cpp.s
+.PHONY : tcp_client_main.cpp.s
+
+tcp_server_main.o: tcp_server_main.cpp.o
+
+.PHONY : tcp_server_main.o
+
+# target to build an object file
+tcp_server_main.cpp.o:
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f src/CMakeFiles/tcp_server_test.dir/build.make src/CMakeFiles/tcp_server_test.dir/tcp_server_main.cpp.o
+.PHONY : tcp_server_main.cpp.o
+
+tcp_server_main.i: tcp_server_main.cpp.i
+
+.PHONY : tcp_server_main.i
+
+# target to preprocess a source file
+tcp_server_main.cpp.i:
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f src/CMakeFiles/tcp_server_test.dir/build.make src/CMakeFiles/tcp_server_test.dir/tcp_server_main.cpp.i
+.PHONY : tcp_server_main.cpp.i
+
+tcp_server_main.s: tcp_server_main.cpp.s
+
+.PHONY : tcp_server_main.s
+
+# target to generate assembly for a file
+tcp_server_main.cpp.s:
+	cd /home/shuai/my_code/ilike/data_structure/build && $(MAKE) -f src/CMakeFiles/tcp_server_test.dir/build.make src/CMakeFiles/tcp_server_test.dir/tcp_server_main.cpp.s
+.PHONY : tcp_server_main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -243,10 +369,13 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... queue"
-	@echo "... array"
-	@echo "... rebuild_cache"
 	@echo "... LinkList"
+	@echo "... rebuild_cache"
+	@echo "... test_day"
+	@echo "... array"
+	@echo "... queue"
+	@echo "... tcp_client_test"
+	@echo "... tcp_server_test"
 	@echo "... ArrayMain.o"
 	@echo "... ArrayMain.i"
 	@echo "... ArrayMain.s"
@@ -256,6 +385,15 @@ help:
 	@echo "... QueueMain.o"
 	@echo "... QueueMain.i"
 	@echo "... QueueMain.s"
+	@echo "... TestMain.o"
+	@echo "... TestMain.i"
+	@echo "... TestMain.s"
+	@echo "... tcp_client_main.o"
+	@echo "... tcp_client_main.i"
+	@echo "... tcp_client_main.s"
+	@echo "... tcp_server_main.o"
+	@echo "... tcp_server_main.i"
+	@echo "... tcp_server_main.s"
 .PHONY : help
 
 

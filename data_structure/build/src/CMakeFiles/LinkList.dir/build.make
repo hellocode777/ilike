@@ -60,15 +60,15 @@ include src/CMakeFiles/LinkList.dir/flags.make
 src/CMakeFiles/LinkList.dir/LinkListMain.cpp.o: src/CMakeFiles/LinkList.dir/flags.make
 src/CMakeFiles/LinkList.dir/LinkListMain.cpp.o: ../src/LinkListMain.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shuai/my_code/ilike/data_structure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/LinkList.dir/LinkListMain.cpp.o"
-	cd /home/shuai/my_code/ilike/data_structure/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinkList.dir/LinkListMain.cpp.o -c /home/shuai/my_code/ilike/data_structure/src/LinkListMain.cpp
+	cd /home/shuai/my_code/ilike/data_structure/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinkList.dir/LinkListMain.cpp.o -c /home/shuai/my_code/ilike/data_structure/src/LinkListMain.cpp
 
 src/CMakeFiles/LinkList.dir/LinkListMain.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LinkList.dir/LinkListMain.cpp.i"
-	cd /home/shuai/my_code/ilike/data_structure/build/src && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shuai/my_code/ilike/data_structure/src/LinkListMain.cpp > CMakeFiles/LinkList.dir/LinkListMain.cpp.i
+	cd /home/shuai/my_code/ilike/data_structure/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shuai/my_code/ilike/data_structure/src/LinkListMain.cpp > CMakeFiles/LinkList.dir/LinkListMain.cpp.i
 
 src/CMakeFiles/LinkList.dir/LinkListMain.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LinkList.dir/LinkListMain.cpp.s"
-	cd /home/shuai/my_code/ilike/data_structure/build/src && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shuai/my_code/ilike/data_structure/src/LinkListMain.cpp -o CMakeFiles/LinkList.dir/LinkListMain.cpp.s
+	cd /home/shuai/my_code/ilike/data_structure/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shuai/my_code/ilike/data_structure/src/LinkListMain.cpp -o CMakeFiles/LinkList.dir/LinkListMain.cpp.s
 
 # Object files for target LinkList
 LinkList_OBJECTS = \

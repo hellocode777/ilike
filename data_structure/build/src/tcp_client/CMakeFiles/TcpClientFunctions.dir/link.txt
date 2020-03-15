@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/libTcpClientFunctions.a  CMakeFiles/TcpClientFunctions.dir/TcpClient.cpp.o
+/usr/bin/ranlib ../../../lib/libTcpClientFunctions.a

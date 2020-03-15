@@ -13,8 +13,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.13.0-rc2/CMakeSystem.cmake"
   "../src/CMakeLists.txt"
   "../src/LinkList/CMakeLists.txt"
+  "../src/TestDay/CMakeLists.txt"
   "../src/array/CMakeLists.txt"
   "../src/queue/CMakeLists.txt"
+  "../src/tcp_client/CMakeLists.txt"
+  "../src/tcp_server/CMakeLists.txt"
   "/usr/local/cmake/Modules/CMakeCInformation.cmake"
   "/usr/local/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/local/cmake/Modules/CMakeCommonLanguageInclude.cmake"
@@ -47,14 +50,23 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "src/array/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/LinkList/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/queue/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/TestDay/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/tcp_client/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/tcp_server/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "src/CMakeFiles/queue.dir/DependInfo.cmake"
-  "src/CMakeFiles/array.dir/DependInfo.cmake"
   "src/CMakeFiles/LinkList.dir/DependInfo.cmake"
+  "src/CMakeFiles/test_day.dir/DependInfo.cmake"
+  "src/CMakeFiles/array.dir/DependInfo.cmake"
+  "src/CMakeFiles/queue.dir/DependInfo.cmake"
+  "src/CMakeFiles/tcp_client_test.dir/DependInfo.cmake"
+  "src/CMakeFiles/tcp_server_test.dir/DependInfo.cmake"
   "src/array/CMakeFiles/ArrayFunctions.dir/DependInfo.cmake"
   "src/LinkList/CMakeFiles/LinkListFunctions.dir/DependInfo.cmake"
   "src/queue/CMakeFiles/QueueFunctions.dir/DependInfo.cmake"
+  "src/TestDay/CMakeFiles/TestFunctions.dir/DependInfo.cmake"
+  "src/tcp_client/CMakeFiles/TcpClientFunctions.dir/DependInfo.cmake"
+  "src/tcp_server/CMakeFiles/TcpServerFunctions.dir/DependInfo.cmake"
   )

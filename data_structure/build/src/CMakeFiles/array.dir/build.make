@@ -60,15 +60,15 @@ include src/CMakeFiles/array.dir/flags.make
 src/CMakeFiles/array.dir/ArrayMain.cpp.o: src/CMakeFiles/array.dir/flags.make
 src/CMakeFiles/array.dir/ArrayMain.cpp.o: ../src/ArrayMain.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shuai/my_code/ilike/data_structure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/array.dir/ArrayMain.cpp.o"
-	cd /home/shuai/my_code/ilike/data_structure/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/array.dir/ArrayMain.cpp.o -c /home/shuai/my_code/ilike/data_structure/src/ArrayMain.cpp
+	cd /home/shuai/my_code/ilike/data_structure/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/array.dir/ArrayMain.cpp.o -c /home/shuai/my_code/ilike/data_structure/src/ArrayMain.cpp
 
 src/CMakeFiles/array.dir/ArrayMain.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/array.dir/ArrayMain.cpp.i"
-	cd /home/shuai/my_code/ilike/data_structure/build/src && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shuai/my_code/ilike/data_structure/src/ArrayMain.cpp > CMakeFiles/array.dir/ArrayMain.cpp.i
+	cd /home/shuai/my_code/ilike/data_structure/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shuai/my_code/ilike/data_structure/src/ArrayMain.cpp > CMakeFiles/array.dir/ArrayMain.cpp.i
 
 src/CMakeFiles/array.dir/ArrayMain.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/array.dir/ArrayMain.cpp.s"
-	cd /home/shuai/my_code/ilike/data_structure/build/src && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shuai/my_code/ilike/data_structure/src/ArrayMain.cpp -o CMakeFiles/array.dir/ArrayMain.cpp.s
+	cd /home/shuai/my_code/ilike/data_structure/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shuai/my_code/ilike/data_structure/src/ArrayMain.cpp -o CMakeFiles/array.dir/ArrayMain.cpp.s
 
 # Object files for target array
 array_OBJECTS = \

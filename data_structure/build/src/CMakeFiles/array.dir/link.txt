@@ -1,1 +1,1 @@
-g++     CMakeFiles/array.dir/ArrayMain.cpp.o  -o ../../bin/array  -L/home/shuai/my_code/ilike/data_structure/lib -Wl,-rpath,/home/shuai/my_code/ilike/data_structure/lib ../../lib/libArrayFunctions.a 
+/usr/bin/c++   -std=c++11 -march=native -O3 -pthread   CMakeFiles/array.dir/ArrayMain.cpp.o  -o ../../bin/array  -L/home/shuai/my_code/ilike/data_structure/lib -Wl,-rpath,/home/shuai/my_code/ilike/data_structure/lib ../../lib/libArrayFunctions.a 
