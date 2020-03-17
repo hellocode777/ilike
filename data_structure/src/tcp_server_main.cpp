@@ -9,7 +9,7 @@ void *process(void *arg)
 
 	int *i = (int *)arg;
 	cout << "thread==============================================: " <<  (unsigned int)pthread_self() << "on task: "<< *i  << endl;
-	sleep(1);
+	sleep(4);
 	cout <<  "task=====================================================: "<< *i   << "is end" << endl;
 
 	return NULL;
@@ -31,13 +31,11 @@ int main(int argc, char** argv)
 	{
 		num[i] = i;
 		cout <<  "add task!" << endl;
+		sleep(4);
 		thp1->threadpool_add(thp, process, (void*)&num[i]);
 	}
 	sleep(10);
 	thp->threadpool_destroy(thp);
 	return 0;
 
-
-
-    return 0;
 }
