@@ -11,8 +11,7 @@ void *process(void *arg)
 	cout << "thread==============================================: " <<  (unsigned int)pthread_self() << "on task: "<< *i  << endl;
 	sleep(1);
 	cout <<  "task=====================================================: "<< *i   << "is end" << endl;
-	sleep(1);
-	cout <<  "task: "  << "is end" << endl;
+
 	return NULL;
 }
 
@@ -26,6 +25,7 @@ int main(int argc, char** argv)
 	ThreadPool *thp1 = new ThreadPool;
 	ThreadPool *thp = thp1->threadPool_create(3, 100, 100);
 	cout <<  "pool inited!" << endl;
+
 	int num[20], i;
 	for (i = 0; i < 20; i++)
 	{

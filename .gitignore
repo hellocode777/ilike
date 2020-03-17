@@ -1,5 +1,8 @@
 HeadFirst/build
 HeadFirst/lib
+data_structure/build
+data_structure/lib
+data_structure/bin
 RemoteSystemsTempFiles
 .project
 .cproject
