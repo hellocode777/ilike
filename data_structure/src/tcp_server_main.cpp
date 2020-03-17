@@ -31,8 +31,9 @@ int main(int argc, char** argv)
 	{
 		num[i] = i;
 		cout <<  "add task!" << endl;
-		sleep(4);
+
 		thp1->threadpool_add(thp, process, (void*)&num[i]);
+		sleep(10);
 	}
 	sleep(10);
 	thp->threadpool_destroy(thp);
