@@ -114,28 +114,27 @@ void *threadpool_thread(void *threadpool)
 	pthread_exit(NULL);
 }
 
-int ThreadPool::threadpool_free(ThreadPool *pool)
+int ThreadPool::threadpool_free()
 {
-	if (pool == NULL)
+	if (this == NULL)
 	{
 		return -1;
 	}
-	if (pool->task_queue)
+	if (this->task_queue)
 	{
-		free(pool->task_queue);
+		free(this->task_queue);
 	}
-	if (pool->threads)
+	if (this->threads)
 	{
-		free(pool->threads);
-		pthread_mutex_lock(&(pool->lock));
-		pthread_mutex_destroy(&(pool->lock));
-		pthread_mutex_lock(&(pool->thread_counter));
-		pthread_mutex_destroy(&(pool->thread_counter));
-		pthread_cond_destroy(&(pool->queue_not_empty));
-		pthread_cond_destroy(&(pool->queue_not_full));
+		free(this->threads);
+		pthread_mutex_lock(&(this->lock));
+		pthread_mutex_destroy(&(this->lock));
+		pthread_mutex_lock(&(this->thread_counter));
+		pthread_mutex_destroy(&(this->thread_counter));
+		pthread_cond_destroy(&(this->queue_not_empty));
+		pthread_cond_destroy(&(this->queue_not_full));
 	}
-	free(pool);
-	pool = NULL;
+
 	return 0;
 }
 
@@ -149,11 +148,60 @@ int ThreadPool::is_thread_alive(pthread_t tid)
 	return 1;
 }
 
-ThreadPool::ThreadPool() {
-	// TODO Auto-generated constructor stub
+ThreadPool::ThreadPool(int min_thr_num, int max_thr_num, int queue_max_size)
+{
+	for (int i = 0; i < 1; i++)
+	{
+		this->min_thr_num = min_thr_num;
+		this->max_thr_num = max_thr_num;
+		this->busy_thr_num = 0;
+		this->live_thr_num = min_thr_num;
+		this->queue_size = 0;
+		this->queue_max_size = queue_max_size;
+		this->queue_front = 0;
+		this->queue_rear = 0;
+		this->shutdown = false;
+
+
+		if (pthread_mutex_init(&(this->lock), NULL) != 0
+				|| pthread_mutex_init(&(this->thread_counter), NULL) != 0
+				|| pthread_cond_init(&(this->queue_not_empty), NULL) != 0
+				|| pthread_cond_init(&(this->queue_not_full), NULL) != 0)
+		{
+			cout <<  "init the lock or cond fail!" << endl;
+			break;
+		}
+
+		this->threads = (pthread_t *)malloc(sizeof(pthread_t)*max_thr_num);
+		if (this->threads == NULL)
+		{
+			cout <<  "malloc threads fail!" << endl;
+			break;
+		}
+		memset(this->threads, 0, sizeof(pthread_t)*max_thr_num);
+
+		this->task_queue = (ThreadPoolTask *)malloc(sizeof(ThreadPoolTask)*queue_max_size);
+		if (this->task_queue == NULL)
+		{
+			cout <<  "malloc ThreadPoolTask fail!" << endl;
+			break;
+		}
+		memset(this->task_queue, 0, sizeof(ThreadPoolTask)*queue_max_size);
+
+		for (int i = 0; i < min_thr_num; i++)
+		{
+			pthread_create(&(this->threads[i]), NULL, threadpool_thread, (void *)this);
+			sleep(4);
+			//cout << "start thread: " <<  (unsigned int)pool->threads[i] << endl;
+		}
+		pthread_create(&(this->adjust_tid), NULL, adjust_thread, (void *)this);
+	}
+
+	//threadpool_free(this);
+
 
 }
-
+#if 0
 ThreadPool* ThreadPool::threadPool_create(int min_thr_num, int max_thr_num, int queue_max_size)
 {
 	ThreadPool* pool = new ThreadPool;
@@ -210,34 +258,34 @@ ThreadPool* ThreadPool::threadPool_create(int min_thr_num, int max_thr_num, int 
 	return NULL;
 
 }
-
-int ThreadPool::threadpool_add(ThreadPool *pool, void*(*function)(void *arg), void *arg)
+#endif
+int ThreadPool::threadpool_add(void*(*function)(void *arg), void *arg)
 {
-	pthread_mutex_lock(&(pool->lock));
+	pthread_mutex_lock(&(this->lock));
 
-	while((pool->queue_size == pool->queue_max_size) && (!pool->shutdown))
+	while((this->queue_size == this->queue_max_size) && (!this->shutdown))
 	{
-		pthread_cond_wait(&(pool->queue_not_full), &(pool->lock));
+		pthread_cond_wait(&(this->queue_not_full), &(this->lock));
 	}
-	if (pool->shutdown)
+	if (this->shutdown)
 	{
-		pthread_mutex_unlock(&(pool->lock));
-	}
-
-	if (pool->task_queue[pool->queue_rear].arg != NULL)
-	{
-		free(pool->task_queue[pool->queue_rear].arg);
-		pool->task_queue[pool->queue_rear].arg = NULL;
+		pthread_mutex_unlock(&(this->lock));
 	}
 
-	pool->task_queue[pool->queue_rear].function = function;
+	if (this->task_queue[this->queue_rear].arg != NULL)
+	{
+		free(this->task_queue[this->queue_rear].arg);
+		this->task_queue[this->queue_rear].arg = NULL;
+	}
 
-	pool->task_queue[pool->queue_rear].arg = arg;
-	pool->queue_rear = (pool->queue_rear + 1) % pool->queue_max_size;
-	pool->queue_size++;
+	this->task_queue[this->queue_rear].function = function;
 
-	pthread_cond_signal(&(pool->queue_not_empty));
-	pthread_mutex_unlock(&(pool->lock));
+	this->task_queue[this->queue_rear].arg = arg;
+	this->queue_rear = (this->queue_rear + 1) % this->queue_max_size;
+	this->queue_size++;
+
+	pthread_cond_signal(&(this->queue_not_empty));
+	pthread_mutex_unlock(&(this->lock));
 
 	return 0;
 
@@ -263,12 +311,27 @@ int ThreadPool::threadpool_destroy(ThreadPool *pool)
 		pthread_join(pool->threads[i], NULL);
 	}
 
-	threadpool_free(pool);
+	threadpool_free();
 
 	return 0;
 }
 
 ThreadPool::~ThreadPool() {
-	// TODO Auto-generated destructor stub
+	int i;
+
+	this->shutdown = true;
+
+	pthread_join(this->adjust_tid, NULL);
+
+	for (i = 0; this->live_thr_num; i++)
+	{
+		pthread_cond_broadcast(&(this->queue_not_empty));
+	}
+	for (i = 0; this->live_thr_num; i++)
+	{
+		pthread_join(this->threads[i], NULL);
+	}
+
+	threadpool_free();
 }
 

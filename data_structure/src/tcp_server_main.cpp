@@ -22,21 +22,31 @@ int main(int argc, char** argv)
 	//std::cout << __LINE__<< std::endl;
 	//tcp_server.do_receiveMsg();
 
-	ThreadPool *thp1 = new ThreadPool;
-	ThreadPool *thp = thp1->threadPool_create(3, 100, 100);
+	ThreadPool *thp = new ThreadPool(3, 100, 100);
 	cout <<  "pool inited!" << endl;
 
-	int num[20], i;
-	for (i = 0; i < 20; i++)
+	int num[5], i;
+	for (i = 0; i < 5; i++)
 	{
 		num[i] = i;
 		cout <<  "add task!" << endl;
 
-		thp1->threadpool_add(thp, process, (void*)&num[i]);
+		thp->threadpool_add(process, (void*)&num[i]);
 		sleep(10);
 	}
 	sleep(10);
-	thp->threadpool_destroy(thp);
+	for (i = 0; i < 5; i++)
+	{
+		num[i] = i;
+		cout <<  "add task!" << endl;
+
+		thp->threadpool_add(process, (void*)&num[i]);
+		sleep(10);
+	}
+	//thp->threadpool_destroy(thp);
+
+	delete thp;
+	thp = NULL;
 	return 0;
 
 }
