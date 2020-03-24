@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../../../lib/libTcpServerFunctions.a  CMakeFiles/TcpServerFunctions.dir/TcpServer.cpp.o CMakeFiles/TcpServerFunctions.dir/ThreadPool.cpp.o CMakeFiles/TcpServerFunctions.dir/ThreadPoolTask.cpp.o
-/usr/bin/ranlib ../../../lib/libTcpServerFunctions.a

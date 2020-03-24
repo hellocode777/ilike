@@ -1,1 +1,0 @@
-/usr/bin/c++   -std=c++11 -march=native -O3 -pthread   CMakeFiles/LinkList.dir/LinkListMain.cpp.o  -o ../../bin/LinkList  -L/home/shuai/my_code/ilike/data_structure/lib -Wl,-rpath,/home/shuai/my_code/ilike/data_structure/lib ../../lib/libLinkListFunctions.a 

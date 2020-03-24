@@ -11,6 +11,7 @@ void *threadpool_thread(void *threadpool);
 
 void *adjust_thread(void *threadpool)
 {
+
 	int i;
 	ThreadPool *pool = (ThreadPool *)threadpool;
 	while (!pool->shutdown)
