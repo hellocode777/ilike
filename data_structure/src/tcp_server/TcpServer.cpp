@@ -7,6 +7,20 @@
 
 #include "TcpServer.h"
 
+void accepter_cb(event_loop* loop, int fd, void *args)
+{
+    tcp_server* server = (tcp_server*)args;
+    server->do_accept();
+}
+
+void tcp_rcb(event_loop* loop, int fd, void *args)
+{
+	tcp_server* server = (tcp_server*)args;
+	server->handle_read();
+}
+
+
+
 void *accepter_cb(void *args)
 {
 	TcpServer* server = (TcpServer*)args;
@@ -15,8 +29,9 @@ void *accepter_cb(void *args)
 }
 
 
-TcpServer::TcpServer()
+TcpServer::TcpServer(event_loop* loop)
 {
+
 	struct sockaddr_in servaddr;
 	memset(&servaddr,0,sizeof(servaddr));
 	servaddr.sin_family = AF_INET;
@@ -28,9 +43,14 @@ TcpServer::TcpServer()
 	setsockopt( iServerFd, SOL_SOCKET, SO_REUSEADDR, ( const char* )&opend, sizeof( opend ) );
 	bind(iServerFd,(struct sockaddr*)&servaddr,sizeof(servaddr));
 
-	listen(iServerFd,10);
-	iEpollFd = ::epoll_create1(0);
+	_loop = loop;
 
+	listen(iServerFd,10);
+
+    //add accepter event
+    _loop->add_ioev(iServerFd, accepter_cb, EPOLLIN, this);
+
+/*
     int err;
 
     err = pthread_create(&pthNtid, NULL, accepter_cb, this);
@@ -39,22 +59,105 @@ TcpServer::TcpServer()
 
     pthread_detach(pthNtid);
     //std::cout << __LINE__<< std::endl;
+     * */
+
 }
 
 void TcpServer::do_accept()
 {
-	while (1)
+
+	std::cout << "do_accept" << std::endl;
+
+	int iClient = accept(iServerFd,(struct sockaddr*)NULL,NULL);
+
+	_loop->add_ioev(iClient, accepter_cb, EPOLLIN, this);
+
+
+/*
+	int connfd;
+   	bool conn_full = false;
+	while (true)
 	{
-		std::cout << "do_accept" << std::endl;
-		struct epoll_event event;
-		event.data.fd = accept(iServerFd,(struct sockaddr*)NULL,NULL);
-		event.events = EPOLLIN;
-		::epoll_ctl(iEpollFd, EPOLL_CTL_ADD, event.data.fd, &event);
+		connfd = ::accept(iServerFd,(struct sockaddr*)NULL,NULL);
+		if (connfd == -1)
+		{
+			if (errno == EINTR)
+			{
+				continue;
+			}
+			else if (errno == EMFILE)
+			{
+				conn_full = true;
+				::close(_reservfd);
+			}
+			else if (errno == EAGAIN)
+			{
+				break;
+			}
+			else
+			{
+				//exit_log("accept()");
+			}
+		}
+		else if (conn_full)
+		{
+			//::close(connfd);
+			//_reservfd = ::open("/tmp/reactor_accepter", O_CREAT | O_RDONLY | O_CLOEXEC, 0666);
+			//error_if(_reservfd == -1, "open()");
+		}
+		else
+		{
+			//connfd and max connections
+			int curr_conns;
+			//get_conn_num(curr_conns);
+			if (curr_conns >= _max_conns)
+			{
+				error_log("connection exceeds the maximum connection count %d", _max_conns);
+				::close(connfd);
+			}
+			else
+			{
+				assert(connfd < _conns_size);
+				if (_keepalive)
+				{
+					int opend = 1;
+					int ret = ::setsockopt(connfd, SOL_SOCKET, SO_KEEPALIVE, &opend, sizeof(opend));
+					error_if(ret < 0, "setsockopt SO_KEEPALIVE");
+				}
+
+				//multi-thread reactor model: round-robin a event loop and give message to it
+				if (_thd_pool)
+				{
+					thread_queue<queue_msg>* cq = _thd_pool->get_next_thread();
+					queue_msg msg;
+					msg.cmd_type = queue_msg::NEW_CONN;
+					msg.connfd = connfd;
+					cq->send_msg(msg);
+				}
+				else//register in self thread
+				{
+					tcp_conn* conn = conns[connfd];
+					if (conn)
+					{
+						conn->init(connfd, _loop);
+					}
+					else
+					{
+						conn = new tcp_conn(connfd, _loop);
+						exit_if(conn == NULL, "new tcp_conn");
+						conns[connfd] = conn;
+					}
+				}
+			}
+		}
 	}
+
+*/
+
 
 }
 
-void TcpServer::do_receiveMsg()
+void TcpServer::handle_read()
 {
 	int nfds;
 	char buff[MAXLINE];
@@ -62,12 +165,18 @@ void TcpServer::do_receiveMsg()
     //std::cout << __LINE__<< std::endl;
 	while (1)
 	{
+		sleep(2);
 		nfds = ::epoll_wait(iEpollFd, epollEvents, MAXEVENTS, 10);
+		std::cout << "nfds = " << nfds  << std::endl;
 		for (int i = 0; i < nfds; i++)
 		{
-			if (epollEvents[i].events & EPOLLIN)
+			if (iServerFd == epollEvents[i].data.fd & (epollEvents[i].events & EPOLLIN))
+			{
+				do_accept();
+			}
+			else if (epollEvents[i].events & EPOLLIN)
             {
-				memset(buff, 0, MAXLINE);
+				//memset(buff, 0, MAXLINE);
 				recv(epollEvents[i].data.fd, buff, MAXLINE, 0);
 				std::cout << "recv msg from client:" << buff << std::endl;
             }

@@ -17,6 +17,7 @@
 #include <sys/epoll.h>
 
 #include <pthread.h>
+#include "event_loop.h"
 
 
 #define MAXLINE 4096
@@ -24,16 +25,18 @@
 
 class TcpServer {
 public:
-	TcpServer();
+	TcpServer(event_loop* loop);
 	void do_accept();
 	//void *thr_fn(void *arg)
-	void do_receiveMsg();
+	void handle_read();
 	virtual ~TcpServer();
 
 
 private:
 	int iServerFd;
 	int iClientFd;
+
+	event_loop* _loop;
 
 	int iEpollFd;
     pthread_t pthNtid;

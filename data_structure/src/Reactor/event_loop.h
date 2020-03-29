@@ -3,7 +3,7 @@
 
 #include "event_base.h"
 #include "timer_queue.h"
-#include <sys/epoll.h>
+#include <epoll.h>
 #include <ext/hash_map>
 #include <ext/hash_set>
 

@@ -1,5 +1,6 @@
 #include <iostream>
 #include "tcp_server/TcpServer.h"
+#include "tcp_server/event_loop.h"
 #include "tcp_server/ThreadPool.h"
 
 using namespace std;
@@ -18,10 +19,12 @@ void *process(void *arg)
 
 int main(int argc, char** argv)
 {
-	//TcpServer  tcp_server;
-	//std::cout << __LINE__<< std::endl;
+	event_loop loop;
+	TcpServer  tcp_server(&loop);
+	loop.process_evs();
+	std::cout << __LINE__<< std::endl;
 	//tcp_server.do_receiveMsg();
-
+	/*
 	ThreadPool *thp = new ThreadPool(3, 100, 100);
 	cout <<  "pool inited!" << endl;
 
@@ -47,6 +50,7 @@ int main(int argc, char** argv)
 
 	delete thp;
 	thp = NULL;
+	*/
 	return 0;
 
 }
