@@ -19,9 +19,9 @@ void *process(void *arg)
 
 int main(int argc, char** argv)
 {
-	event_loop loop;
-	TcpServer  tcp_server(&loop);
-	loop.process_evs();
+	my_tcp_server::event_loop *loop = new my_tcp_server::event_loop;
+	my_tcp_server::TcpServer  tcp_server(loop);
+	loop->process_evs();
 	std::cout << __LINE__<< std::endl;
 	//tcp_server.do_receiveMsg();
 	/*

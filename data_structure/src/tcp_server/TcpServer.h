@@ -18,7 +18,7 @@
 
 #include <pthread.h>
 #include "event_loop.h"
-
+namespace my_tcp_server {
 
 #define MAXLINE 4096
 #define MAXEVENTS 10
@@ -28,7 +28,7 @@ public:
 	TcpServer(event_loop* loop);
 	void do_accept();
 	//void *thr_fn(void *arg)
-	void handle_read();
+	void handle_read(int fd);
 	virtual ~TcpServer();
 
 
@@ -42,5 +42,5 @@ private:
     pthread_t pthNtid;
 	struct epoll_event epollEvents[MAXEVENTS];
 };
-
+}
 #endif /* TCPSERVER_H_ */

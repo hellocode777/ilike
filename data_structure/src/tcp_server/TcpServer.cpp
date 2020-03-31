@@ -6,28 +6,28 @@
  */
 
 #include "TcpServer.h"
-
+namespace my_tcp_server {
 void accepter_cb(event_loop* loop, int fd, void *args)
 {
-    tcp_server* server = (tcp_server*)args;
+	TcpServer* server = (TcpServer*)args;
     server->do_accept();
 }
 
 void tcp_rcb(event_loop* loop, int fd, void *args)
 {
-	tcp_server* server = (tcp_server*)args;
-	server->handle_read();
+	TcpServer* server = (TcpServer*)args;
+	server->handle_read(fd);
 }
 
 
-
+/*
 void *accepter_cb(void *args)
 {
 	TcpServer* server = (TcpServer*)args;
     server->do_accept();
     return NULL;
 }
-
+*/
 
 TcpServer::TcpServer(event_loop* loop)
 {
@@ -48,7 +48,7 @@ TcpServer::TcpServer(event_loop* loop)
 	listen(iServerFd,10);
 
     //add accepter event
-    _loop->add_ioev(iServerFd, accepter_cb, EPOLLIN, this);
+	_loop->add_ioev(iServerFd, accepter_cb, EPOLLIN, this);
 
 /*
     int err;
@@ -70,7 +70,7 @@ void TcpServer::do_accept()
 
 	int iClient = accept(iServerFd,(struct sockaddr*)NULL,NULL);
 
-	_loop->add_ioev(iClient, accepter_cb, EPOLLIN, this);
+	_loop->add_ioev(iClient, tcp_rcb, EPOLLIN, this);
 
 
 /*
@@ -157,34 +157,18 @@ void TcpServer::do_accept()
 
 }
 
-void TcpServer::handle_read()
+void TcpServer::handle_read(int fd)
 {
 	int nfds;
 	char buff[MAXLINE];
-    //pthread_join(pthNtid,NULL);
-    //std::cout << __LINE__<< std::endl;
-	while (1)
-	{
-		sleep(2);
-		nfds = ::epoll_wait(iEpollFd, epollEvents, MAXEVENTS, 10);
-		std::cout << "nfds = " << nfds  << std::endl;
-		for (int i = 0; i < nfds; i++)
-		{
-			if (iServerFd == epollEvents[i].data.fd & (epollEvents[i].events & EPOLLIN))
-			{
-				do_accept();
-			}
-			else if (epollEvents[i].events & EPOLLIN)
-            {
-				//memset(buff, 0, MAXLINE);
-				recv(epollEvents[i].data.fd, buff, MAXLINE, 0);
-				std::cout << "recv msg from client:" << buff << std::endl;
-            }
-		}
-	}
+	memset(buff, 0, MAXLINE);
+	recv(fd, buff, MAXLINE, 0);
+	std::cout << "recv msg from client:" << buff << std::endl;
+
 }
 
 TcpServer::~TcpServer() {
 	// TODO Auto-generated destructor stub
 }
 
+}

@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 #include <stdio.h>//NULL
-
+namespace my_tcp_server {
 class event_loop;
 
 typedef void io_callback(event_loop* loop, int fd, void *args);//IO事件回调函数
@@ -17,7 +17,7 @@ struct io_event//注册的IO事件
     void* rcb_args;   //extra arguments for read_cb
     void* wcb_args;  //extra arguments for write_cb
 };
-
+}
 
 
 
