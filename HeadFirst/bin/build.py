@@ -1,4 +1,4 @@
-cd /home/shuai/my_code/ilike/HeadFirst/build
+cd /home/shuai/ilike/ilike/data_structure/build
 cmake ..
 make
-cd /home/shuai/my_code/ilike/HeadFirst/bin
+cd /home/shuai/ilike/ilike/data_structure/bin

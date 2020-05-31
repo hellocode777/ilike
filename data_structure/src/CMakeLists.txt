@@ -50,3 +50,10 @@ add_executable(tcp_server_test tcp_server_main.cpp )
 # 添加链接库
 target_link_libraries(tcp_server_test TcpServerFunctions)
 
+# 添加 memory_plan 子目录
+add_subdirectory(memory_plan)
+# 指定生成目标 
+add_executable(memory_plan_main memory_plan_main.cpp )
+# 添加链接库
+target_link_libraries(memory_plan_main MemoryPlanFunctions)
+

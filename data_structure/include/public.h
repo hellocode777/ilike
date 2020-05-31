@@ -15,6 +15,7 @@
 #define PUBLIC_H
 #include <stdio.h>
 #include <stdlib.h>
+#include <iostream>
 
 #define TRUE        1
 #define FALSE       0
