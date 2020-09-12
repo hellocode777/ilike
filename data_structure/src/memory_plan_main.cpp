@@ -4,7 +4,7 @@ using namespace std;
 
 int main(int argc, char** argv)
 {
-	CMemoryPlan  myPlan(26, 96, 6);
+	CMemoryPlan  myPlan(30, 96, 6);
 	myPlan.MakePlan();
     return 0;
 }

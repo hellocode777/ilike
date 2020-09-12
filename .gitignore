@@ -6,3 +6,11 @@ data_structure/bin
 RemoteSystemsTempFiles
 .project
 .cproject
+.metadata/
+.settings/RemoteSystemsTempFiles/
+bash.md
+git.md
+index.html
+
+cmake_study/Step1/Step1_build
+cmake_study/Step2/Step2_build

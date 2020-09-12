@@ -113,8 +113,11 @@ Status StackTraverse(SqStack S, Status(*visit)(ElemType e))
 
 int main(int argc, char** argv) 
 {
+
     SqStack s;
+    
     ElemType e;
+    e.
     InitStack(s);
     Push(s, 0);
     Push(s, 1);
