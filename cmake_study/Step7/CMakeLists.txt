@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 # set the project name and version
-project(Tutorial VERSION 1.0)
+project(Tutorial VERSION 3.10)
 
 # specify the C++ standard
 set(CMAKE_CXX_STANDARD 11)
@@ -68,7 +68,11 @@ do_test(Tutorial 0.0001 "0.0001 is 0.01")
 
 
 
-
+include(InstallRequiredSystemLibraries)
+set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/License.txt")
+set(CPACK_PACKAGE_VERSION_MAJOR "${Tutorial_VERSION_MAJOR}")
+set(CPACK_PACKAGE_VERSION_MINOR "${Tutorial_VERSION_MINOR}")
+include(CPack)
 
 
 
