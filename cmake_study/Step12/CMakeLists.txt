@@ -15,14 +15,22 @@ if(USE_MYMATH)
   list(APPEND EXTRA_LIBS MathFunctions)
 endif()
 
+set(CMAKE_DEBUG_POSTFIX d)
+
+add_library(tutorial_compiler_flags INTERFACE)
+
 # add the executable
 add_executable(Tutorial tutorial.cxx)
+
+set_target_properties(Tutorial PROPERTIES DEBUG_POSTFIX ${CMAKE_DEBUG_POSTFIX})
+
+target_link_libraries(Tutorial PUBLIC MathFunctions)
 
 # configure a header file to pass some of the CMake settings
 # to the source code
 configure_file(TutorialConfig.h.in TutorialConfig.h)
 
-target_link_libraries(Tutorial PUBLIC ${EXTRA_LIBS})
+# target_link_libraries(Tutorial PUBLIC ${EXTRA_LIBS})
 
 # add the binary tree to the search path for include files
 # so that we will find TutorialConfig.h
@@ -73,6 +81,9 @@ set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/License.txt")
 set(CPACK_PACKAGE_VERSION_MAJOR "${Tutorial_VERSION_MAJOR}")
 set(CPACK_PACKAGE_VERSION_MINOR "${Tutorial_VERSION_MINOR}")
 include(CPack)
+
+
+
 
 
 

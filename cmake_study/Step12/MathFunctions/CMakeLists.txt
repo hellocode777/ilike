@@ -18,3 +18,5 @@ add_custom_command(
   DEPENDS MakeTable
   )
   
+set_property(TARGET MathFunctions PROPERTY VERSION "1.0.0")
+set_property(TARGET MathFunctions PROPERTY SOVERSION "1")
