@@ -11,11 +11,14 @@
 //#define NDEBUG
 //can not write in .cpp, don`t know why
 #include <iostream>
-class test1 {
+class test {
 public:
-	test1();
-	void test();
-	virtual ~test1();
+	test();
+	virtual ~test();
+
+	void test1();
+	void test2();
+	void test3();
 };
 
 #endif /* TEST1_H_ */
