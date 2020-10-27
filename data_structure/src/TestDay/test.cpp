@@ -69,6 +69,16 @@ public:
 		foo = std::move(a);
 	}
 
+	int& get()
+	{
+		return *foo;
+	}
+
+	std::unique_ptr<int>& getPtr()
+	{
+		return foo;
+	}
+
 	std::unique_ptr<int> foo;
 };
 
@@ -85,7 +95,10 @@ void test::test3()
 	  Student stu;
 	  stu.set(foo);
 
-	  std::cout << *stu.foo << '\n';
+	  //int a = std::move(stu.get());
+	  bar = std::move(stu.getPtr());
+          //此时stu.foo为null，因为资源被移走
+	  //std::cout << *stu.foo << " "; //<< a << '\n';
 
 
 	  //bar = std::move(foo);                       // using std::move
