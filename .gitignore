@@ -11,7 +11,9 @@ RemoteSystemsTempFiles
 bash.md
 git.md
 index.html
+.vscode/
 
+Building an Installer
 cmake_study/Step1/Step1_build
 cmake_study/Step2/Step2_build
 cmake_study/Step3/Step3_build
