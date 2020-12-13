@@ -1,5 +1,6 @@
 # 增加一个可执行的二进制
 add_definitions(-std=c++11)
+add_definitions("-Wall -g")
 
 # 添加 ObserverPattern 子目录
 add_subdirectory(array)
