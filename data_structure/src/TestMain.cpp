@@ -6,5 +6,6 @@ int main(int argc, char** argv)
 {
 	test1  test;
 	test.test();
+	test.testSmartPtr();
     return 0;
 }

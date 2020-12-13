@@ -15,6 +15,7 @@ class test1 {
 public:
 	test1();
 	void test();
+	void testSmartPtr();
 	virtual ~test1();
 };
 

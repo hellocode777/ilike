@@ -21,3 +21,5 @@ cmake_study/Step6/Step6_build
 cmake_study/Step7/Step7_build
 cmake_study/Step8/Step8_build
 cmake_study/Step12/Step12_build
+.project_alt.json
+.vscode/
