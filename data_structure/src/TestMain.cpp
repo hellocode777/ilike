@@ -10,5 +10,7 @@ int main(int argc, char** argv)
 	test.test2();
 
 	test.test3();
+	test.testSmartPtr();
+	test.testDefault();
     return 0;
 }

@@ -112,3 +112,55 @@ void test::test3()
 
 }
 
+void test::testSmartPtr()
+{
+    std::shared_ptr<int> intPtr = std::make_shared<int>(10);
+    std::cout<< "inPtr=" << *intPtr << std::endl;
+    int* intP = intPtr.get();
+    //delete intP;
+    std::cout<< "inPtr=" << *intPtr.get() << std::endl;
+    std::cout<< "inPtr=" << *intPtr << std::endl;
+}
+
+//test = default
+class Student1
+{
+public:
+	Student1() = default;
+	Student1(std::string name):m_name(name) {}
+//private:
+	std::string m_name;
+};
+void test::testDefault()
+{
+    std::cout<< "void test::testDefault()" << std::endl;
+
+	Student1 stu("shuai");
+	Student1 stu1(stu);
+	// here will fail, we need add default below in class.
+
+
+    std::cout<< "stu.m_name=" << stu1.m_name << std::endl;
+}
+
+constexpr int add(int i)
+{
+	return i * 9;
+
+}
+
+void test::testMyInline()
+{
+	MyInline myInline;
+	myInline.myPrint();
+
+	// test constexpr
+	const int a = 10;
+	constexpr int b = a;
+	constexpr int c = b;
+	int sum1 = add(a);
+	constexpr int sum = add(a);
+	int i = 10;
+	// failed, because i is not constexpr
+	//constexpr int sum1 = add(i);
+}
