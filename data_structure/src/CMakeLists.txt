@@ -58,3 +58,16 @@ add_executable(memory_plan_main memory_plan_main.cpp )
 # 添加链接库
 target_link_libraries(memory_plan_main MemoryPlanFunctions)
 
+# 添加 my_easy_server 子目录
+add_subdirectory(my_easy_server)
+# 指定生成目标 
+add_executable(my_easy_server_main my_easy_server_main.cpp )
+# 添加链接库
+target_link_libraries(my_easy_server_main MyEasyServerFunctions)
+
+# 添加 my_easy_client 子目录
+add_subdirectory(my_easy_client)
+# 指定生成目标 
+add_executable(my_easy_client_main my_easy_client_main.cpp )
+# 添加链接库
+target_link_libraries(my_easy_client_main MyEasyClientFunctions)

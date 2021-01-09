@@ -11,6 +11,22 @@
 //#define NDEBUG
 //can not write in .cpp, don`t know why
 #include <iostream>
+
+
+class MyInline{
+public:
+	inline void myPrint();
+
+private:
+	std::string m_name;
+
+};
+
+inline void MyInline::myPrint()
+{
+	std::cout << "myPring" << std::endl;
+}
+
 class test {
 public:
 	test();
@@ -19,14 +35,11 @@ public:
 	void test1();
 	void test2();
 	void test3();
+	void testSmartPtr();
+
+	void testDefault();
+
+	void testMyInline();
 };
 
 #endif /* TEST1_H_ */
-
-12345
-
-123456
-
-1234567
-
-12345678
