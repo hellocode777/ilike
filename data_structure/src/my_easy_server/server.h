@@ -11,9 +11,24 @@
 #include<netinet/in.h>
 #include<arpa/inet.h>
 
+#include <sys/epoll.h>
+
 #include<iostream>
 
 #define MAXLINE 4096
+#define MAXFD 4096
 
-void myServer();
+
+class Server
+{
+public:
+    Server();
+    ~Server();
+    void run();
+private:
+    int itsListenFd;
+    int itsEpollFd;
+
+    struct epoll_event itsEpollEvents[MAXFD];
+};
 #endif

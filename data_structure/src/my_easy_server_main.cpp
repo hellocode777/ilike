@@ -2,6 +2,7 @@
 
 int main()
 {
-    myServer();
+    Server server;
+    server.run();
     return 0;
 }
