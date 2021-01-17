@@ -1,9 +1,9 @@
-#ifndef SERVER_H
-#define SERVER_H
+#ifndef READ_HANDLER_H
+#define READ_HANDLER_H
 
-#include "read_handler.h"
 #include "../support/event_handler.h"
 #include "../support/reactor.h"
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -21,17 +21,17 @@
 #define MAXLINE 4096
 #define MAXFD 4096
 
-using ClientMap = std::map<int, Event_handler*>;
-class Server : public Event_handler
+class Server;
+class Read_Handler : public Event_handler
 {
 public:
-    Server(Reactor* reactor);
+    Read_Handler(Reactor* reactor, Server* handler);
     void handle_event() override;
     void get_handle() override;
-    void moveClient(int fd);
 private:
-    int itsListenFd;
     Reactor* itsReator;
-    ClientMap itsClientMap;
+    Server* itsServer;
 };
+
+
 #endif

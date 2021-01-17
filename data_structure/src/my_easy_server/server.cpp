@@ -1,12 +1,10 @@
 #include "server.h"
 
-Server::Server()
+Server::Server(Reactor* reactor)
 {
-    itsEpollFd = epoll_create(MAXFD + 1);
-    if (itsEpollFd <= 0)
-    {
-        std::cout << "epoll_create() failed!" << std::endl;
-    }
+
+    std::cout << "nfds1" << std::endl;
+    itsReator = reactor;
 
     struct sockaddr_in servaddr;
     if ((itsListenFd = socket(AF_INET, SOCK_STREAM, 0)) == -1 )
@@ -32,62 +30,40 @@ Server::Server()
         exit(0); 
     } 
 
-    epoll_event event;
-    event.data.fd = itsListenFd;
-    event.events = EPOLL_CTL_ADD;
-    if (epoll_ctl(itsEpollFd, EPOLL_CTL_ADD, itsListenFd, &event) < 0)
+    itsFd = itsListenFd;
+    std::cout << "nfdsr" << std::endl;
+    itsReator->register_handler(Event_Type::ACCEPT_EVENT, this);
+    std::cout << "nfdse" << std::endl;
+}
+
+void Server::handle_event()
+{
+    struct sockaddr_in clientAddr;
+    unsigned int len = sizeof(clientAddr); 
+    int connfd;
+    if ((connfd = accept(itsListenFd, (struct sockaddr*)&clientAddr, &len)) == -1)
+    { 
+        printf("accept socket error: %s(errno: %d)",strerror(errno),errno);
+    } 
+    std::cout << "the address of client is " << inet_ntoa(clientAddr.sin_addr) << " port is " << clientAddr.sin_port << std::endl;
+    Event_handler* client = new Read_Handler(itsReator, this);
+    client->itsFd = connfd;
+    itsReator->register_handler(Event_Type::READ_EVENT, client);
+    itsClientMap.insert(std::make_pair(connfd, client));
+}
+
+void Server::moveClient(int fd)
+{
+    auto iter = itsClientMap.find(fd);
+    if (iter != itsClientMap.end())
     {
-        std::cout << "event add failed!" << std::endl;
+        delete iter->second;
+        iter->second = NULL;
+        itsClientMap.erase(fd);
     }
 }
 
-void Server::run()
+void Server::get_handle()
 {
-    printf("======waiting for client's request======\n");
-    int connfd;
-    epoll_event ev;
-    epoll_event events[MAXFD + 1];
-    while(1)
-    {
-        int nfds = epoll_wait(itsEpollFd, events, MAXFD + 1, 100);
-        //sleep(1);
-        for (int i = 0; i < nfds; i++)
-        {
-            //sleep(1);
-            if (events[i].data.fd == itsListenFd)
-            {
-                struct sockaddr_in clientAddr;
-                unsigned int len = sizeof(clientAddr); 
-                if ((connfd = accept(itsListenFd, (struct sockaddr*)&clientAddr, &len)) == -1)
-                { 
-                    printf("accept socket error: %s(errno: %d)",strerror(errno),errno);
-                    continue; 
-                } 
-                std::cout << "the address of client is " << inet_ntoa(clientAddr.sin_addr) << " port is " << clientAddr.sin_port << std::endl;
-                ev.data.fd = connfd;
-                ev.events = EPOLLIN;
-                epoll_ctl(itsEpollFd, EPOLL_CTL_ADD, connfd, &ev);
-            }
-            else if (events[i].events & EPOLLIN)
-            {
-                int n;
-                int clientFd = events[i].data.fd;
-                char buff[4096];
-                n = recv(clientFd, buff, MAXLINE, 0); 
-                if (n <= 0)
-                {
-                    close(clientFd);
-                    epoll_ctl(itsEpollFd, EPOLL_CTL_DEL, clientFd, &events[i]);
-                    continue;
-                }
-                buff[n] = '\0'; 
-                printf("recv msg from client: %s\n", buff); 
-            }
-        }
-    } 
-}
 
-Server::~Server()
-{
-    close(itsListenFd);
 }

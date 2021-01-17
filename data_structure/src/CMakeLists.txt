@@ -60,10 +60,18 @@ target_link_libraries(memory_plan_main MemoryPlanFunctions)
 
 # 添加 my_easy_server 子目录
 add_subdirectory(my_easy_server)
+add_subdirectory(support)
 # 指定生成目标 
 add_executable(my_easy_server_main my_easy_server_main.cpp )
 # 添加链接库
-target_link_libraries(my_easy_server_main MyEasyServerFunctions)
+target_link_libraries(my_easy_server_main MyEasyServerFunctions reactor)
+
+# 添加 my_easy_server 子目录
+# add_subdirectory(support)
+# 指定生成目标 
+# add_executable(my_easy_server_main my_easy_server_main.cpp )
+# 添加链接库
+# target_link_libraries(my_easy_server_main reactor)
 
 # 添加 my_easy_client 子目录
 add_subdirectory(my_easy_client)
