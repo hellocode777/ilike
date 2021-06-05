@@ -2,12 +2,11 @@
 #define RB_TREE_ITERATOR_H
 
 #include "rb_tree_node.h"
-// #include <stl_iterator_base_types.h>
 
 struct __rb_tree_base_iterator
 {
     typedef __rb_tree_node_base::base_ptr base_ptr;
-    typedef bidirectional_iterator_tag iterator_category;
+    typedef std::bidirectional_iterator_tag iterator_category;
     typedef ptrdiff_t difference_type;
 
     base_ptr node;

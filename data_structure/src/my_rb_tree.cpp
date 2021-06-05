@@ -1,4 +1,4 @@
-#include "rb_tree/rb_tree_node.h"
+#include "rb_tree/rb_tree.h"
 int main()
 {
     std::cout << "ZZSS" << std::endl;
