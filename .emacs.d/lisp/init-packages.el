@@ -20,6 +20,7 @@
 			counsel
 			smartparens
 			fzf
+<<<<<<< HEAD
 			ccls
 			eglot
 			lsp-mode
@@ -34,6 +35,8 @@
 			which-key
 			helm-xref
 			dap-mode
+=======
+>>>>>>> 593e6c26d787381d2bab783bd242301a5c698cbb
 			) "Default packages")
 
 (setq package-selected-packages zzss/packages)
@@ -53,6 +56,11 @@
 
 (global-company-mode)
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 593e6c26d787381d2bab783bd242301a5c698cbb
 (require 'evil-leader)
 (global-evil-leader-mode)
 
@@ -62,6 +70,10 @@
 (require 'hungry-delete)
 (global-hungry-delete-mode)
 
+<<<<<<< HEAD
+=======
+(require 'smartparens-config)
+>>>>>>> 593e6c26d787381d2bab783bd242301a5c698cbb
 (smartparens-global-mode t)
 
 (ivy-mode)
@@ -70,10 +82,13 @@
 
 (load-theme 'monokai t)
 
+<<<<<<< HEAD
 (global-flycheck-mode)
 
 (helm-mode)
 
 (which-key-mode)
 
+=======
+>>>>>>> 593e6c26d787381d2bab783bd242301a5c698cbb
 (provide 'init-packages)
