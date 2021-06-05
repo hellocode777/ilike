@@ -1,4 +1,3 @@
-
 (setq ring-bell-function 'ignore)
 
 (global-auto-revert-mode t)
