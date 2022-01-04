@@ -37,8 +37,11 @@ void TcpClient::do_send_msg()
     {
     	memset(sendline, 0, MAXLINE);
 		std::cout << "send msg to server:" << std::endl;
-		fgets(sendline,MAXLINE,stdin);
-		send(iClientFd,sendline,strlen(sendline),0);
+		fgets(sendline, MAXLINE, stdin);
+		send(iClientFd, sendline, strlen(sendline), 0);
+        char recvline[MAXLINE];
+        recv(iClientFd, recvline, MAXLINE, 0);
+		std::cout << "recv msg from server:" << recvline << std::endl;
     }
 
 }

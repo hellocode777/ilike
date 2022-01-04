@@ -86,3 +86,10 @@ add_subdirectory(rb_tree)
 add_executable(my_rb_tree my_rb_tree.cpp )
 # 添加链接库
 target_link_libraries(my_rb_tree MyRbTree)
+
+# 添加 my_rb_tree 子目录
+add_subdirectory(leet_code)
+# 指定生成目标 
+add_executable(leet_code_main leet_code_main.cpp )
+# 添加链接库
+target_link_libraries(leet_code_main LeetCodeSolution)

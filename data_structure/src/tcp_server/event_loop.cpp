@@ -61,12 +61,13 @@ void event_loop::process_evs()
         //handle file event
         ioev_it it;
         int nfds = ::epoll_wait(_iEpollFd, _fired_evs, MAXEVENTS, 10);
-        for (int i = 0;i < nfds; ++i)
+        for (int i = 0; i < nfds; ++i)
         {
             it = _io_evs.find(_fired_evs[i].data.fd);
             assert(it != _io_evs.end());
             io_event* ev = &(it->second);
 
+            std::cout << __FILE__ << " ZZSS =" << _fired_evs[i].events << std::endl;
             if (_fired_evs[i].events & EPOLLIN)
             {
                 void *args = ev->rcb_args;

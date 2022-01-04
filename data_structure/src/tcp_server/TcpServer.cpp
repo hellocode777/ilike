@@ -6,6 +6,7 @@
  */
 
 #include "TcpServer.h"
+#include <sys/socket.h>
 namespace my_tcp_server {
 void accepter_cb(event_loop* loop, int fd, void *args)
 {
@@ -163,6 +164,7 @@ void TcpServer::handle_read(int fd)
 	char buff[MAXLINE];
 	memset(buff, 0, MAXLINE);
 	recv(fd, buff, MAXLINE, 0);
+    send(fd, buff, MAXLINE, 0);
 	std::cout << "recv msg from client:" << buff << std::endl;
 
 }

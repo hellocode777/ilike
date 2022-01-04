@@ -17,6 +17,7 @@
 #include <stdlib.h>
 #include <iostream>
 
+
 #define TRUE        1
 #define FALSE       0
 #define OK          1
@@ -26,6 +27,7 @@
 typedef int Status;
 typedef int ElemType;
 
+using namespace std;
 
 #endif /* PUBLIC_H */
 
