@@ -93,3 +93,10 @@ add_subdirectory(leet_code)
 add_executable(leet_code_main leet_code_main.cpp )
 # 添加链接库
 target_link_libraries(leet_code_main LeetCodeSolution)
+
+# 添加 data_structure 子目录
+add_subdirectory(data_structure)
+# 指定生成目标 
+add_executable(data_structure_main data_structure_main.cpp )
+# 添加链接库
+target_link_libraries(data_structure_main DataStructure)
