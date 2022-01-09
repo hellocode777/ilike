@@ -1,42 +1,32 @@
 #include "my_list.h"
+#include <algorithm>
 
 MyList::MyList() {
-    sq_list.elem = new int(LIST_INIT_SIZE * sizeof(ElemType));
-    sq_list.length = 0;
-    sq_list.listsize = LIST_INIT_SIZE;
 }
 
 
 Status MyList::ClearList() {
-    if (!sq_list.elem)
-        return FALSE;
-    sq_list.length = 0;
+    sq_list.clear();
     return OK;
 }
 
 Status MyList::ListEmpty() {
-    if (!sq_list.elem)
-        return FALSE;
-    if (sq_list.length)
-    {
-        return FALSE;
-    }
-    return OK;
+    return sq_list.empty();
 }
 
 int MyList::ListLength() {
-    return sq_list.length;
+    return sq_list.size();
 }
 
 Status MyList::GetElem(int i, ElemType &e) {
-    if (!sq_list.elem || (i < 0 || i > ListLength() - 1))
+    if (i < 0 || i > ListLength() - 1)
         return FALSE;
-    e = sq_list.elem[i];
+    e = sq_list[i];
     return OK;
 }
 
 Status MyList::PriorElem(ElemType cur_e, ElemType &pre_e) {
-    if (!sq_list.elem)
+    if (ListEmpty())
         return FALSE;
   
     ElemType e;
@@ -61,7 +51,7 @@ Status MyList::PriorElem(ElemType cur_e, ElemType &pre_e) {
 }
 
 Status MyList::NextElem(ElemType cur_e, ElemType &next_e) {
-    if (!sq_list.elem)
+    if (ListEmpty())
         return FALSE;
   
     ElemType e;
@@ -87,23 +77,22 @@ Status MyList::NextElem(ElemType cur_e, ElemType &next_e) {
 
 // 需要思考
 Status MyList::ListInsert(int i, ElemType e) {
-    if (!sq_list.elem || (i < 0 || i > ListLength()))
+    if ((i < 0 || i > ListLength()))
         return FALSE;
 
     if (ListLength() == i)
     {
-        sq_list.elem[i] = e;
-        sq_list.length += 1;
+        sq_list.push_back(e);
         return OK;
     }
     int j = ListLength() - 1;
+    sq_list.push_back(0);
     while (true)
     {
-        sq_list.elem[j + 1] = sq_list.elem[j];
+        sq_list[j + 1] = sq_list[j];
         if (j == i)
         {
-            sq_list.elem[j] = e;
-            sq_list.length += 1;
+            sq_list[j] = e;
             break;
         }
         j--;
@@ -115,7 +104,7 @@ Status MyList::FindElem(int &i, ElemType e) {
 
     for (int j = 0; j < ListLength(); j++)
     {
-        if (e == sq_list.elem[j])
+        if (e == sq_list[j])
         {
             i = j;
             return OK;
@@ -130,7 +119,7 @@ void MyList::Print() {
   
     for (int i = 0; i < ListLength(); i++)
     {
-        cout << sq_list.elem[i];
+        cout << sq_list[i];
         if (i != ListLength() - 1)
         {
             cout << "->";
@@ -139,24 +128,30 @@ void MyList::Print() {
     cout << endl;
 }
 
-MyList::~MyList() {
-    cout << __FUNCTION__ << endl;
-    //delete sq_list.elem;
-    sq_list.elem = NULL;
-    sq_list.length = 0;
-    sq_list.listsize = 0;
+Status MyList::Sort() {
+    sort(sq_list.begin(), sq_list.end());
+    return OK;
 }
+
+SqList MyList::GetList() {
+    return sq_list;
+}
+
+MyList::~MyList() {
+}
+
 void TestList::test_my_list() {
     cout << __FUNCTION__ << endl;
     MyList myList;
     myList.ListInsert(0, 2);
     myList.ListInsert(1, 26);
-    myList.ListInsert(2, 36);
-    myList.ListInsert(1, 56);
-    myList.ListInsert(1, 56);
-    myList.ListInsert(1, 56);
-    myList.ListInsert(1, 56);
-    myList.ListInsert(1, 56);
+    myList.ListInsert(2, 6);
+    myList.ListInsert(1, 5);
+    myList.ListInsert(1, 4);
+    myList.ListInsert(1, 3);
+    myList.ListInsert(1, 2);
+    myList.ListInsert(1, 1);
+    myList.Sort();
     myList.Print();
 
     ElemType e = 0;
@@ -188,6 +183,7 @@ void TestList::test_my_union_list() {
     myList.ListInsert(2, 3);
     myList.ListInsert(3, 5);
     myList.ListInsert(4, 5);
+    myList.Sort();
     myList.Print();
 
     MyList myList1;
@@ -196,9 +192,11 @@ void TestList::test_my_union_list() {
     myList1.ListInsert(2, 10);
     myList1.ListInsert(3, 29);
     myList1.ListInsert(4, 39);
+    myList1.Sort();
     myList1.Print();
 
     UnionList(myList, myList1);
+    myList.Sort();
     myList.Print();
 
     cout << "----------end-------------" << endl << endl;
