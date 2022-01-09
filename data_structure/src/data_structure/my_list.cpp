@@ -31,7 +31,7 @@ int MyList::ListLength() {
 Status MyList::GetElem(int i, ElemType &e) {
     if (!sq_list.elem || (i < 0 || i > ListLength() - 1))
         return FALSE;
-    e = *(sq_list.elem + i);
+    e = sq_list.elem[i];
     return OK;
 }
 
@@ -92,21 +92,114 @@ Status MyList::ListInsert(int i, ElemType e) {
 
     if (ListLength() == i)
     {
-        *(sq_list.elem + i) = e;
+        sq_list.elem[i] = e;
         sq_list.length += 1;
         return OK;
     }
     int j = ListLength() - 1;
     while (true)
     {
-        *(sq_list.elem + j + 1) = *(sq_list.elem + j); 
+        sq_list.elem[j + 1] = sq_list.elem[j];
         if (j == i)
         {
-            *(sq_list.elem + j) = e;
+            sq_list.elem[j] = e;
             sq_list.length += 1;
             break;
         }
         j--;
     }
     return OK;
+}
+
+Status MyList::FindElem(int &i, ElemType e) {
+
+    for (int j = 0; j < ListLength(); j++)
+    {
+        if (e == sq_list.elem[j])
+        {
+            i = j;
+            return OK;
+        }
+
+    }
+
+    return FALSE;
+}
+
+void MyList::Print() {
+  
+    for (int i = 0; i < ListLength(); i++)
+    {
+        cout << sq_list.elem[i];
+        if (i != ListLength() - 1)
+        {
+            cout << "->";
+        }
+    }
+    cout << endl;
+}
+
+MyList::~MyList() {
+    cout << __FUNCTION__ << endl;
+    //delete sq_list.elem;
+    sq_list.elem = NULL;
+    sq_list.length = 0;
+    sq_list.listsize = 0;
+}
+void TestList::test_my_list() {
+    cout << __FUNCTION__ << endl;
+    MyList myList;
+    myList.ListInsert(0, 2);
+    myList.ListInsert(1, 26);
+    myList.ListInsert(2, 36);
+    myList.ListInsert(1, 56);
+    myList.ListInsert(1, 56);
+    myList.ListInsert(1, 56);
+    myList.ListInsert(1, 56);
+    myList.ListInsert(1, 56);
+    myList.Print();
+
+    ElemType e = 0;
+    myList.NextElem(56, e);
+    cout << e << endl;
+    cout << "----------end-------------" << endl << endl;
+}
+
+Status TestList::UnionList(MyList& la, MyList& lb) {
+    ElemType e = 0;
+    int j = 0;
+    for (int i = 0; i < lb.ListLength(); i++)
+    {
+        lb.GetElem(i, e);
+        if (!la.FindElem(j, e))
+        {
+            la.ListInsert(la.ListLength(), e);
+        }
+    }
+
+    return OK;
+}
+
+void TestList::test_my_union_list() {
+    cout << __FUNCTION__ << endl;
+    MyList myList;
+    myList.ListInsert(0, 1);
+    myList.ListInsert(1, 2);
+    myList.ListInsert(2, 3);
+    myList.ListInsert(3, 5);
+    myList.ListInsert(4, 5);
+    myList.Print();
+
+    MyList myList1;
+    myList1.ListInsert(0, 9);
+    myList1.ListInsert(1, 19);
+    myList1.ListInsert(2, 10);
+    myList1.ListInsert(3, 29);
+    myList1.ListInsert(4, 39);
+    myList1.Print();
+
+    UnionList(myList, myList1);
+    myList.Print();
+
+    cout << "----------end-------------" << endl << endl;
 }

@@ -27,6 +27,10 @@ public:
     Triplet& get();
 private:
     Triplet t_data;
-};    
+};
+
+
+
+void test_data_structure();
 
 #endif
