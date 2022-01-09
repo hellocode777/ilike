@@ -13,6 +13,9 @@ int main(int argc, char** argv)
     TestMergeList test_merge;
     test_merge.test();
 
+    cout << "TestLinkList" << endl;
+    TestLinkList testLinkList;
+    testLinkList.test();
     return 0;
 }
 
