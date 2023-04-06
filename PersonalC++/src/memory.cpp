@@ -25,16 +25,20 @@ void changeMap(map<int,string> &mymap, int key,string value)
     mymap[key] = value;
 }
 
-int MemoryMain()
+int main()
 {
 	int i;
-	int i5 = 11;
-	int j = 37;
+    // 只需更改如下三个变量的value
+	int i5 = 11; // 第多少天开始Summarize
+    int j = 11; // 从哪一课开始
+    int end = 96; // 最后是哪一课
 	string m_strStudy;
 	string m_strReview;
 	string m_one;
 	//string m_two;
-	for (i = 1; i <= 66; i++)
+    int all = (end - j + 1) / i5 + 1 + end - j + 1;
+    std::cout << "all=" << all << std::endl;
+	for (i = 1; i <= all; i++)
 	{
 		
 		if (i5 - i == 0)
@@ -53,7 +57,8 @@ int MemoryMain()
 		}
 		
 	}
-	for (i = 1; i <= 100; i++)
+    int review = all + 15;
+	for (i = 1; i <= review; i++)
 	{
 		g_mapDayReview.insert(pair<int,string>(i," "));
 
@@ -83,7 +88,7 @@ int MemoryMain()
 	}
 	for(iter = g_mapDayReview.begin(); iter != g_mapDayReview.end(); iter++)
 	{
-		if (iter->first <= 66)
+		if (iter->first <= all)
 		{cout << iter->first << "      " << g_mapDayStudy[iter->first] << "   ";}
 		else
 		{cout << iter->first << "               ";}

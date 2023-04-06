@@ -16,7 +16,7 @@ int main() {
 	//MypollMain();
 	//Polymorphism_main();
 	//FactroyMain();
-	//MemoryMain();
+	MemoryMain();
 
 	//bit_manipulationmain();
 	//StaticMain();
@@ -39,7 +39,7 @@ int main() {
 
 
 
-	EventMain();
+	//EventMain();
 	//C__PrimerMain();
 	return 0;
 
